@@ -5,10 +5,10 @@
 \blfootnote{$^1$\color{duongvaotoanhoc}Viện Toán học.}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannerduongvao}}}
-\AddToShipoutPicture*{\put(92,525){\includegraphics[scale=1]{../tieude.pdf}}}
+\AddToShipoutPicture*{\put(168,550){\includegraphics[scale=1]{../tieude.pdf}}}
 \centering
 \endgroup
-\vspace*{160pt}
+\vspace*{155pt}
 
 \begin{multicols}{2}	
 	Chúng ta biết rằng một đa thức hệ bậc $n\geq 1$ với hệ số thực có không quá $n$ nghiệm thực. Điều này cũng có thể được minh họa là đồ thị của nó cắt trục hoành tại không quá $n$ điểm. Tổng quát hơn ta có: đồ thi  đó cắt một đường thẳng bất kỳ cũng tại không quá $n$ điểm. 
@@ -17,14 +17,25 @@
 	\vskip 0.1cm
 	Nếu cho một elipse cắt đồ thị của một đa thức bậc $3$ thì số giao điểm có thể lên tới $6$. Ta thấy, số giao điểm lớn nhất có thể liên quan tới bậc của các đường cong mà ta đang xét.
 	\begin{figure}[H]
-		\vspace*{-5pt}
 		\centering
+		\vspace*{-5pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.4\linewidth]{1}
-		\includegraphics[width= 0.4\linewidth]{2}
+		\begin{tikzpicture}[scale=0.48, duongvaotoanhoc, node font= \small]
+			\begin{axis} [axis lines=center]
+				\addplot [blue,domain=-2.5:2.5, smooth] { x^3 - 4*x };
+				\addplot [domain=-5:5,red,smooth] {2};
+				\addplot [domain=-5:5,green,smooth] {4};
+			\end{axis}
+		\end{tikzpicture}
+		\begin{tikzpicture}[duongvaotoanhoc,scale=0.48, node font= \small]
+			\begin{axis}[domain=-5:5, axis x line=bottom,axis y line=left]
+				\addplot [blue,domain=-2.5:2.5, smooth] { x^3 - 4*x };
+			\end{axis}
+			\draw[red] (3.5,3) ellipse (3.3cm and 1cm);
+		\end{tikzpicture}
 		\caption{\small\textit{\color{duongvaotoanhoc}Hình $1$.}}
 		\vspace*{-10pt}
-	\end{figure} 
+	\end{figure}
 	Nếu xét đa thức hệ số phức và các nghiệm phức, đồng thời tính cả bội thì một đa thức bậc $n\geq 1$ với hệ số phức có đúng $n$ nghiệm. Ta cũng có thể nói, ``đồ thị'' của đa thức này cắt ``đường thẳng phức'' tại đúng $n$ điểm nếu tính cả bội.
 	\vskip 0.1cm
 	Định lý Bézout phát biểu rằng {\em hai đường cong đại số trên mặt phẳng xạ ảnh cắt nhau tại đúng $n$ điểm nếu kể cả bội, với $n$ là tích của bậc của hai đường cong} (ngoại trừ trường hợp chúng trùng nhau một phần). 
@@ -120,6 +131,16 @@
 	\begin{align*}
 		u^2+v^2=t.
 	\end{align*}
+	\begin{center}
+		\begin{tikzpicture}[domain=-4:4]
+			\draw[-stealth] (-4.2,0) -- (4.2,0) node[right] {$x$};
+			\draw[-stealth] (0,-1.2) -- (0,4.2) node[above] {$y$};
+			
+			\draw[color=red]    plot (\x,\x^2);
+		\draw (3.43,4.5) ellipse (3cm and 1.25cm);
+		\draw (3.43,2) ellipse (2cm and 0.75cm);
+	\end{tikzpicture}
+	\end{center}
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
