@@ -5,14 +5,27 @@
 \blfootnote{$^1$\color{duongvaotoanhoc}Viện Toán học.}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannerduongvao}}}
-\AddToShipoutPicture*{\put(168,550){\includegraphics[scale=1]{../tieude.pdf}}}
+\AddToShipoutPicture*{\put(168,553){\includegraphics[scale=1]{../tieude.pdf}}}
 \centering
 \endgroup
-\vspace*{155pt}
+\vspace*{154pt}
 
 \begin{multicols}{2}	
 	Chúng ta biết rằng một đa thức hệ bậc $n\geq 1$ với hệ số thực có không quá $n$ nghiệm thực. Điều này cũng có thể được minh họa là đồ thị của nó cắt trục hoành tại không quá $n$ điểm. Tổng quát hơn ta có: đồ thi  đó cắt một đường thẳng bất kỳ cũng tại không quá $n$ điểm. 
-	\vskip 0.1cm
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[scale=0.52, duongvaotoanhoc, node font= \small]
+			\begin{axis} [axis lines=center]
+				\addplot [blue,domain=-2.5:2.5, smooth] { x^3 - 4*x };
+				\addplot [domain=-5:5,red,smooth] {2};
+				\addplot [domain=-5:5,green,smooth] {4};
+			\end{axis}
+		\end{tikzpicture}
+		\caption{\small\textit{\color{duongvaotoanhoc}Hình $1$.}}
+		\vspace*{-10pt}
+	\end{figure}
 	Nếu cho hai đường elipse trên mặt phẳng cắt nhau ta thấy số giao điểm không thể quá $4$. Điều này cũng đúng với các đường parabola và hyperbola.
 	\vskip 0.1cm
 	Nếu cho một elipse cắt đồ thị của một đa thức bậc $3$ thì số giao điểm có thể lên tới $6$. Ta thấy, số giao điểm lớn nhất có thể liên quan tới bậc của các đường cong mà ta đang xét.
@@ -20,21 +33,14 @@
 		\centering
 		\vspace*{-5pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[scale=0.48, duongvaotoanhoc, node font= \small]
-			\begin{axis} [axis lines=center]
-				\addplot [blue,domain=-2.5:2.5, smooth] { x^3 - 4*x };
-				\addplot [domain=-5:5,red,smooth] {2};
-				\addplot [domain=-5:5,green,smooth] {4};
-			\end{axis}
-		\end{tikzpicture}
-		\begin{tikzpicture}[duongvaotoanhoc,scale=0.48, node font= \small]
+		\begin{tikzpicture}[duongvaotoanhoc,scale=0.52, node font= \small]
 			\begin{axis}[domain=-5:5, axis x line=bottom,axis y line=left]
 				\addplot [blue,domain=-2.5:2.5, smooth] { x^3 - 4*x };
 			\end{axis}
 			\draw[red] (3.5,3) ellipse (3.3cm and 1cm);
 		\end{tikzpicture}
-		\caption{\small\textit{\color{duongvaotoanhoc}Hình $1$.}}
-		\vspace*{-10pt}
+		\caption{\small\textit{\color{duongvaotoanhoc}Hình $2$.}}
+		\vspace*{-5pt}
 	\end{figure}
 	Nếu xét đa thức hệ số phức và các nghiệm phức, đồng thời tính cả bội thì một đa thức bậc $n\geq 1$ với hệ số phức có đúng $n$ nghiệm. Ta cũng có thể nói, ``đồ thị'' của đa thức này cắt ``đường thẳng phức'' tại đúng $n$ điểm nếu tính cả bội.
 	\vskip 0.1cm
@@ -44,11 +50,13 @@
 	\vskip 0.1cm
 	Bézout đưa ra chứng minh năm $1779$ trong cuốn sách {\em Théorie générale des équations algébraiques} (Lý thuyết đại cương về phương trình đại số). Một đường cong đại số trên mặt phẳng được xác định như tập nghiệm của một đa thức hai biến. Như vậy khẳng định có thể được phát biểu như là số nghiệm của một hệ hai phương trình đa thức theo hai ẩn.
 	Bézout đã đưa ra khái niệm {\em kết thức} để giải quyết bài toán. Cho hai đa thức $F(x)$ và $G(x)$ hệ số phức với bậc tương ứng là $m$ và $n$. Ký hiệu $\mathbb C[x]_d$ là không gian véc tơ các đa thức với bậc nhỏ hơn $d$. Xét ánh xạ tuyến tính ``Bézout'' cho bởi 
+	\setlength{\abovedisplayskip}{5pt}
+	\setlength{\belowdisplayskip}{5pt}
 	\begin{align*}
 		\mathbb C[x]_n\!\times\! \mathbb C[x]_m \!\rightarrow\!  \mathbb C[x]_{m\!+\!n},
 		(A,B)\!\mapsto\! AF\!+\!BG.
 	\end{align*}
-	Nhận xét là số chiều của hai không gian nguồn và đích cùng bằng $m+n$. Do đó ta có thể xét định thức của ánh xạ này. Đây chính là kết thức của $F$ và $G$. Theo bổ đề Bézout (xem Bổ đề \ref{lem.Bézout} dưới đây), nếu $F$ và $G$ có nghiệm chung thì ánh xạ trên có hạch không tầm thường, từ đó kết thức bằng $0$, và ngược lại. 
+	Nhận xét là số chiều của hai không gian nguồn và đích cùng bằng $m+n$. Do đó ta có thể xét định thức của ánh xạ này. Đây chính là kết thức của $F$ và $G$. Theo bổ đề Bézout (xem Bổ đề $2$ dưới đây), nếu $F$ và $G$ có nghiệm chung thì ánh xạ trên có hạch không tầm thường, từ đó kết thức bằng $0$, và ngược lại. 
 	\vskip 0.1cm
 	Bằng cách coi hai đa thức theo $x$ và $y$ như là các đa thức theo biến $y$, thì kết thức của chúng sẽ là một đa thức theo $x$ với bậc không vượt quá tích các bậc của hai đa thức ban đầu. Từ đó Bézout có một chứng minh cho các đa thức (và do đó các đường cong) ở vị trí tổng quát. 
 	\vskip 0.1cm
@@ -84,9 +92,9 @@
 	với $\alpha$ thay đổi. Khi $\alpha\neq 0$ phương trình này xác định một cặp hai đường thẳng song song. Khi $\alpha$ tiến tới $0$, hai đường thẳng này tiến gần tới nhau và khi $\alpha=0$, hai đường thẳng này tạo thành {\em một đường thẳng kép}. 
 	\vskip 0.1cm
 	Như vậy hình ảnh hình học của tập nghiệm không phản ánh hết bản chất đại số của phương trình, đặc biệt khi phương trình đó phụ thuộc vào tham số. Để giải quyết vấn đề này, ta sẽ sử dụng {\em ngôn ngữ đại số} để mô tả hình học. Định nghĩa của một đường cong đại số vì thế sẽ được phát biểu như sau. 
-	\vskip 0.1cm
+	\vskip 0.2cm
 	\PIbox{\em Đường cong đại số trong mặt phẳng được xác định bởi một đa thức $F\in \mathbb C[x,y]$ có bậc lớn hơn hoặc bằng 1, tập các điểm hình học của nó là nghiệm của phương trình $F$. Đường cong đại số này được gọi tắt là {\em đường cong $F$}. }
-	\vskip 0.1cm
+	\vskip 0.2cm
 	Trong Hình học Đại số, thay vì xét các tập nghiệm thực của phương trình ($1$), người ta xét các nghiệm phức. Có một số khác biệt căn bản giữa nghiệm thực và nghiệm phức, từ góc độ đại số cũng như từ góc độ hình học. 
 	\vskip 0.1cm
 	($1$) Một trong những tính chất đại số quan trọng nhất của số phức là mọi đa thức hệ số phức với bậc $n\geq 1$ đều có đủ $n$ nghiệm phức, nếu tính cả bội.   
@@ -131,28 +139,18 @@
 	\begin{align*}
 		u^2+v^2=t.
 	\end{align*}
-	\begin{center}
-		\begin{tikzpicture}[domain=-4:4]
-			\draw[-stealth] (-4.2,0) -- (4.2,0) node[right] {$x$};
-			\draw[-stealth] (0,-1.2) -- (0,4.2) node[above] {$y$};
-			
-			\draw[color=red]    plot (\x,\x^2);
-		\draw (3.43,4.5) ellipse (3cm and 1.25cm);
-		\draw (3.43,2) ellipse (2cm and 0.75cm);
-	\end{tikzpicture}
-	\end{center}
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{3}
-		\caption{\small\textit{\color{duongvaotoanhoc}Hình $2$.}}
+		\includegraphics[width= 0.55\linewidth]{3}
+		\caption{\small\textit{\color{duongvaotoanhoc}Hình $3$.}}
 		\vspace*{-10pt}
 	\end{figure}
 	Như vậy:
-	\vskip 0.1cm
+	\vskip 0.2cm
 	\PIbox{trong không gian $3$ chiều với các tọa độ là $u,v,t$, nghiệm của phương trình xác định {\bf\color{duongvaotoanhoc} đường hyperbola phức} lập thành một {\bf\color{duongvaotoanhoc} mặt paraboloid tròn xoay thực}, bỏ đi điểm $(0,0,0)$ (ứng với giá trị $t=0$).}
-	\vskip 0.1cm
+	\vskip 0.2cm
 	$\pmb{2.}$ \textbf{\color{duongvaotoanhoc}Đường cong  bất khả quy}
 	\vskip 0.1cm 
 	Nếu đa thức $F$ phân tích thành hai đa thức $G$ và $H$, bậc $>0$, thì tập nghiệm của $F=$ là hợp các tập nghiệm của $G=0$ và $H=0$. Một đa thức được gọi là {\em bất khả quy} nếu nó không có phân tích như trên. Đường cong xác định bởi đa thức này cũng được gọi là {\em bất khả quy}. Kết quả sau đây khẳng định rằng một đường cong đại số sẽ là hợp của các đường cong bất khả quy.
@@ -200,7 +198,8 @@
 	\end{align*}
 	Có nhiều cách để lý giải điều này. Cách đơn giản nhất là thông qua khai triển Taylor đối với $F$ tại điểm $P(a,b)$. Do $F(a,b)=0$ nên khai triển này có dạng:
 	\begin{align*}
-		F(x,y)=F_1(x-a,y-b)+F_2(x-a,y-b)+\ldots,
+		F(x,y)=&F_1(x-a,y-b)\\
+		&+F_2(x-a,y-b)+\ldots,
 	\end{align*}
 	trong đó $F_1(x-a,y-b)= F_x(a,b)(x-a)+F_y(a,b)(y-b)$, còn các số hạng $F_2(x-a,y-b)$... có bậc cao hơn theo $x-a$ và $y-b$.  Do tiếp tuyến tới một đường cong tại một điểm $P$ trên đường cong mô tả \textit{xấp xỉ tuyến tính} của phần đường cong tại xung quanh điểm $P$, ta kết luận, phương trình của tiếp tuyến được cho bởi công thức ($2$).
 	\vskip 0.1cm
@@ -223,22 +222,19 @@
 	$\pmb{4.}$ \textbf{\color{duongvaotoanhoc}Điểm bội và tiếp tuyến}
 	\vskip 0.1cm 
 	Một điểm trên đường cong $F$  được gọi là điểm bội nếu nó không phải là điểm đơn. Trước tiên ta sẽ xét trường hợp $F$ là một đa thức bất khả quy trong $\mathbb C[x,y]$. Để đơn giản ta sẽ giả thiết điểm đang xét là gốc tọa độ $O(0,0)$. Các hình vẽ dưới đây mô tả ``phần thực'' của một số đường cong tại lân cận điểm $O$:
-%	\begin{figure}[H]
-%		\vspace*{-5pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 1\linewidth]{}
-%		\caption{\small\textit{\color{duongvaotoanhoc}Hình $3$. Các đường cong với kỳ dị tại $O(0,0)$.}}
-%		\vspace*{-10pt}
-%	\end{figure}
-%	$\begin{array}{cccc}
-%		\includegraphics[width=15ex]{sing03.png} &
-%		\includegraphics[width=13ex]{sing04.png} &
-%		\includegraphics[width=18ex]{sing05.png}&
-%		\includegraphics[width=18ex]{sing06.png}\\
-%		F=x^3-y^2 & F=x^3+x^2-y^2& F=(x^2 + y^2)^2 + 3x^2y-y^3 & F=(x^2 + y^2)^3- 4x^2y^2 
-%	\end{array}$
-	
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[scale=0.8]{4a}\quad\quad
+		\includegraphics[scale=0.8]{4c}
+		\caption{\small$F=x^3-y^2$ \quad\quad\quad$F\!=\!(x^2 \!+\! y^2)^2 \!+\! 3x^2y\!-\!y^3$}
+		\includegraphics[scale=0.8]{4b}\quad\quad\quad
+		\includegraphics[scale=0.8]{4d}
+		\caption{\small$F=x^3+x^2-y^2$ \quad$F=(x^2 + y^2)^3- 4x^2y^2$}
+		\caption{\small\textit{\color{duongvaotoanhoc}Hình $4$. Các đường cong với kỳ dị tại $O(0,0)$.}}
+		\vspace*{-5pt}
+	\end{figure}
 	Nhắc lại rằng nếu điểm $O(0,0)$ là điểm bội của $F(x,y)$ khai triển Taylor của $F$ tại $O$ có dạng
 	\begin{align*}
 		F=F_m+F_{m+1}+\ldots, \quad m\geq 2,
@@ -257,12 +253,12 @@
 	Các phương trình này xác định các chùm đường thẳng (bao gồm cả đường thẳng kép) là các tiếp tuyến tới đường cong tại $O$. 
 	\vskip 0.1cm
 	Ta thấy giá trị của $m$ ứng với số các tiếp tuyến tới đường cong tại điểm $O$. Lý giải cho điều này rất đơn giản. 
-	\vskip 0.1cm
+	\vskip 0.2cm
 	\PIbox{Trong một {\em lân cận đủ nhỏ} của $O$, $F$ được xấp xỉ bởi $F_m$, do đó đường cong  $F$  được xấp xỉ bởi đường cong $F_m$.}
-	\vskip 0.1cm
+	\vskip 0.2cm
 	Mở rộng phân tích ở trên cho một điểm bất kỳ trên đường cong ta có định nghĩa sau. 
 	Cho $F\in \mathbb C[x,y]$ là đa thức bất khả quy và $P(a,b)$ là một điểm trên đường cong $F$. 
-	\vskip 0.1cm
+	\vskip 0.2cm
 	\PIbox{Bội của $P$ trên đường cong, ký hiệu là $\mu_P(F)$, là lũy thừa nhỏ nhất trong khai triển Taylor của $F$ tại $P$:
 	\begin{align*}
 		F(x,y)= &F_m(x-a,y-b)\\
@@ -271,7 +267,7 @@
 		Phương trình
 		$F_m(x-a,y-b)=0$
 		xác định các đường thẳng tiếp xúc với đương cong tại $P$. }
-	\vskip 0.1cm
+	\vskip 0.2cm
 	Nếu hai đường cong $F$  và $G$  cắt nhau tại điểm $P$, thì bội giao tại $P$ của hai đường cong phụ thuộc vào vị trí tương đối của các tiếp tuyến của hai đường cong. Trong trường hợp các tiếp tuyến là đôi một phân biệt thì bội giao sẽ là tích của số các tiếp tuyến. Nhưng trong trường hợp có sự trùng lấp thì vấn đề chưa rõ ràng. 
 	\vskip 0.1cm
 	Về nguyên tắc, để xác định được bội giao, người ta thực hiện một phép biến dạng nhỏ hai đường cong tại lân cận của giao điểm, sau đó đếm số giao điểm của hai đường cong trong lân cận đó. Đó là phương pháp của Giải tích. Trong Hình học Đại số, ta sẽ sử dụng tiếp cận khác, trong đó ta sẽ trừu tượng hóa vấn đề lên để qua đó nhìn thấy sâu hơn bản chất của nó. Bội giao của hai đường cong sẽ được nhìn nhận như chiều của các không gian véc tơ. Công cụ để triển khai việc này là {\em vành địa phương}. 
@@ -283,10 +279,10 @@
 	Nhắc lại rằng số bội của một điểm $P$ trên đường cong $F$ được xác định nhờ khai triển Taylor của $F$ tại điểm đó. Ta sẽ định nghĩa số bội này thông qua số chiều của các không gian véc tơ được xây dựng từ vành địa phương của $P$.  Ưu điểm của cách làm này là nó cho một mô tả trừu tượng về số bội, cho chúng ta hiểu biết sâu sắc hơn về nó, để từ đó cho phép phát triển những phương pháp hiện đại hơn khi nghiên cứu số bội. 
 	\vskip 0.1cm
 	{\em Vành địa phương tại một điểm trong mặt phẳng affine} (phức) được hiểu là tập các hàm số xác định trên một lân cận nào đó của điểm đã cho. Do ta chỉ xét các hàm ``đại số'' nên định nghĩa của một hàm địa phương là như sau.
-	\vskip 0.1cm
+	\vskip 0.2cm
 	\PIbox{Vành địa phương $\pazocal O_P$ tại điểm $P(a,b)$ trong mặt phẳng affine là tập hợp các phân thức đại số $F/G$ với tính chất
 		$G(P):=G(a,b)\neq 0.$}
-	\vskip 0.1cm
+	\vskip 0.2cm
 	Tập hợp các phân thức trong $\pazocal O_P$ triệt tiêu tại $P$ lập thành ideal cực đại duy nhất trong vành này, ký hiệu là $\mathfrak m_P$. 
 	\begin{align*}
 		\mathfrak m_P=\left\{ F/G \left|\right.  F(P)=0, G(P)\neq 0\right\}.
@@ -294,10 +290,10 @@
 	Trong Đại số Giao hoán, một vành với duy nhất ideal cực đại được gọi   là \textbf{\color{duongvaotoanhoc}vành địa phương}.
 	\vskip 0.1cm
 	Cho $P(a,b)$ là một điểm trên đường cong bất khả quy  $F$. Các hàm địa phương trên mặt phẳng affine tại $P$ khi hạn chế lên đường cong này xác định các hàm địa phương trên đó. Ta nhận thấy rằng hai hàm khi hạn chế lên đường cong sẽ bằng nhau nếu chúng sai khác nhau bởi một bội số của $F$. Do đó, 
-	\vskip 0.1cm
+	\vskip 0.2cm
 	\PIbox{vành các hàm địa phương tại $P$ trên đường cong $F$  là vành thương 
 		$\pazocal O_P(F):= \pazocal O_P/(F),$}
-	\vskip 0.1cm
+	\vskip 0.2cm
 	trong đó $(F)$ là ideal sinh bởi $F$ trong vành $\pazocal O_P$.
 	Vành $\pazocal O_P(F)$ cũng là vành địa phương với ideal cực đại duy nhất:
 	$\mathfrak m_P(F)=\mathfrak m_P/(F).$
@@ -316,6 +312,7 @@
 	\end{align*}
 	với mọi $n$. 
 	\vskip 0.1cm
+	\columnbreak
 	$\pmb{6.}$ \textbf{\color{duongvaotoanhoc}Giao điểm của hai đường cong}
 	\vskip 0.1cm
 	Xét hai đường cong $F$  và $G$. Khi đó hệ phương trình
@@ -382,6 +379,8 @@
 	xác định một đường cong trong không gian xạ ảnh, được gọi là  {\em xạ ảnh hóa} của đường cong $F$. 
 	\vskip 0.1cm
 	Các điểm ở vô cùng của đường cong xạ ảnh hóa ứng với nghiệm chung của hai  phương trình  
+	\setlength{\abovedisplayskip}{7pt}
+	\setlength{\belowdisplayskip}{7pt}
 	$\widehat F=0,\ Z=0.$
 	Hay nói cách khác, là nghiệm của phương trình
 	\begin{align*}
@@ -425,11 +424,12 @@
 		\pazocal O_P/(F,G).
 	\end{align*}
 	Đây là cơ sở cho định nghĩa sau.
-	\vskip 0.1cm
+	\vskip 0.2cm
 	\PIbox{Bội giao của hai đường cong $F$  và $G$  tại điểm $P$ được định nghĩa là số
 	\begin{align*}
 		\mu_P(F,G):=\dim_{\mathbb C}\pazocal O_P/(F,G).
 	\end{align*}}
+	\vskip 0.05cm
 	Đối với mọi điểm $B$ không là giao điểm ta định nghĩa
 	$\mu_B(F,G)=0.$ 
 	Ta có các tính  chất cơ bản sau đây của bội giao. 
@@ -466,17 +466,20 @@
 	Mệnh đề ($2$) được rút ra từ  \textbf{\color{duongvaotoanhoc}dãy khớp}  sau đây. Đặt $R:=\mathbb C[x,y]$ và $R_d$ là tập các đa thức trong $R$ với bậc $<d$.
 	Với mỗi $d\geq m+n$, dãy các ánh xạ tuyến tính sau là khớp (nghĩa là ảnh của ánh xạ trước trùng với hạch của ánh xạ sau):
 	\begin{align*}
-		0\longrightarrow R_{d-m-n}\stackrel\beta\longrightarrow 
-		R_{d-m}\oplus R_{d-n} \stackrel\alpha\longrightarrow R_d\stackrel\pi\longrightarrow R/(F,G)\longrightarrow 0	
+		0&\longrightarrow R_{d-m-n}\stackrel\beta\longrightarrow 
+		R_{d-m}\oplus R_{d-n} \stackrel\alpha\longrightarrow R_d\\
+		&\stackrel\pi\longrightarrow R/(F,G)\longrightarrow 0	
 	\end{align*}
 	trong đó  
 	\begin{align*}
-		\alpha: (A,B)\longmapsto AF+BG,\quad \beta: C\longmapsto (CG,-CF),
+		&\alpha: (A,B)\longmapsto AF+BG,\\
+		&\beta: C\longmapsto (CG,-CF),
 	\end{align*}
 	còn $\pi$ là hạn chế của ánh xạ thương lên $R_d$. Từ đó, bằng cách so sánh số chiều ta có 
 	\begin{align*} \dim_{\mathbb C}\textrm{im}\pi=&\dim_{\mathbb C}R_d-\dim_{\mathbb C}\textrm{ker}\pi\\
 		=& \dim_{\mathbb C}R_d-\dim_{\mathbb C}\textrm{im}\alpha\\
-		=& \dim_{\mathbb C}R_d-\dim_{\mathbb C}R_{d-m}-\dim_{\mathbb C}R_{d-n}+ 
+		=& \dim_{\mathbb C}R_d-\dim_{\mathbb C}R_{d-m}\\
+		&-\dim_{\mathbb C}R_{d-n}+ 
 		\dim_{\mathbb C}R_{d-m-n}.
 	\end{align*}
 	Do
