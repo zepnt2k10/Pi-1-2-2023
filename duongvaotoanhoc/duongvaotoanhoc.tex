@@ -50,8 +50,8 @@
 	\vskip 0.1cm
 	Bézout đưa ra chứng minh năm $1779$ trong cuốn sách {\em Théorie générale des équations algébraiques} (Lý thuyết đại cương về phương trình đại số). Một đường cong đại số trên mặt phẳng được xác định như tập nghiệm của một đa thức hai biến. Như vậy khẳng định có thể được phát biểu như là số nghiệm của một hệ hai phương trình đa thức theo hai ẩn.
 	Bézout đã đưa ra khái niệm {\em kết thức} để giải quyết bài toán. Cho hai đa thức $F(x)$ và $G(x)$ hệ số phức với bậc tương ứng là $m$ và $n$. Ký hiệu $\mathbb C[x]_d$ là không gian véc tơ các đa thức với bậc nhỏ hơn $d$. Xét ánh xạ tuyến tính ``Bézout'' cho bởi 
-	\setlength{\abovedisplayskip}{5pt}
-	\setlength{\belowdisplayskip}{5pt}
+%	\setlength{\abovedisplayskip}{5pt}
+%	\setlength{\belowdisplayskip}{5pt}
 	\begin{align*}
 		\mathbb C[x]_n\!\times\! \mathbb C[x]_m \!\rightarrow\!  \mathbb C[x]_{m\!+\!n},
 		(A,B)\!\mapsto\! AF\!+\!BG.
@@ -143,7 +143,40 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.55\linewidth]{3}
+		\begin{tikzpicture}[duongvaotoanhoc,scale=0.8]
+			\begin{axis}[axis lines = center, xmin=-3.5,xmax=3.5, ticks = none, axis line style={draw=none}]
+				\addplot [cackithi,domain=-2.5:2.5, smooth] {x^2};
+			\end{axis}
+			\draw[dashed, cackithi] (5.03,2.5) arc
+			[
+			start angle=0,
+			end angle=180,
+			x radius=1.6cm,
+			y radius =0.59cm
+			];
+			\draw[cackithi] (5.03,2.5) arc
+			[
+			start angle=0,
+			end angle=-180,
+			x radius=1.6cm,
+			y radius =0.59cm
+			];
+			\draw[cackithi] (5.86,5.7) arc
+			[
+			start angle=0,
+			end angle=360,
+			x radius=2.44cm,
+			y radius =0.9cm
+			];
+			\draw[cackithi] (5.86,5.7) -- (0.98,5.7) (2.6,4.86) -- (4.3,6.56);
+			\draw[cackithi, dashed] (5.03,2.5) -- (1.83,2.5) (2.9,2) -- (3.9,3);
+			\draw[-stealth] (4.42,1) -- (2.42,-1) node [below] {$y$};
+			\draw[-stealth] (0,0) -- (6.86, 0) node [right] {$x$};
+			\draw[-stealth] (3.43,-1) -- (3.43, 7) node [above] {$z$};
+			\draw[cackithi] plot [smooth] coordinates {(2.6,4.86) (2.85,1.95) (3.1,0.65) (3.43,0)};
+			\draw[cackithi, dashed] plot [smooth] coordinates {(4.3,6.56) (4,3) (3.75,0.67) (3.43,0)};
+			\draw (3.7, -0.4) node {$O$};
+		\end{tikzpicture}
 		\caption{\small\textit{\color{duongvaotoanhoc}Hình $3$.}}
 		\vspace*{-10pt}
 	\end{figure}
@@ -222,25 +255,25 @@
 	$\pmb{4.}$ \textbf{\color{duongvaotoanhoc}Điểm bội và tiếp tuyến}
 	\vskip 0.1cm 
 	Một điểm trên đường cong $F$  được gọi là điểm bội nếu nó không phải là điểm đơn. Trước tiên ta sẽ xét trường hợp $F$ là một đa thức bất khả quy trong $\mathbb C[x,y]$. Để đơn giản ta sẽ giả thiết điểm đang xét là gốc tọa độ $O(0,0)$. Các hình vẽ dưới đây mô tả ``phần thực'' của một số đường cong tại lân cận điểm $O$:
-	\begin{figure}[H]
-		\vspace*{-10pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[scale=0.8]{4a}\quad\quad
-		\includegraphics[scale=0.8]{4c}
-		\caption{\small$F=x^3-y^2$ \quad\quad\quad$F\!=\!(x^2 \!+\! y^2)^2 \!+\! 3x^2y\!-\!y^3$}
-		\includegraphics[scale=0.8]{4b}\quad\quad\quad
-		\includegraphics[scale=0.8]{4d}
-		\caption{\small$F=x^3+x^2-y^2$ \quad$F=(x^2 + y^2)^3- 4x^2y^2$}
-		\caption{\small\textit{\color{duongvaotoanhoc}Hình $4$. Các đường cong với kỳ dị tại $O(0,0)$.}}
-		\vspace*{-5pt}
-	\end{figure}
+	\vskip 0.1cm
 	Nhắc lại rằng nếu điểm $O(0,0)$ là điểm bội của $F(x,y)$ khai triển Taylor của $F$ tại $O$ có dạng
 	\begin{align*}
 		F=F_m+F_{m+1}+\ldots, \quad m\geq 2,
 	\end{align*}
 	trong đó $F_i$ là các đa thức thuần nhất bậc $i$ theo $x$ và $y$. 
-	\vskip 0.1cm
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[height=0.4\linewidth]{4a}\quad\quad
+		\includegraphics[height=0.4\linewidth]{4b}
+		\caption{\small\quad\quad$F=x^3-y^2$ \quad\quad$F\!=\!(x^2 \!+\! y^2)^2 \!+\! 3x^2y\!-\!y^3$}
+		\includegraphics[height=0.4\linewidth]{4c}\quad\quad
+		\includegraphics[height=0.4\linewidth]{4d}
+		\caption{\small$F=x^3+x^2-y^2$ \quad$F=(x^2 + y^2)^3- 4x^2y^2$}
+		\caption{\small\textit{\color{duongvaotoanhoc}Hình $4$. Các đường cong với kỳ dị tại $O(0,0)$.}}
+		\vspace*{-5pt}
+	\end{figure}
 	Trong các đồ thị ở hình $4$, giá trị $m$ tương ứng là $2,2,3,4$. Phương trình
 	$F_m=0$
 	tương ứng là:
@@ -260,6 +293,8 @@
 	Cho $F\in \mathbb C[x,y]$ là đa thức bất khả quy và $P(a,b)$ là một điểm trên đường cong $F$. 
 	\vskip 0.2cm
 	\PIbox{Bội của $P$ trên đường cong, ký hiệu là $\mu_P(F)$, là lũy thừa nhỏ nhất trong khai triển Taylor của $F$ tại $P$:
+		\setlength{\abovedisplayskip}{5pt}
+		\setlength{\belowdisplayskip}{5pt}
 	\begin{align*}
 		F(x,y)= &F_m(x-a,y-b)\\
 		&+F_{m+1}(x-a,y-b)+\ldots
@@ -300,7 +335,9 @@
 	\vskip 0.1cm
 	\textbf{\color{duongvaotoanhoc}Mệnh đề} $\pmb{4}$ (Bội của điểm trên đường cong)\textbf{\color{duongvaotoanhoc}.} 
 		\textit{Cho $F\in\mathbb C[x,y]$ là đa thức bất khả quy và $P$ là một điểm trên đường cong $F$. 
-		Khi đó với mọi $n\geq\mu:= \mu_P(F)$  ta có} 
+		Khi đó với mọi $n\geq\mu:= \mu_P(F)$  ta có}
+		\setlength{\abovedisplayskip}{8pt}
+		\setlength{\belowdisplayskip}{8pt} 
 		\begin{align*}
 			\dim_{\mathbb C}  \pazocal O_P(F)/(\mathfrak m_P(F)^n)=\mu \cdot n -
 			{\mu \choose 2}.
@@ -312,7 +349,6 @@
 	\end{align*}
 	với mọi $n$. 
 	\vskip 0.1cm
-	\columnbreak
 	$\pmb{6.}$ \textbf{\color{duongvaotoanhoc}Giao điểm của hai đường cong}
 	\vskip 0.1cm
 	Xét hai đường cong $F$  và $G$. Khi đó hệ phương trình
@@ -378,9 +414,7 @@
 	\end{align*}
 	xác định một đường cong trong không gian xạ ảnh, được gọi là  {\em xạ ảnh hóa} của đường cong $F$. 
 	\vskip 0.1cm
-	Các điểm ở vô cùng của đường cong xạ ảnh hóa ứng với nghiệm chung của hai  phương trình  
-	\setlength{\abovedisplayskip}{7pt}
-	\setlength{\belowdisplayskip}{7pt}
+	Các điểm ở vô cùng của đường cong xạ ảnh hóa ứng với nghiệm chung của hai  phương trình 
 	$\widehat F=0,\ Z=0.$
 	Hay nói cách khác, là nghiệm của phương trình
 	\begin{align*}
@@ -434,7 +468,9 @@
 	$\mu_B(F,G)=0.$ 
 	Ta có các tính  chất cơ bản sau đây của bội giao. 
 	\vskip 0.1cm
-	($1$) Nếu các đa thức $G$ và $H$ không có ước chung với $F$ thì 
+	($1$) Nếu các đa thức $G$ và $H$ không có ước chung với $F$ thì
+	\setlength{\abovedisplayskip}{7pt}
+	\setlength{\belowdisplayskip}{7pt} 
 	\begin{align*}
 		\mu_P(F,GH)=\mu_P(F,G)+\mu_P(F,H).
 	\end{align*}
@@ -495,6 +531,8 @@
 		AF+BG.
 	\end{align*}
 	Biểu thức này rõ ràng có nguồn gốc từ khai triển Bézout cũng như liên quan tới kết thức của hai đa thức. 
+	\vskip 0.1cm
+	\textbf{\color{duongvaotoanhoc}Lời cảm ơn:} Tác giả trân trọng cảm ơn TS.~Nguyễn Đăng Hợp và TS. Đào Văn Thịnh đã đọc kỹ và có nhiều góp ý giá trị giúp hoàn thiện bài viết.  
 	\vskip 0.1cm
 	\textbf{\color{duongvaotoanhoc}Tài liệu tham khảo}
 	\vskip 0.1cm
