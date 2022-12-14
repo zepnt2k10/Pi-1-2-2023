@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  14 DEC 2022 11:52
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  14 DEC 2022 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2782,7 +2782,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 80.
 
-(../toancuabi/toancuabi3.tex
+(../toancuabi/toancuabi.tex
 Requested font "[lmsans12-regular]:mapping=tex-text;" at 12.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
 12-regular.otf
@@ -2963,8 +2963,19 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 31.
+Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
+mapping=tex-text;" at 12.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Bold.otf
+
+Overfull \hbox (1.6797pt too wide) in paragraph at lines 31--69
+[][] 
+ []
+
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 27.
+(Font)              scaled to size 12.0pt on input line 70.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 12.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -2972,43 +2983,53 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
 (microtype)             Ignoring protrusion settings for this character.
-File: ../toancuabi/pic//hc-2022-2-3-15-1.pdf Graphic file (type pdf)
-<use ../toancuabi/pic//hc-2022-2-3-15-1.pdf>
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
-Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
-mapping=tex-text;" at 12.0pt
+File: ../toancuabi/pic//hc-2022-2-2-2-1.pdf Graphic file (type pdf)
+<use ../toancuabi/pic//hc-2022-2-2-2-1.pdf>
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 81.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Bold.otf
+d/EBGaramond-Regular.otf
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 81.
+Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
+m;mapping=tex-text;" at 10.95pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Italic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+File: ../toancuabi/pic//hc-2022-2-2-2-2.pdf Graphic file (type pdf)
+<use ../toancuabi/pic//hc-2022-2-2-2-2.pdf>
 
-Overfull \hbox (1.6797pt too wide) in paragraph at lines 53--54
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 84--95
+[]\TU/EBGaramond(0)/m/n/12 The graph of Vietnamese phrases, we
  []
 
 
-Overfull \hbox (1.6797pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-File: ../toancuabi/pic//hc-2022-2-3-15-2.pdf Graphic file (type pdf)
-<use ../toancuabi/pic//hc-2022-2-3-15-2.pdf>
-
-Underfull \hbox (badness 5726) in paragraph at lines 96--100
-\TU/EBGaramond(0)/m/n/12 Thus, those cannot be Binh’s sisters or
+Underfull \hbox (badness 6575) in paragraph at lines 84--95
+\TU/EBGaramond(0)/m/n/12 phrase with another so that one has a
  []
 
 
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 112.
+Underfull \hbox (badness 5189) in paragraph at lines 84--95
+\TU/EBGaramond(0)/m/n/12 meaning that shall be contained by the
+ []
 
+
+Underfull \hbox (badness 6741) in paragraph at lines 96--102
+\TU/EBGaramond(0)/m/it/12 flower), \TU/EBGaramond(0)/m/n/12 are \TU/EBGaramond(
+0)/m/it/12 topologically \TU/EBGaramond(0)/m/n/12 equivalent, thus
+ []
 
 
 Overfull \vbox (11.62634pt too high) has occurred while \output is active []
 
 File: ../toancuabi/pic//../mathc.pdf Graphic file (type pdf)
 <use ../toancuabi/pic//../mathc.pdf>
-File: ../toancuabi/pic//../tieude4.pdf Graphic file (type pdf)
-<use ../toancuabi/pic//../tieude4.pdf>
+File: ../toancuabi/pic//../tieude3.pdf Graphic file (type pdf)
+<use ../toancuabi/pic//../tieude3.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
 <use ftoancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
@@ -3040,12 +3061,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67516 strings out of 410939
- 1531068 string characters out of 2823530
- 2585313 words of memory out of 3000000
- 87054 multiletter control sequences out of 15000+600000
- 495769 words of font info for 112 fonts, out of 8000000 for 9000
+ 67529 strings out of 410939
+ 1531429 string characters out of 2823530
+ 2599313 words of memory out of 3000000
+ 87065 multiletter control sequences out of 15000+600000
+ 495785 words of font info for 114 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,11n,120p,1132b,826s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,13n,120p,1132b,816s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on _main.pdf (3 pages).
