@@ -11,220 +11,220 @@
 
 \vspace*{182pt}
 
-\begin{multicols}{2}
-	Mục Toán của Bi trong Số $11$, Tập $6$ đã giới thiệu đến các em cách tính diện tích của những hình tạo trên lưới ô vuông. Rất nhiều hình khác nhau có các đỉnh tại các điểm nguyên đều tính được mà chỉ cần dựa trên những ô vuông đơn vị có diện tích $1$. Không biết diện tích của những hình trên lưới có liên hệ gì với những điểm trên lưới không nhỉ? Định lý Pick được giới thiệu trong phần này sẽ trả lời cho ta câu hỏi rất thú vị này đấy.
-	\vskip 0.1cm
-	$\pmb{1.}$ \textbf{\color{toancuabi}Định lý Pick}
-	\vskip 0.1cm
-	Để xem diện tích của một hình trên lưới tính thế nào qua các điểm trên lưới (còn gọi là điểm nguyên), chúng ta thử tính diện tích của một hình cơ bản trong Phần $1$ -- hình chữ nhật kích thước $3\times4$ có các cạnh nằm trên các đường thẳng của lưới bằng một cách khác nhé. Bây giờ, ta chia hình chữ nhật đã cho bởi những đường thẳng song song, cách đều, đi qua giữa hai điểm nguyên trên các cạnh của hình chữ nhật như trong Hình $1$ dưới đây. 
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.65\linewidth]{1}
-		\caption{\small\textit{\color{toancuabi}Hình $1$.}}
-		\vspace*{-5pt}
-	\end{figure}
-	Khi đó ta thấy
-	\vskip 0.1cm
-	-- Mỗi điểm nguyên ({\color{red}màu đỏ}) nằm trong hình chữ nhật ứng với một hình vuông đơn vị;
-	\vskip 0.1cm
-	-- Mỗi điểm nguyên ({\color{blue}màu xanh dương}) nằm trên các cạnh của hình chữ nhật mà không phải đỉnh ứng với một nửa hình vuông đơn vị;
-	\vskip 0.1cm
-	Mỗi điểm nguyên là đỉnh ({\color{black}màu đen}) của hình chữ nhật ứng với một phần tư hình vuông đơn vị.
-	\vskip 0.1cm
-	Như vậy
-	\vskip 0.1cm
-	Diện tích của hình chữ nhật $=$ số điểm trong hình chữ nhật
-	$+ \dfrac{1}{2}\times$ số điểm trên cạnh mà không phải đỉnh $+ \dfrac{1}{4}\times$ số đỉnh
-	\vskip 0.1cm
-	Do hình chữ nhật có $4$ đỉnh nên ta thấy ngay
-	\vskip 0.1cm
-	Diện tích của hình chữ nhật $=$ số điểm trong hình chữ nhật 
-	$+ \dfrac{1}{2} \times$ số điểm nằm trên cạnh
-	$- 1$.
-	\vskip 0.1cm
-	Từ đó ta có diện tích của hình chữ nhật trên là:
-	\begin{align*}
-		6 + \frac{1}{2}\times14 - 1 = 12 \text{ (đơn vị diện tích).}
-	\end{align*}
-	Ví dụ trên được tính trong một trường hợp cụ thể, tuy nhiên những lập luận này hoàn toàn có thể áp dụng cho tất cả những hình chữ nhật khác cùng đặc điểm. Như vậy diện tích của hình chữ nhật có các cạnh trùng với những đường thẳng của lưới có thể được tính thông qua số điểm nguyên nằm trong và nằm trên cạnh của hình chữ nhật. Nếu ta gọi $T$ là số điểm nằm trong và $B$ là số điểm nằm trên các cạnh của hình chữ nhật, thì diện tích của hình chữ nhật là:
-	\begin{align*}
-		T+  \frac{B}{2} - 1.
-	\end{align*}
-	Một công thức thật đơn giản, thật hay đúng không các em. Không biết ngoài hình chữ nhật, công thức tính diện tích này còn đúng với những hình nào nữa nhỉ?
-	\vskip 0.1cm
-	Chúng ta cùng xem xét diện tích hình cơ bản thứ hai được đề cập trong Phần $1$ -- tam giác vuông có hai cạnh góc vuông trùng với những đường thẳng của lưới.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.7\linewidth]{2}
-		\caption{\small\textit{\color{toancuabi}Hình $2$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Bây giờ ta kẻ hình chữ nhật bao quanh tam giác vuông và dùng công thức tính diện tích qua các điểm của hình chữ nhật được chỉ ra ở trên để xem về công thức tính diện tích của tam giác.
-	\vskip 0.1cm
-	Giả sử trên cạnh huyền của tam giác vuông có $d$ điểm nguyên. Nhận thấy $d$ điểm này vẫn là điểm trong của hình chữ nhật bao quanh. Do đó
-	\vskip 0.1cm
-	Số điểm trong $t$ của hình tam giác $= \dfrac{1}{2} \times $ (số điểm trong $T$ của hình chữ nhật $-$ số điểm trên cạnh huyền $d$)
-	\vskip 0.1cm
-	Hay $T = 2\times t + d$.
-	\vskip 0.1cm
-	Mặt khác, do tính đối xứng nên số điểm nguyên nằm trên hai cạnh góc vuông của tam giác vuông đã cho và tam giác vuông bù với nó, nên ta lại có
-	\vskip 0.1cm
-	Số điểm biên $b$ của hình tam giác $= \dfrac{1}{2} \times$ số điểm biên $B$ của hình chữ nhật 
-	$+ 1$ điểm đỉnh $+$ số điểm trên cạnh huyền $d$.
-	\vskip 0.1cm
-	Hay $B = 2i - 2d - 2$.
-	\vskip 0.1cm
-	Vậy từ công thức tính diện tích của hình chữ nhật, ta có
-	\vskip 0.1cm
-	Diện tích tam giác vuông $= \dfrac{1}{2}$ diện tích hình chữ nhật
-	$= \dfrac{T}{2} + \dfrac{B}{4} - \dfrac{1}{2}$
-	$= t + \dfrac{b}{2} - 1$.
-	\vskip 0.1cm
-	Như vậy là công thức tính diện tích qua các điểm cũng đúng tiếp tam giác vuông! Đến đây, hẳn nhiều bạn nhỏ tiếp tục đặt câu hỏi: Công thức tính diện tích qua các điểm còn đúng cho dạng hình nào trên lưới nữa nhỉ? Câu hỏi này của chúng ta đã được một nhà toán học người Áo là Georg Alexander Pick ($1859 - 1942$) đưa ra câu trả lời. Ông đã chứng minh được Công thức tính diện tích qua những điểm nguyên đúng cho các đa giác đơn có các đỉnh là các điểm trên lưới. Kết quả này được phát biểu qua định lý mang tên ông -- Định lý Pick.
-	\vskip 0.1cm
-	\textbf{\color{toancuabi}Định lý Pick:} Cho một đa giác đơn có các đỉnh là các điểm nguyên của một lưới ô vuông. Giả sử có $T$ điểm nằm trong đa giác và $B$ điểm nằm trên các cạnh của đa giác (bao gồm cả các đỉnh). Khi đó diện tích của đa giác là:
-	\begin{align*}
-		T+  \dfrac{B}{2}-1.
-	\end{align*}
-	Một lưu ý là Định lý Pick tính diện tích cho những hình là đa giác đơn, là những đa giác không có cạnh tự cắt các em nhé. Dưới đây là một vài minh họa cho những đa giác loại này.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{3}
-		\caption{\small\textit{\color{toancuabi}Hình $3$. Đa giác đơn.}}
-		\vspace*{-5pt}
-	\end{figure}
-	\begin{figure}[H]
-		\vspace*{5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{4}
-		\caption{\small\textit{\color{toancuabi}Hình $4$. Đa giác không đơn.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Việc áp dụng định lý cho các đa giác không đơn có thể dẫn đến kết quả không chính xác. Các em ghi nhớ điều này khi dùng định lý Pick để tính diện tích nhé.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.55\linewidth]{5}
-		\caption{\small\textit{\color{toancuabi}Hình $5$. Georg Alexander Pick.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Định lý Pick được phát biểu đầy đủ như sau.
-	\vskip 0.1cm
-	$\pmb{2.}$ \textbf{\color{toancuabi}Tính diện tích theo định lý Pick}
-	\vskip 0.1cm
-	Trong mục này, chúng ta tính lại diện tích của một số hình trong Phần $1$ theo công thức có được từ định lý Pick và so sánh với nhau nhé.
-	Đầu tiên là ``chú mèo" đáng yêu trong Ví dụ $4$ của Phần $1$.
-	\vskip 0.1cm
-	\textbf{\color{toancuabi}Ví dụ} $1$. Tính diện tích của hình được tô đậm dưới đây.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.45\linewidth]{6}
-		\caption{\small\textit{\color{toancuabi}Hình $6$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	\textit{Lời giải.} Ta dễ dàng thấy ngay $T = 2$ điểm trong ``chú mèo" và $B = 20$ điểm nằm trên các cạnh biên. Từ đó, diện tích của ``chú mèo" là:
-	\begin{align*}
-		T + \frac{B}{2} - 1 = 2 + \frac{20}{2} - 1 = 11 \text{ (đơn vị diện tích)}.
-	\end{align*}
-	Kết quả này cũng giống với con số mà ta đã tính được trong Phần $1$, nhưng có phần nhanh chóng hơn các em nhỉ.
-	\vskip 0.1cm
-	Chúng ta thử tiếp với hình trong Ví dụ $6$ trong Phần $1$.
-	\vskip 0.1cm
-	\textbf{\color{toancuabi}Ví dụ} $\pmb{2.}$ Tính diện tích của đa giác được tô đậm trong hình sau.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.55\linewidth]{7}
-		\caption{\small\textit{\color{toancuabi}Hình $7$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	\textit{Lời giải.}	Đa giác trong Hình $7$ có $T = 8$ điểm trong và $B = 6$ điểm nằm trên các canh. Do đó, Định lý Pick cho ta diện tích của đa giác này là:
-	\begin{align*}
-		T + \frac{B}{2} - 1 = 10 \text{ (đơn vị diện tích).}
-	\end{align*}
-	Kết quả này tất nhiên là trùng với con số tính ra theo cách giới thiệu ở Phần $1$ rồi, nhưng thay vì phải tính khá nhiều diện tích tam giác thông qua phương pháp lấy phần bù, chúng ta chỉ cần đếm số điểm nằm trên lưới. Định lý Pick thật là lợi hại phải không!
-	\vskip 0.1cm
-	Bài tập dưới đây để các em luyện tập thêm công thức Pick. Các em có thể tính diện tích theo cách trong Phần $1$ để kiểm tra lại nhé.
-	\vskip 0.1cm
-	\textbf{\color{toancuabi}Bài tập} $\pmb{1.}$ Tính diện tích của hình tô đậm sau đây.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.35\linewidth]{8}
-		\caption{\small\textit{\color{toancuabi}Hình $8$.}}
-		\vspace*{-5pt}
-	\end{figure}
-	$\pmb{3.}$ \textbf{\color{toancuabi}Làm thế nào để chứng minh định lý Pick?}
-	\vskip 0.1cm
-	Định lý Pick có thể chứng minh bằng nhiều cách khác nhau, trong khuôn khổ bài viết này, chúng ta chỉ mô tả cách tìm ra công thức của Pick cho hai hình cơ bản, đơn giản nhất -- hình chữ nhật và tam giác vuông có cạnh nằm trên lưới.
-	\vskip 0.1cm 
-	Nếu bạn nào quan tâm đến việc chứng minh đầy đủ định lý này thì có thể tham khảo các bước làm sau.
-	\vskip 0.1cm
-	-- Để chứng minh công thức Pick cho một đa giác nào đó ta chia đa giác thành hai phần bằng một đường chéo và quy về việc chứng công thức Pick cho mỗi đa giác thành phần. Ta thấy, đường chéo này trở thành cạnh của hai đa giác thành phần do đó các điểm nguyên trên đường chéo lúc trước được tính $1$ đơn vị, khi trở thành điểm biên thì tính $\dfrac{1}{2}$ đơn vị nhưng tính hai lần, vậy là hòa! Còn lại là hai điểm mút của đường chéo, chúng được tính hai lần do là đỉnh của hai đa giác con, vậy là dôi ra $1$ đơn vị. Nhưng trong công thức Pick sau khi tính các điểm biên và điểm trong ta bớt đi $1$ đơn vị. Đối với hai đa giác thành phần, ta bớt đi cả thảy $2$ đơn vị, vậy cũng hòa! 
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.45\linewidth]{9}
-		\caption{\small\textit{\color{toancuabi}Hình $9$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	-- Sau khi thực hiện nhiều lần chia đa giác thành các đa giác con, cuối cùng ta quy việc chứng minh định lý Pick cho tam giác. Ta lại tiếp tục chia tam giác đó thành các tam giác con nếu có một điểm nguyên ở trong hoặc trên biên tam giác. 
-	\begin{figure}[H]
-		\vspace*{5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.4\linewidth]{10}
-		\caption{\small\textit{\color{toancuabi}Hình $10$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	-- Đối với tam giác không chứa điểm nguyên ở trong hoặc trên biên, định lý Pick khẳng định nó có diện tích bằng
-	\begin{align*}
-		\dfrac{3}{2}-1=\dfrac{1}{2} \text{ (đơn vị diện tích).}
-	\end{align*}
-	Dưới đây chúng ta sẽ xem một vài ví dụ kiểm chứng điều này. Hy vọng sau đó các bạn có thể tự đưa ra một chứng minh chặt chẽ của định lý Pick cho các tam giác đơn (nghĩa là tam giác không chứa điểm nguyên ở trong và trên biên, ngoại từ ba đỉnh).
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{11}
-		\caption{\small\textit{\color{toancuabi}Hình $11$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Ba tam giác trong Hình $11$ đều là các tam giác đơn. Ba tam giác này có nhiều hình dáng khác nhau, nhưng ta đều thấy chúng có diện tích bằng $\dfrac{1}{2}$.
-	Thật vậy, vận dụng những cách tính diện tích trong Phần $1$, ta có thể thấy ngay
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{12}
-		\caption{\small\textit{\color{toancuabi}Hình $12$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	-- Diện tích tam giác trong Hình $A$ là $\dfrac{1}{2}$;
-	\vskip 0.1cm
-	Diện tích của tam giác trong Hình $B$ là: 
-	\begin{align*}
-		\dfrac{1}{2}\times 1\times 2 - \dfrac{1}{2} = \dfrac{1}{2};
-	\end{align*}
-	Diện tích của tam giác trong Hình $C$ là: 
-	\begin{align*}
-		\dfrac{1}{2}\times2\times3 - \dfrac{1}{2} - 1 - \dfrac{1}{2}\times1\times2 = \dfrac{1}{2}.
-	\end{align*}
-	Bài viết về Tính diện tích trên lưới ô vuông đã giới thiệu đến các em cách tính diện tích của những hình trên lưới. Đầu tiên là hai phương pháp rất phổ biến: phương pháp chia hình cần tính thành những hình cơ bản đã biết diện tích và phương pháp tính theo phần bù. Tiếp theo đó bài viết giới thiệu với các em một công thức tính diện tích vô cùng đẹp đẽ qua Định lý Pick. Việc áp dụng định lý Pick giúp tính diện tích trở nên đơn giản hơn nhiều vì ta chỉ cần đếm số điểm nguyên ở trong và trên cạnh của hình cần tính. Chủ đề tính diện tích trên lưới ô vuông vẫn còn nhiều điều hấp dẫn, các bạn nhỏ nếu tìm được những bài toán hay thì hãy chia sẻ cùng Pi và các thầy cô trong câu lạc bộ UMC nhé.
-\end{multicols}
+%\begin{multicols}{2}
+%	Mục Toán của Bi trong Số $11$, Tập $6$ đã giới thiệu đến các em cách tính diện tích của những hình tạo trên lưới ô vuông. Rất nhiều hình khác nhau có các đỉnh tại các điểm nguyên đều tính được mà chỉ cần dựa trên những ô vuông đơn vị có diện tích $1$. Không biết diện tích của những hình trên lưới có liên hệ gì với những điểm trên lưới không nhỉ? Định lý Pick được giới thiệu trong phần này sẽ trả lời cho ta câu hỏi rất thú vị này đấy.
+%	\vskip 0.1cm
+%	$\pmb{1.}$ \textbf{\color{toancuabi}Định lý Pick}
+%	\vskip 0.1cm
+%	Để xem diện tích của một hình trên lưới tính thế nào qua các điểm trên lưới (còn gọi là điểm nguyên), chúng ta thử tính diện tích của một hình cơ bản trong Phần $1$ -- hình chữ nhật kích thước $3\times4$ có các cạnh nằm trên các đường thẳng của lưới bằng một cách khác nhé. Bây giờ, ta chia hình chữ nhật đã cho bởi những đường thẳng song song, cách đều, đi qua giữa hai điểm nguyên trên các cạnh của hình chữ nhật như trong Hình $1$ dưới đây. 
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.65\linewidth]{1}
+%		\caption{\small\textit{\color{toancuabi}Hình $1$.}}
+%		\vspace*{-5pt}
+%	\end{figure}
+%	Khi đó ta thấy
+%	\vskip 0.1cm
+%	-- Mỗi điểm nguyên ({\color{red}màu đỏ}) nằm trong hình chữ nhật ứng với một hình vuông đơn vị;
+%	\vskip 0.1cm
+%	-- Mỗi điểm nguyên ({\color{blue}màu xanh dương}) nằm trên các cạnh của hình chữ nhật mà không phải đỉnh ứng với một nửa hình vuông đơn vị;
+%	\vskip 0.1cm
+%	Mỗi điểm nguyên là đỉnh ({\color{black}màu đen}) của hình chữ nhật ứng với một phần tư hình vuông đơn vị.
+%	\vskip 0.1cm
+%	Như vậy
+%	\vskip 0.1cm
+%	Diện tích của hình chữ nhật $=$ số điểm trong hình chữ nhật
+%	$+ \dfrac{1}{2}\times$ số điểm trên cạnh mà không phải đỉnh $+ \dfrac{1}{4}\times$ số đỉnh
+%	\vskip 0.1cm
+%	Do hình chữ nhật có $4$ đỉnh nên ta thấy ngay
+%	\vskip 0.1cm
+%	Diện tích của hình chữ nhật $=$ số điểm trong hình chữ nhật 
+%	$+ \dfrac{1}{2} \times$ số điểm nằm trên cạnh
+%	$- 1$.
+%	\vskip 0.1cm
+%	Từ đó ta có diện tích của hình chữ nhật trên là:
+%	\begin{align*}
+%		6 + \frac{1}{2}\times14 - 1 = 12 \text{ (đơn vị diện tích).}
+%	\end{align*}
+%	Ví dụ trên được tính trong một trường hợp cụ thể, tuy nhiên những lập luận này hoàn toàn có thể áp dụng cho tất cả những hình chữ nhật khác cùng đặc điểm. Như vậy diện tích của hình chữ nhật có các cạnh trùng với những đường thẳng của lưới có thể được tính thông qua số điểm nguyên nằm trong và nằm trên cạnh của hình chữ nhật. Nếu ta gọi $T$ là số điểm nằm trong và $B$ là số điểm nằm trên các cạnh của hình chữ nhật, thì diện tích của hình chữ nhật là:
+%	\begin{align*}
+%		T+  \frac{B}{2} - 1.
+%	\end{align*}
+%	Một công thức thật đơn giản, thật hay đúng không các em. Không biết ngoài hình chữ nhật, công thức tính diện tích này còn đúng với những hình nào nữa nhỉ?
+%	\vskip 0.1cm
+%	Chúng ta cùng xem xét diện tích hình cơ bản thứ hai được đề cập trong Phần $1$ -- tam giác vuông có hai cạnh góc vuông trùng với những đường thẳng của lưới.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.7\linewidth]{2}
+%		\caption{\small\textit{\color{toancuabi}Hình $2$.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	Bây giờ ta kẻ hình chữ nhật bao quanh tam giác vuông và dùng công thức tính diện tích qua các điểm của hình chữ nhật được chỉ ra ở trên để xem về công thức tính diện tích của tam giác.
+%	\vskip 0.1cm
+%	Giả sử trên cạnh huyền của tam giác vuông có $d$ điểm nguyên. Nhận thấy $d$ điểm này vẫn là điểm trong của hình chữ nhật bao quanh. Do đó
+%	\vskip 0.1cm
+%	Số điểm trong $t$ của hình tam giác $= \dfrac{1}{2} \times $ (số điểm trong $T$ của hình chữ nhật $-$ số điểm trên cạnh huyền $d$)
+%	\vskip 0.1cm
+%	Hay $T = 2\times t + d$.
+%	\vskip 0.1cm
+%	Mặt khác, do tính đối xứng nên số điểm nguyên nằm trên hai cạnh góc vuông của tam giác vuông đã cho và tam giác vuông bù với nó, nên ta lại có
+%	\vskip 0.1cm
+%	Số điểm biên $b$ của hình tam giác $= \dfrac{1}{2} \times$ số điểm biên $B$ của hình chữ nhật 
+%	$+ 1$ điểm đỉnh $+$ số điểm trên cạnh huyền $d$.
+%	\vskip 0.1cm
+%	Hay $B = 2i - 2d - 2$.
+%	\vskip 0.1cm
+%	Vậy từ công thức tính diện tích của hình chữ nhật, ta có
+%	\vskip 0.1cm
+%	Diện tích tam giác vuông $= \dfrac{1}{2}$ diện tích hình chữ nhật
+%	$= \dfrac{T}{2} + \dfrac{B}{4} - \dfrac{1}{2}$
+%	$= t + \dfrac{b}{2} - 1$.
+%	\vskip 0.1cm
+%	Như vậy là công thức tính diện tích qua các điểm cũng đúng tiếp tam giác vuông! Đến đây, hẳn nhiều bạn nhỏ tiếp tục đặt câu hỏi: Công thức tính diện tích qua các điểm còn đúng cho dạng hình nào trên lưới nữa nhỉ? Câu hỏi này của chúng ta đã được một nhà toán học người Áo là Georg Alexander Pick ($1859 - 1942$) đưa ra câu trả lời. Ông đã chứng minh được Công thức tính diện tích qua những điểm nguyên đúng cho các đa giác đơn có các đỉnh là các điểm trên lưới. Kết quả này được phát biểu qua định lý mang tên ông -- Định lý Pick.
+%	\vskip 0.1cm
+%	\textbf{\color{toancuabi}Định lý Pick:} Cho một đa giác đơn có các đỉnh là các điểm nguyên của một lưới ô vuông. Giả sử có $T$ điểm nằm trong đa giác và $B$ điểm nằm trên các cạnh của đa giác (bao gồm cả các đỉnh). Khi đó diện tích của đa giác là:
+%	\begin{align*}
+%		T+  \dfrac{B}{2}-1.
+%	\end{align*}
+%	Một lưu ý là Định lý Pick tính diện tích cho những hình là đa giác đơn, là những đa giác không có cạnh tự cắt các em nhé. Dưới đây là một vài minh họa cho những đa giác loại này.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{3}
+%		\caption{\small\textit{\color{toancuabi}Hình $3$. Đa giác đơn.}}
+%		\vspace*{-5pt}
+%	\end{figure}
+%	\begin{figure}[H]
+%		\vspace*{5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{4}
+%		\caption{\small\textit{\color{toancuabi}Hình $4$. Đa giác không đơn.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	Việc áp dụng định lý cho các đa giác không đơn có thể dẫn đến kết quả không chính xác. Các em ghi nhớ điều này khi dùng định lý Pick để tính diện tích nhé.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.55\linewidth]{5}
+%		\caption{\small\textit{\color{toancuabi}Hình $5$. Georg Alexander Pick.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	Định lý Pick được phát biểu đầy đủ như sau.
+%	\vskip 0.1cm
+%	$\pmb{2.}$ \textbf{\color{toancuabi}Tính diện tích theo định lý Pick}
+%	\vskip 0.1cm
+%	Trong mục này, chúng ta tính lại diện tích của một số hình trong Phần $1$ theo công thức có được từ định lý Pick và so sánh với nhau nhé.
+%	Đầu tiên là ``chú mèo" đáng yêu trong Ví dụ $4$ của Phần $1$.
+%	\vskip 0.1cm
+%	\textbf{\color{toancuabi}Ví dụ} $1$. Tính diện tích của hình được tô đậm dưới đây.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.45\linewidth]{6}
+%		\caption{\small\textit{\color{toancuabi}Hình $6$.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	\textit{Lời giải.} Ta dễ dàng thấy ngay $T = 2$ điểm trong ``chú mèo" và $B = 20$ điểm nằm trên các cạnh biên. Từ đó, diện tích của ``chú mèo" là:
+%	\begin{align*}
+%		T + \frac{B}{2} - 1 = 2 + \frac{20}{2} - 1 = 11 \text{ (đơn vị diện tích)}.
+%	\end{align*}
+%	Kết quả này cũng giống với con số mà ta đã tính được trong Phần $1$, nhưng có phần nhanh chóng hơn các em nhỉ.
+%	\vskip 0.1cm
+%	Chúng ta thử tiếp với hình trong Ví dụ $6$ trong Phần $1$.
+%	\vskip 0.1cm
+%	\textbf{\color{toancuabi}Ví dụ} $\pmb{2.}$ Tính diện tích của đa giác được tô đậm trong hình sau.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.55\linewidth]{7}
+%		\caption{\small\textit{\color{toancuabi}Hình $7$.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	\textit{Lời giải.}	Đa giác trong Hình $7$ có $T = 8$ điểm trong và $B = 6$ điểm nằm trên các canh. Do đó, Định lý Pick cho ta diện tích của đa giác này là:
+%	\begin{align*}
+%		T + \frac{B}{2} - 1 = 10 \text{ (đơn vị diện tích).}
+%	\end{align*}
+%	Kết quả này tất nhiên là trùng với con số tính ra theo cách giới thiệu ở Phần $1$ rồi, nhưng thay vì phải tính khá nhiều diện tích tam giác thông qua phương pháp lấy phần bù, chúng ta chỉ cần đếm số điểm nằm trên lưới. Định lý Pick thật là lợi hại phải không!
+%	\vskip 0.1cm
+%	Bài tập dưới đây để các em luyện tập thêm công thức Pick. Các em có thể tính diện tích theo cách trong Phần $1$ để kiểm tra lại nhé.
+%	\vskip 0.1cm
+%	\textbf{\color{toancuabi}Bài tập} $\pmb{1.}$ Tính diện tích của hình tô đậm sau đây.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.35\linewidth]{8}
+%		\caption{\small\textit{\color{toancuabi}Hình $8$.}}
+%		\vspace*{-5pt}
+%	\end{figure}
+%	$\pmb{3.}$ \textbf{\color{toancuabi}Làm thế nào để chứng minh định lý Pick?}
+%	\vskip 0.1cm
+%	Định lý Pick có thể chứng minh bằng nhiều cách khác nhau, trong khuôn khổ bài viết này, chúng ta chỉ mô tả cách tìm ra công thức của Pick cho hai hình cơ bản, đơn giản nhất -- hình chữ nhật và tam giác vuông có cạnh nằm trên lưới.
+%	\vskip 0.1cm 
+%	Nếu bạn nào quan tâm đến việc chứng minh đầy đủ định lý này thì có thể tham khảo các bước làm sau.
+%	\vskip 0.1cm
+%	-- Để chứng minh công thức Pick cho một đa giác nào đó ta chia đa giác thành hai phần bằng một đường chéo và quy về việc chứng công thức Pick cho mỗi đa giác thành phần. Ta thấy, đường chéo này trở thành cạnh của hai đa giác thành phần do đó các điểm nguyên trên đường chéo lúc trước được tính $1$ đơn vị, khi trở thành điểm biên thì tính $\dfrac{1}{2}$ đơn vị nhưng tính hai lần, vậy là hòa! Còn lại là hai điểm mút của đường chéo, chúng được tính hai lần do là đỉnh của hai đa giác con, vậy là dôi ra $1$ đơn vị. Nhưng trong công thức Pick sau khi tính các điểm biên và điểm trong ta bớt đi $1$ đơn vị. Đối với hai đa giác thành phần, ta bớt đi cả thảy $2$ đơn vị, vậy cũng hòa! 
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.45\linewidth]{9}
+%		\caption{\small\textit{\color{toancuabi}Hình $9$.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	-- Sau khi thực hiện nhiều lần chia đa giác thành các đa giác con, cuối cùng ta quy việc chứng minh định lý Pick cho tam giác. Ta lại tiếp tục chia tam giác đó thành các tam giác con nếu có một điểm nguyên ở trong hoặc trên biên tam giác. 
+%	\begin{figure}[H]
+%		\vspace*{5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.4\linewidth]{10}
+%		\caption{\small\textit{\color{toancuabi}Hình $10$.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	-- Đối với tam giác không chứa điểm nguyên ở trong hoặc trên biên, định lý Pick khẳng định nó có diện tích bằng
+%	\begin{align*}
+%		\dfrac{3}{2}-1=\dfrac{1}{2} \text{ (đơn vị diện tích).}
+%	\end{align*}
+%	Dưới đây chúng ta sẽ xem một vài ví dụ kiểm chứng điều này. Hy vọng sau đó các bạn có thể tự đưa ra một chứng minh chặt chẽ của định lý Pick cho các tam giác đơn (nghĩa là tam giác không chứa điểm nguyên ở trong và trên biên, ngoại từ ba đỉnh).
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{11}
+%		\caption{\small\textit{\color{toancuabi}Hình $11$.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	Ba tam giác trong Hình $11$ đều là các tam giác đơn. Ba tam giác này có nhiều hình dáng khác nhau, nhưng ta đều thấy chúng có diện tích bằng $\dfrac{1}{2}$.
+%	Thật vậy, vận dụng những cách tính diện tích trong Phần $1$, ta có thể thấy ngay
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{12}
+%		\caption{\small\textit{\color{toancuabi}Hình $12$.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	-- Diện tích tam giác trong Hình $A$ là $\dfrac{1}{2}$;
+%	\vskip 0.1cm
+%	Diện tích của tam giác trong Hình $B$ là: 
+%	\begin{align*}
+%		\dfrac{1}{2}\times 1\times 2 - \dfrac{1}{2} = \dfrac{1}{2};
+%	\end{align*}
+%	Diện tích của tam giác trong Hình $C$ là: 
+%	\begin{align*}
+%		\dfrac{1}{2}\times2\times3 - \dfrac{1}{2} - 1 - \dfrac{1}{2}\times1\times2 = \dfrac{1}{2}.
+%	\end{align*}
+%	Bài viết về Tính diện tích trên lưới ô vuông đã giới thiệu đến các em cách tính diện tích của những hình trên lưới. Đầu tiên là hai phương pháp rất phổ biến: phương pháp chia hình cần tính thành những hình cơ bản đã biết diện tích và phương pháp tính theo phần bù. Tiếp theo đó bài viết giới thiệu với các em một công thức tính diện tích vô cùng đẹp đẽ qua Định lý Pick. Việc áp dụng định lý Pick giúp tính diện tích trở nên đơn giản hơn nhiều vì ta chỉ cần đếm số điểm nguyên ở trong và trên cạnh của hình cần tính. Chủ đề tính diện tích trên lưới ô vuông vẫn còn nhiều điều hấp dẫn, các bạn nhỏ nếu tìm được những bài toán hay thì hãy chia sẻ cùng Pi và các thầy cô trong câu lạc bộ UMC nhé.
+%\end{multicols}
 
 %\begin{multicols}{2}
 %	Thám tử Xuân Phong trong một lần đi du lịch cùng thanh tra Lê Kính tới một hòn đảo xa xôi tận bên Phi Châu được đặt chân tới một ngôi làng đẹp tuyệt diệu ẩn sau những cành cọ, rặng dừa xum xuê chạy dài bờ biển xanh ngắt trong veo. Trưởng làng đon đả mời hai người tới ngôi nhà lớn của cả làng để dự một lễ hội đặc biệt của người dân. Theo như chỉ dẫn từ công ty lữ hành, những người thổ dân ở làng đó chia thành hai họ tộc, họ Tutu chuyên nói thật và họ Titi lại chuyên nói dối. Khi bước vào căn nhà lớn, Xuân Phong đã thấy có $50$ người dân đảo ăn mặc\hspace*{123pt}\linebreak[6]những bộ quần\hspace*{123pt}\linebreak[6]áo màu sắc lộng\hspace*{123pt}\linebreak[6]lẫy dành riêng\hspace*{123pt}\linebreak[6]cho lễ hội và\hspace*{123pt}\linebreak[6]ngồi xung quanh\hspace*{123pt}\linebreak[6]một chiếc bàn\hspace*{123pt}\linebreak[6]tròn thật to đặt\hspace*{123pt}\linebreak[6]giữa phòng. Theo\hspace*{123pt}\linebreak[6]như tục lệ, $50$\hspace*{123pt}\linebreak[6]người sẽ lần lượt\hspace*{123pt}\linebreak[6]đứng lên và nếu\hspace*{123pt}\linebreak[6]số tuổi của hai\hspace*{123pt}\linebreak[6]người ngồi cạnh\hspace*{123pt}\linebreak[6]anh ta, tuổi\hspace*{123pt}\linebreak[6]người ngồi bên\hspace*{123pt}\linebreak[6]trái trước -- sau\hspace*{123pt}\linebreak[6]đó là người ngồi\hspace*{123pt}\linebreak[6]bên phải. Xuân\hspace*{123pt}\linebreak[6]Phong được biết trước trong sách hướng dẫn du lịch là: người tộc Tutu sẽ nói đúng cả hai con số này, còn người tộc Titi sẽ tăng một trong hai số tuổi của hai người ngồi cạnh (người nào theo cách anh ta tùy thích chọn) thêm $1$ tuổi còn giảm tuổi kia đi $1$ tuổi. Xuân Phong chỉ cần nghe xong và ghi chép lại $50$ câu nói  của $50$ người dân làng ngồi quanh bàn, sau một chút suy nghĩ, đã biết được ngay ai là người đến từ tộc nào, Tutu hay Titi. Làm sao mà thám tử lại tài thế nhỉ, các em có biết cách lập luận của Xuân Phong được hay không?
@@ -397,197 +397,140 @@
 %	\end{figure}
 %	\textit{Lời giải.} Để chiến thắng được Mãng xà, Thạch Sanh phải chém đứt được một số chẵn cái đầu của nó. Số đầu mới của Mãng xà sẽ tăng thêm chỉ trong trường hợp nếu Thạch Sanh chém đứt một số cái đuôi nào của con  chằn tinh này. Do có tất cả $3$ cái đuôi, nên nếu chém đứt tất cả đuôi của Mãng xà, thì số đầu mới mọc ra không ít hơn  $2$ cái. Vì thế tổng số đầu mà Thạch Sanh cần phải chém để thắng không ít hơn $5$ cái. Do vậy, một số chẵn cái đầu cần chém đứt phải tối thiểu là $6$ cái. Đây là cách Thạch Sanh tiêu diệt Mãng xà với $6$ đầu: Đầu tiên, chàng sẽ lần lượt chặt đứt từng cái đuôi (với $3$ nhát gươm). Mãng xà giờ có $6$ đuôi mới và $3$ đầu. Sau đó chàng lần lượt sẽ chặt đứt từng cặp đuôi (với $3$ nhát gươm). Lúc này Mãng xà giờ có $6$ đầu và $0$ đuôi. Cuối cùng Thạch Sanh sẽ lần lượt chặt từng cặp $2$ cái đầu sau $3$ nhát chém. Tóm lại, với $9$ nhát gươm Thạch Sanh sẽ hạ được con chằn tinh.
 %\end{multicols}
-%\newpage
-%\begingroup
-%\thispagestyle{toancuabinone}
-%\blfootnote{$^1$\color{toancuabi}Canada.}
-%\AddToShipoutPicture*{\put(60,733){\includegraphics[width=17.2cm]{../mathc.pdf}}}
-%%\AddToShipoutPicture*{\put(-2,733){\includegraphics[width=17.2cm]{../mathl.pdf}}} 
-%\AddToShipoutPicture*{\put(88,675){\includegraphics[scale=1]{../tieude3.pdf}}} 
-%\centering
-%\endgroup
-%\graphicspath{{../toancuabi/pic/}}
-%\vspace*{35pt}
-%
-%\begin{multicols}{2}
-%	Usually approaching a problem from different angles help to see different nature of the problem,
-%	more importantly of what we learned, and how to apply them.
-%	In this article, we shows five different approaches, or solutions, to a simple geometry problem.
-%	\vskip 0.2cm
-%	\PIbox{\textbf{\color{toancuabi}\color{toancuabi}Example}
-%	\vskip 0.1cm
-%	Let $ABCD$ be a square, $E$ is the midpoint of side $AD,$
-%	and $F$ is the foot of the altitude from $C$ to $BE.$
-%	Prove that $DF = DA.$}
-%	\begin{figure}[H]
-%		\vspace*{-5pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.7\linewidth]{2022-2-ms-1-1.pdf}
-%		\vspace*{-15pt}
-%	\end{figure}
-%	\textit{First proof -- Using congruent triangles}.
-%	Extending $FE$ to intersect $CD$ at $G,$ see the diagram on the left. 
-%	Since $\angle AEB = \angle GED, AE = ED, \angle EAB = \angle EDA = 90^\circ,$
-%	by the angle-side-angle (ASA) rule, the triangles $ EAB$ and $EDG,$ are equal,
-%	thus the corresponding pair of sides are the same, or $DG=AB$. Therefore $DG=DC.$
-%	\begin{figure}[H]
-%		\vspace*{-5pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 1\linewidth]{2022-2-ms-1-1-a.pdf}
-%		\vspace*{-15pt}
-%	\end{figure}
-%	\begin{figure}[H]
-%		\vspace*{-5pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.9\linewidth]{2022-2-ms-1-1-b.pdf}
-%		\vspace*{-10pt}
-%	\end{figure}	
-%	Now, it is a well--known fact that,
-%	\textit{the midpoint of the hypotenuse of a right triangle is at equidistance from all vertices.}
-%	Using this fact for $\triangle DGC$ in the diagram on the right in the figure above, $DG=DC,\ \angle{GFC} = 90^\circ,$ thus $DF=DG=DC.$
-%	\vskip 0.1cm
-%	\textit{Second proof -- Using median segment.}
-%	Let $G$ be the midpoint of $BC,$ and let $DG$ intersect $FC$ at $H.$
-%	By side--side--side (SSS) rule, the triangle $ EAB$ and $  GCD$ are equal,
-%	so $\angle ABE = \angle CDG$, implying $EB \parallel DG.$
-%	\begin{figure}[H]
-%		\vspace*{-15pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.65\linewidth]{2022-2-ms-1-1-c.pdf}
-%		\includegraphics[width= 0.65\linewidth]{2022-2-ms-1-1-d.pdf}
-%		\vspace*{-5pt}
-%	\end{figure}	
-%	Furthermore, in $\triangle FBC,$ $GH \parallel BF,$ $G$ is midpoint of $BC,$
-%	so $H$ is midpoint of $FC.$
-%	Finally, in $\triangle DFC,$ $DH \perp FC,$ $H$ is midpoint of $FC,$
-%	thus by side--angle--side (SAS) rule, the triangles $ DHF$ and $DHC$ are equal, hence $DF = DC.$
-%	\begin{figure}[H]
-%		\vspace*{-10pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.65\linewidth]{2022-2-ms-1-1-e.pdf}
-%		\vspace*{-15pt}
-%	\end{figure}		
-%	\textit{Third proof -- Using angles in circle}.
-%	The triangles $EDC$ and $ EFC$ are right at $D$ and $F$ respectively. It follows that the points $C, D, E$ and $F$ are on the circle centered at $G.$
-%	\begin{figure}[H]
-%		\vspace*{-15pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.65\linewidth]{2022-2-ms-1-1-f.pdf}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.65\linewidth]{2022-2-ms-1-1-g.pdf}
-%		\vspace*{-5pt}
-%	\end{figure}	
-%	$\angle DEC = \angle AEB = 180^{\circ} - \angle DEF = \angle DCF.$ 
-%	$\angle DEC = \angle DFC$ (subtends arc $DC$).
-%	$\angle DCF = \angle DFC$, $\triangle DCF$ is isosceles, thus $DC = DF.$
-%	\vskip 0.1cm
-%	\textit{Fourth proof -- Using triangle trigonometry}.
-%	First, by Pythagorean theorem, $EB = \sqrt{AB^2 +AE^2} = \frac{a\sqrt{5}}{2}.$
-%	Then, let $\alpha = \angle DCF = \angle FBC = \angle AEB.$
-%	It is easy to see that $\cos{\alpha} = \frac{AE}{EB} = \frac{1}{\sqrt{5}},$
-%	and since $\triangle FCB \sim \triangle ABE$, $\frac{FC}{BC} = \sin{\alpha} = \frac{AB}{EB} = \frac{2}{\sqrt{5}},$
-%	so $FC = BC \sin{\alpha} = \frac{2a}{\sqrt{5}}.$
-%	\begin{figure}[H]
-%		\vspace*{-10pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.65\linewidth]{2022-2-ms-1-1-h.pdf}
-%		\vspace*{-15pt}
-%	\end{figure}	
-%	By the Law of Cosines,
-%	\begin{align*}
-%		DF &= \sqrt{DC^2 +  FC^2 - 2(DC)(FC)\cos{\alpha}}\\
-%		&= \sqrt{a^2 + \left(\frac{2a}{\sqrt{5}}\right)^2 - 2a \frac{2a}{\sqrt{5}} \frac{1}{\sqrt{5}}} = a.
-%	\end{align*}
-%	\textit{Fifth proof -- Using Ptolemy theorem}.
-%	Similar to the previous proof,
-%	let $DC = a \Rightarrow EB = EC = \frac{a\sqrt{5}}{2}.$ 
-%	$\frac{FC}{BC} = \frac{AB}{EB} \Rightarrow FC=\frac{2a}{\sqrt{5}}.$
-%	$\frac{FB}{BC} = \frac{AE}{EB} \Rightarrow FB=\frac{a}{\sqrt{5}}.$
-%	\begin{figure}[H]
-%		\vspace*{-15pt}
-%		\centering
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width= 0.65\linewidth]{2022-2-ms-1-1-i.pdf}
-%		\vspace*{-15pt}
-%	\end{figure}	
-%	By Ptolemy theorem for the cyclic quadrilateral $CDEF,$
-%	$DF \cdot EC = ED \cdot FC + EF \cdot DC 
-%	= \frac{a}{2}\cdot \frac{2a}{\sqrt{5}} + \left(\frac{a\sqrt{5}}{2} - \frac{a}{\sqrt{5}} \right) \cdot a
-%	= \frac{a^2\sqrt{5}}{2} \Rightarrow DF = a.$
-%	\vskip 0.1cm
-%	Be open minded. Look for alternative approach. Try to use your own toolbox before looking for something else.
-%	Often you know more than you think you know.
-%\end{multicols} 
-%\begin{tBox}
-%	\centerline{\color{toancuabi}\textbf{\color{toancuabi}New Words}}
-%	\vspace*{-10pt}
-%	\begin{multicols}{2}
-%		{\color{toancuabi}Geometry}: (dt) hình học
-%		\vskip 0.1cm
-%		{\color{toancuabi}Angle}: (dt) góc
-%		\vskip 0.1cm
-%		{\color{toancuabi}Triangle}: (dt) tam giác 
-%		\vskip 0.1cm
-%		{\color{toancuabi}Square}: (dt) hình vuông
-%		\vskip 0.1cm
-%		{\color{toancuabi}Quadrilateral}: (dt) tứ giác
-%		\vskip 0.1cm 
-%		{\color{toancuabi}Circle}: (dt) đường tròn  
-%		\vskip 0.1cm
-%		{\color{toancuabi}Midpoint}: (dt) trung điểm
-%		\vskip 0.1cm
-%		{\color{toancuabi}Median}: (dt) đường trung bình  
-%		\vskip 0.1cm
-%		{\color{toancuabi}Vertex}: (dt) đỉnh; (số nhiều: vertices).
-%		\vskip 0.1cm
-%		{\color{toancuabi}Altitude}: (dt) đường cao
-%		\vskip 0.1cm
-%		{\color{toancuabi}Congruent}: (tt) bằng nhau
-%		\vskip 0.1cm
-%		{\color{toancuabi}congruent triangles}: tam giác bằng nhau 
-%		\vskip 0.1cm
-%		{\color{toancuabi}Side}: (dt)  cạnh
-%		\vskip 0.1cm
-%		{\color{toancuabi}Hypotenuse}: (dt) cạnh huyền 
-%		\vskip 0.1cm
-%		{\color{toancuabi}Right}: (tt) vuông
-%		\vskip 0.1cm
-%		{\color{toancuabi}right angle}: góc vuông
-%		\vskip 0.1cm 
-%		{\color{toancuabi}Isoceleses}: (tt) cân
-%		\vskip 0.1cm
-%		{\color{toancuabi}isosceles triangle}: (dt) tam giác cân 
-%		\vskip 0.1cm
-%		{\color{toancuabi}Arc}: (dt) cung
-%	\end{multicols}
-%\end{tBox}
-%\vspace*{-10pt}
-%{\color{toancuabi}\rule{1\linewidth}{0.1pt}}
-%\vskip 0.2cm
-%{\centerline{\textbf{\color{toancuabi}\LARGE\color{toancuabi}LỜI GIẢI, ĐÁP ÁN}}}
-%\begin{multicols}{2}
-%	Tiếp theo ta đánh số các thổ dân có màu xanh ngồi tiếp theo Toto theo chiều kim đồng hồ là $1, 2, 3,\ldots, 25$. 
-%	\vskip 0.1cm
-%	Ta nhận thấy mỗi một thổ dân luôn nói đúng tổng số tuổi của hai người ngồi cạnh mình. Ta sẽ lấy tổng các số tuổi được các thổ dân màu xanh ở vị trí số $1, 3, 5,\ldots, 23, 25$ nói ra. Đó chính là tổng số tuổi của tất cả các thổ dân màu  đỏ, cộng thêm tuổi của Toto. Sau đó ta lại lấy tổng các số tuổi được các thổ dân màu xanh ở vị trí số $2, 4, ,\ldots, 22, 24$ nói ra. Đây lại chính là tổng số tuổi của tất cả các thổ dân màu  đỏ, trừ đi tuổi của Toto. Lấy tổng đầu tiên trừ đi tổng thứ hai rồi chia đôi, ta nhận được ngay tuổi của anh Toto. Như vậy có thể biết tuổi của bất kỳ ai trong số $50$ thổ dân ăn mặc rất đẹp kia.
-%	\vskip 0.1cm
-%	Vậy em đã biết cách Xuân Phong xác định được ai là người đến từ tộc Tutu hay đến từ tộc Titi rồi chứ nào. Chắc hẳn Xuân Phong và Lê Kính đã có một kỳ nghỉ tuyệt vời bên cạnh những người thổ dân vui tính thật đặc biệt này.
-%	\vskip 0.1cm
-%	\textbf{\color{toancuabi}\color{toancuabi}Góc cờ}
-%	\vskip 0.1cm
-%	\textbf{\color{toancuabi}\color{toancuabi}$\pmb{1}$.b$\pmb{8}$/H+ Vxb$\pmb{8}$ $\pmb{2}$.Vb$\pmb{6}$ Ta$\pmb{2}$ $\pmb{3}$.Xc$\pmb{2}$ Tb$\pmb{3}$ $\pmb{4}$.Xb$\pmb{2}$!}
-%	\begin{center}
-%		\newgame
-%		\fenboard{1k6/8/1K6/8/8/1b6/1R6/8 b Q - 0 1}
-%		\scalebox{0.85}\showboard
-%	\end{center}
-%	\textbf{\color{toancuabi}\color{toancuabi}$\pmb{4}$...Te$\pmb{6}$} [$4$...Tf$7$ $5$.Xf$2$ Te$6$ $6$.Xf$8$+ Tc$8$ $7$.Xd$8$; $4$...Ta$4$ $5$.Va$5$+; $4$...Td$5$ $5$.Xd$2$ Tb$7$ $6$.Xd$8$+ Tc$8$ $7$.Xf$8$]
-%	\vskip 0.1cm
-%	\textbf{\color{toancuabi}\color{toancuabi}$\pmb{5}$.Xe$\pmb{2}$ Td$\pmb{7}$ $\pmb{6}$.Xh$\pmb{2}$ Vc$\pmb{8}$ $\pmb{7}$.Xh$\pmb{8}$+ Te$\pmb{8}$ $\pmb{8}$.Xxe$\pmb{8}$+}
-%\end{multicols}
+\newpage
+\begingroup
+\thispagestyle{toancuabinone}
+\blfootnote{$^1$\color{toancuabi}Ottawa, Canada.}
+\AddToShipoutPicture*{\put(60,733){\includegraphics[width=17.2cm]{../mathc.pdf}}}
+%\AddToShipoutPicture*{\put(-2,733){\includegraphics[width=17.2cm]{../mathl.pdf}}} 
+\AddToShipoutPicture*{\put(88,675){\includegraphics[scale=1]{../tieude3.pdf}}} 
+\centering
+\endgroup
+\graphicspath{{../toancuabi/pic/}}
+\vspace*{35pt}
+
+\begin{multicols}{2}
+	In this article, we discuss some applications of pattern recognition in graph theory.
+	
+	\begin{example*}[Match the phrases]
+		
+		Match the phrases in Vietnamese on the left of the table below,
+		with their translations into English on the right of the table.
+		
+		\begin{otherlanguage}{vietnamese}
+			
+			\begin{center}
+				\begin{tabular}{|c|l|c|c|l|}
+					\cline{1-2} \cline{4-5}
+					1  & băng       &  & A & bouquet (a bunch of flowers)        \\ \cline{1-2} \cline{4-5} 
+					2  & bó         &  & B & chalk                               \\ \cline{1-2} \cline{4-5} 
+					3  & bó hoa     &  & C & circle                              \\ \cline{1-2} \cline{4-5} 
+					4  & cánh hoa   &  & D & cluster                             \\ \cline{1-2} \cline{4-5} 
+					5  & đá         &  & E & detour                              \\ \cline{1-2} \cline{4-5} 
+					6  & đá lửa     &  & F & fire                                \\ \cline{1-2} \cline{4-5} 
+					7  & đá phấn    &  & G & flint (a stone used to make sparks) \\ \cline{1-2} \cline{4-5} 
+					8  & đường      &  & H & flower                              \\ \cline{1-2} \cline{4-5} 
+					9  & đường vòng &  & I & ice                                 \\ \cline{1-2} \cline{4-5} 
+					10 & hoa        &  & J & iceberg                             \\ \cline{1-2} \cline{4-5} 
+					11 & lửa        &  & K & mountain                            \\ \cline{1-2} \cline{4-5} 
+					12 & mở         &  & L & petal                               \\ \cline{1-2} \cline{4-5} 
+					13 & mở đường   &  & M & pollen                              \\ \cline{1-2} \cline{4-5} 
+					14 & mở mắt     &  & N & powder                              \\ \cline{1-2} \cline{4-5} 
+					15 & núi        &  & O & road                                \\ \cline{1-2} \cline{4-5} 
+					16 & núi băng   &  & P & rock                                \\ \cline{1-2} \cline{4-5} 
+					17 & núi lửa    &  & Q & tear (as in teardrop)               \\ \cline{1-2} \cline{4-5} 
+					18 & nước đá    &  & R & to make aware                       \\ \cline{1-2} \cline{4-5} 
+					19 & nước mắt   &  & S & to open                             \\ \cline{1-2} \cline{4-5} 
+					20 & phấn       &  & T & to pave the way                     \\ \cline{1-2} \cline{4-5} 
+					21 & phấn hoa   &  & U & volcano                             \\ \cline{1-2} \cline{4-5} 
+					22 & vòng       &  & V & wreath                              \\ \cline{1-2} \cline{4-5} 
+					23 & vòng hoa   &  &   &                                     \\ \cline{1-2} \cline{4-5} 
+				\end{tabular}
+			\end{center}
+			
+		\end{otherlanguage}
+		
+	\end{example*}
+	
+	\newpage
+	
+	\begin{soln}
+		We use a graph theory approach from the point of view of an English speaker to solve the problem.
+		
+		First, we look at the Vietnamese phrases. They are single- and double-word phrases.
+		We connect the phrases in a graph so that each pair of phrases consists of a single-word phrases and a double-word phrase,
+		the double-word phrase basically contains the single-word phrase. See the diagram below.
+		
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{9cm}
+				\centering
+				\includegraphics[width=9cm]{./svg/pdf/hc-2022-2-2-2-1.pdf}
+				\caption{Graph of Vietnamese phrases}
+			\end{minipage}
+		\end{figure}
+		
+		The graph of Vietnamese phrases, we presume, represents connections in \textit{shared meaning} between phrases.
+		Thus, we connect the English phrases in the same way,
+		each phrase with another so that one has a meaning that shall be contained by the meaning of the other.
+		The result is the diagram below.
+		
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{11cm}
+				\centering
+				\includegraphics[width=11cm]{./svg/pdf/hc-2022-2-2-2-2.pdf}
+				\caption{Graph of English phrases}
+			\end{minipage}
+		\end{figure}
+		
+		\begin{otherlanguage}{vietnamese}
+			
+			Comparing the graph, only the $5-vertex$ subgraphs \textit{(phấn hoa, vòng hoa, cánh hoa, bó hoa, hoa)} and
+			\textit{(bouquet, petal, pollen, wreath, flower),} are \textit{topologically} equivalent, thus \textit{hoa=flower}.
+			Note that the relation between \textit{pollen} and \textit{powder},
+			implies that \textit{powder} is \textit{phấn}. The rest of the vertices then can be paired up
+			\textit{petal - cánh hoa, bouquet - bó hoa, pollen - phấn hoa, wreath - vòng hoa.}
+			Therefor \textit{bó - cluster}, and \textit{chalk - đá phấn.}
+			
+			Similarly the paths \textit{(băng - núi băng - núi - núi lửa - lửa - đá lửa - đá - nước đá)} 
+			\textit{(ice - iceberg - mountain - volcano - fire - flint - rock)} are very much alike,
+			in addtion, the relation of \textit{đá - đá phấn} is similar to \textit{rock - chalk,}
+			which make both \textit{nước đá} and \textit{băng} to have the meaning of \textit{ice}.
+			Similarly the paths \textit{(vòng - đường vòng - đường - mở đường - mở)} 
+			\textit{(to open - to pave the way - road - detour - circle)} are very much alike.
+			
+			\newpage
+			
+			Following the reasoning, we can fill the table as shown below.
+			
+			\begin{center}
+				\begin{tabular}{|c|l|l|c|l|}
+					\hline
+					\# & Vietnamese & Literal meaning & Answer & English       \\ \hline
+					1  & băng       & ice             & I      & ice           \\ \hline
+					2  & bó         & cluster         & D      & cluster       \\ \hline
+					3  & bó hoa     & flower cluster  & A      & bouquet       \\ \hline
+					4  & cánh hoa   & flower wing     & L      & petal         \\ \hline
+					5  & đá         & rock            & P      & rock          \\ \hline
+					6  & đá lửa     & fire rock       & G      & flint         \\ \hline
+					7  & đá phấn    & powder rock     & B      & chalk         \\ \hline
+					8  & đường      & road            & O      & road          \\ \hline
+					9  & đường vòng & circle road     & E      & detour        \\ \hline
+					10 & hoa        & flower          & H      & flower        \\ \hline
+					11 & lửa        & fire            & F      & fire          \\ \hline
+					12 & mở         & to open         & S      & to open       \\ \hline
+					13 & mở đường   & to open a road  & T      & to pave a way \\ \hline
+					14 & mở mắt     & to open eyes    & R      & to make aware \\ \hline
+					15 & núi        & mountain        & K      & mountain      \\ \hline
+					16 & núi băng   & ice mountain    & J      & iceberg       \\ \hline
+					17 & núi lửa    & fire mountain   & U      & volcano       \\ \hline
+					18 & nước đá    & rock water      & I      & ice           \\ \hline
+					19 & nước mắt   & eye water       & Q      & tear          \\ \hline
+					20 & phấn       & powder          & N      & powder        \\ \hline
+					21 & phấn hoa   & flower powder   & M      & pollen        \\ \hline
+					22 & vòng       & circle          & C      & circle        \\ \hline
+					23 & vòng hoa   & flower circle   & V      & wreath        \\ \hline
+				\end{tabular}
+			\end{center}
+\end{multicols}
