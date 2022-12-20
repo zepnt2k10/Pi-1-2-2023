@@ -225,178 +225,180 @@
 	\end{align*}
 	Bài viết về Tính diện tích trên lưới ô vuông đã giới thiệu đến các em cách tính diện tích của những hình trên lưới. Đầu tiên là hai phương pháp rất phổ biến: phương pháp chia hình cần tính thành những hình cơ bản đã biết diện tích và phương pháp tính theo phần bù. Tiếp theo đó bài viết giới thiệu với các em một công thức tính diện tích vô cùng đẹp đẽ qua Định lý Pick. Việc áp dụng định lý Pick giúp tính diện tích trở nên đơn giản hơn nhiều vì ta chỉ cần đếm số điểm nguyên ở trong và trên cạnh của hình cần tính. Chủ đề tính diện tích trên lưới ô vuông vẫn còn nhiều điều hấp dẫn, các bạn nhỏ nếu tìm được những bài toán hay thì hãy chia sẻ cùng Pi và các thầy cô trong câu lạc bộ UMC nhé.
 \end{multicols}
+\vspace*{-10pt}
+{\color{toancuabi}\rule{1\linewidth}{0.1pt}}
+\begingroup
+\AddToShipoutPicture*{\put(121,445){\includegraphics[scale=1]{../tieude.pdf}}} 
+\centering
+\endgroup
+\vspace*{65pt}
+\begin{multicols}{2}
+	Thám tử Xuân Phong và thanh tra Lê Kính nhân dịp đi điều tra ở vùng xa được mời tới thăm quan một thành phố kỳ lạ được mang tên Thành phố Thông minh. Thành phố chỉ có vẻn vẹn $200$ cư dân, họ ở trong những ngôi nhà cực kỳ hiện đại với nhiều tiện nghi tối tân và đặc biệt hơn, cư dân được chia ra thành $3$ loại người: $a)$ Người \textit{ngốc ngếch} luôn coi tất cả mọi người khác là ngốc ngếch còn mỗi mình là thông minh; $b)$ người \textit{thông minh khiêm tốn} biết chính xác về tất cả những người khác, còn coi bản thân là ngốc ngếch; $c)$ người \textit{thông minh tự tin} biết chính xác về tất cả những người khác và coi mình là thông minh. Theo thói quen nghề nghiệp, Xuân Phong liền mời tất cả công dân của thành phố tới tòa thị chính để mở một cuộc điều tra khảo sát ẩn danh về câu hỏi: trong tòa thị chính bây giờ có tất cả bao nhiêu công dân của thành phố là thông minh? Sau khi thu phiếu điều tra về, Xuân Phong không thể nào xác định được số lượng công dân thông minh của thành phố. Bỗng dưng vừa đúng lúc đó có một công dân trở về sau chuyến du lịch và chưa kịp tham gia trả lời khảo sát cùng với $199$ công dân đứng chật ních ở tòa thị chính. Anh ta nhanh chóng nhận phiếu điều tra, điền thông tin về các công dân trong phòng thị chính, kể cả về bản thân. Xuân Phong đọc câu trả lời của công dân đến muộn này và nói nhỏ cho Lê Kính “Giờ thì tôi cũng biết rõ về số các nhà thông minh trong thành phố này rồi”.
+	\vskip 0.1cm
+	Vậy theo em trong thành phố đặc biệt nọ có thể có bao nhiêu công dân thông minh?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi1_2_XuanPhong}
+		\vspace*{-5pt}
+	\end{figure}	
+%	Tất cả các người \textit{ngốc ngếch} đều trả lời “Một”. Nếu trong tòa thị chính  có ít nhất là $3$ công dân thông minh, thì tất cả họ sẽ đưa ra một số không nhỏ hơn $2$, và Xuân Phong đã biết được ngay câu trả lời. Vì thế, số công dân thông minh chỉ có thể là $0$, $1$ hoặc $2$. Ta xét tất cả các trường hợp.
+%	\vskip 0.1cm
+%	Nếu không có công dân thông mình nào, thì tất cả sẽ trả lời là “Một”. Nếu chỉ có một công dân thông minh và hơn nữa lại tự tin, thì anh ta cũng trả lời “Một” và tình huống này không phân biệt được với tình huống trước. Nếu người thông minh duy nhất là khiêm tốn, thì anh ta sẽ trả lời “Không có ai”, và trường hợp này phân biệt được ngay.
+%	\vskip 0.1cm
+%	Nếu có hai công dân thông minh và lại khiêm tốn, thì họ cũng lại trả lời “Một”, và tình huống này không phân biệt được với tình huống thứ nhất. Còn nếu có hai công dân thông minh và cả hai lại tự tin, thì họ sẽ đều trả lời “Hai”, tình huống này phân biệt được rõ ngay. Còn nếu có một công dân thông minh tự tin và một công dân thông minh khiêm tốn, thì người thông minh tự tin cũng trả lời “Hai” và tình huống phân biệt được.
+%	\vskip 0.1cm
+%	Như vậy, chỉ có thể có $3$ trường hợp không phân biệt được rõ ràng khi khảo sát $199$ công dân: không có công dân thông minh nào, có một người thông minh tự tin, và có hai người thông minh khiêm tốn. Trong cả $3$ phương án này tất cả các phiếu điều tra đều ghi “Một”.
+%	\vskip 0.1cm
+%	Giờ ta sẽ xem, người tới muộn sẽ đưa ra những câu trả lời nào trong mỗi tình huống được nêu ở trên, phụ thuộc vào mức độ thông minh và khiêm tốn của anh ta.
+%	\vskip 0.1cm
+%	\begin{table}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\begin{tabular}{|l|c|c|c|}
+%			\hline
+%			& $0$ người thông minh tự tin
+%			$0$ người thông minh khiêm tốn&	$1$ người thông minh tự tin
+%			$0$ người thông minh khiêm tốn&	$0$ người thông minh tự tin
+%			$2$ người thông minh khiêm tốn\\
+%			\hline
+%			Ngốc ngếch &	$1$&	$1$&	$1$\\
+%			\hline
+%			Tự tin	&$1$ &	$2$&	$3$\\
+%			\hline
+%			Khiêm tốn&	$0$&	$1$&	$2$\\
+%			\hline
+%		\end{tabular}
+%		\vspace*{-10pt}
+%	\end{table}
+%	Ta thấy rõ ràng là các câu trả lời “$1$” và “$2$” đều được gặp ở vài ô, có nghĩa là chúng không giúp gì được cho việc phân biệt các tình huống. Tuy nhiên các trả lời “$0$” và “$3$”
+%	lại gặp đúng một lần, và chúng cho phép đưa ra các kết luận duy nhất. Vì thế người tới muộn đã đưa ra một trong các câu trả lời đó. Trong trường hợp anh ta trả lời “$0$”
+%	thì trong thành phố có duy nhất $1$ công dân thông minh (là chính người tới muộn đó), còn trong trường hợp anh ta trả lời “$3$” thì đúng là trong thành phố có $3$ công dân thông minh ($2$ người khiêm tốn và $1$ người tự tin là anh tới muộn đó).
+%	\vskip 0.1cm
+%	Đáp số: $1$ hoặc $3$.
+\end{multicols}
+\newpage
+\begingroup
+\AddToShipoutPicture*{\put(112,672){\includegraphics[scale=1]{../tieude11.pdf}}} 
+\centering
+\endgroup
+\vspace*{35pt}
 
-%\begin{multicols}{2}
-%	Thám tử Xuân Phong trong một lần đi du lịch cùng thanh tra Lê Kính tới một hòn đảo xa xôi tận bên Phi Châu được đặt chân tới một ngôi làng đẹp tuyệt diệu ẩn sau những cành cọ, rặng dừa xum xuê chạy dài bờ biển xanh ngắt trong veo. Trưởng làng đon đả mời hai người tới ngôi nhà lớn của cả làng để dự một lễ hội đặc biệt của người dân. Theo như chỉ dẫn từ công ty lữ hành, những người thổ dân ở làng đó chia thành hai họ tộc, họ Tutu chuyên nói thật và họ Titi lại chuyên nói dối. Khi bước vào căn nhà lớn, Xuân Phong đã thấy có $50$ người dân đảo ăn mặc\hspace*{123pt}\linebreak[6]những bộ quần\hspace*{123pt}\linebreak[6]áo màu sắc lộng\hspace*{123pt}\linebreak[6]lẫy dành riêng\hspace*{123pt}\linebreak[6]cho lễ hội và\hspace*{123pt}\linebreak[6]ngồi xung quanh\hspace*{123pt}\linebreak[6]một chiếc bàn\hspace*{123pt}\linebreak[6]tròn thật to đặt\hspace*{123pt}\linebreak[6]giữa phòng. Theo\hspace*{123pt}\linebreak[6]như tục lệ, $50$\hspace*{123pt}\linebreak[6]người sẽ lần lượt\hspace*{123pt}\linebreak[6]đứng lên và nếu\hspace*{123pt}\linebreak[6]số tuổi của hai\hspace*{123pt}\linebreak[6]người ngồi cạnh\hspace*{123pt}\linebreak[6]anh ta, tuổi\hspace*{123pt}\linebreak[6]người ngồi bên\hspace*{123pt}\linebreak[6]trái trước -- sau\hspace*{123pt}\linebreak[6]đó là người ngồi\hspace*{123pt}\linebreak[6]bên phải. Xuân\hspace*{123pt}\linebreak[6]Phong được biết trước trong sách hướng dẫn du lịch là: người tộc Tutu sẽ nói đúng cả hai con số này, còn người tộc Titi sẽ tăng một trong hai số tuổi của hai người ngồi cạnh (người nào theo cách anh ta tùy thích chọn) thêm $1$ tuổi còn giảm tuổi kia đi $1$ tuổi. Xuân Phong chỉ cần nghe xong và ghi chép lại $50$ câu nói  của $50$ người dân làng ngồi quanh bàn, sau một chút suy nghĩ, đã biết được ngay ai là người đến từ tộc nào, Tutu hay Titi. Làm sao mà thám tử lại tài thế nhỉ, các em có biết cách lập luận của Xuân Phong được hay không?
-%	
-%	\vspace*{280pt}
-%	\insertpic{159}{85}{0.54}{xp}
-%\end{multicols}
-%\newpage
-%\begingroup
-%\AddToShipoutPicture*{\put(112,672){\includegraphics[scale=1]{../tieude11.pdf}}} 
-%\centering
-%\endgroup
-%\vspace*{35pt}
-%
-%\begin{multicols}{2}
-%	$\pmb{1.}$ Bạn Tùng làm một số bài trắc nghiệm và sau đó sẽ lấy điểm trung bình của các bài đó để tự đánh giá học lực của mình. Trả lời xong bài trắc nghiệm cuối cùng, Tùng thấy rằng nếu bài này mình được $97$ điểm bài này thì điểm trung bình của tất cả các bài trắc nghiệm sẽ là $90$ điểm, còn nếu như ở bài cuối Tùng chỉ nhận được $73$ điểm thì điểm trung bình của bạn ấy sẽ chỉ còn $87$ điểm. Vậy số bài trắc nghiệm trong loạt bài mà Tùng đã làm là bao nhiêu?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-10pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=0.95\linewidth]{Pi12_Bai1}
-%		\vspace*{-10pt}
-%	\end{figure}
-%	\vskip 0.1cm
-%	$\pmb{2.}$ Có $3$ loại kẹo để trong lọ thủy tinh với ba màu khác nhau: kẹo màu đỏ, kẹo màu vàng và kẹo màu trắng. Nếu Bình nhặt hết số kẹo màu vàng thì tổng số kẹo trong lọ ít hơn một chiếc so với $2/3$ tổng số kẹo ban đầu. Còn nếu Bình nhặt hết số kẹo đỏ, thì số kẹo còn lại trong lọ nhiều hơn $4$ chiếc so với $2/3$ tổng số kẹo ban đầu.
-%	\vskip 0.1cm
-%	Vậy ban đầu trong hai loại kẹo màu vàng và kẹo màu trắng, loại nào có nhiều và nhiều hơn bao nhiêu?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-10pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=0.45\linewidth]{Pi12_Bai2}
-%		\vspace*{-15pt}
-%	\end{figure}
-%	$\pmb{3.}$ $40$ bạn nhỏ nắm tay nhau xếp thành vòng tròn quanh đống lửa trại. Có tất cả $22$ bạn có nắm tay một bạn nam, và $30$ bạn có nắm tay một bạn nữ. Hỏi có tất cả bao nhiêu bạn nữ xếp trong vòng tròn quanh lửa trại ngày hôm đó?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-10pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=0.9\linewidth]{Pi12_Bai3}
-%		\vspace*{-10pt}
-%	\end{figure}
-%	$\pmb{4.}$ Trên mặt bàn có $5$ đồng xu xếp thành hàng ngang. Đồng xu ở giữa đặt xấp còn $4$ đồng còn lại đều đặt ngửa. Mỗi một lần em được cho phép lật $3$ đồng xu đặt liền nhau tùy ý. Liệu em có thể có cách lật thế nào để cuối cùng $5$ đồng xu đều đặt xấp được không?
-%	\vskip 0.1cm
-%	Cũng câu hỏi như vậy, nếu lúc đầu đồng xu đặt xấp duy nhất là đồng xu xếp đầu hàng? Là đồng xu xếp thứ hai trong hàng?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-5pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=1\linewidth]{Pi12_Bai4}
-%		\vspace*{-20pt}
-%	\end{figure}
-%	$\pmb{5.}$ Một lần Lý Toét diện guốc mộc loẹt quẹt ra tận chợ phiên chơi ngày cuối tuần. Khi về nhà, Lý Toét ba hoa khoe khắp làng ``Tôi là tôi gặp $15$ ông bán cây cảnh ngoài chợ nhé. Mà tôi đi lòng vòng và nghiệm thấy cứ $3$ ông bất kỳ có tổng cộng đúng $10$ cây hoa hồng. Thế là tôi lẩm nhẩm đoán được ngay $15$ ông này có tất cả bao nhiêu cây hoa hồng."
-%	\vskip 0.1cm
-%	Em có thể đoán được như Lý Toét xem $15$ ông bán cây có tất cả bao nhiêu cây hoa hồng không? Hay Lý Toét có khoác lác hay nhầm lẫn gì không nhỉ?
-%	\begin{figure}[H]
-%		\centering
-%%		\vspace*{1pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=0.58\linewidth]{Pi12_Bai5}
-%		\vspace*{-15pt}
-%	\end{figure}
-%	$\pmb{6.}$ Có $20$ bạn tham gia nhóm Toán ngồi xung quanh một chiếc bàn tròn. Một lúc sau các bạn nhóm Văn cũng đến, cứ xen kẽ hai bạn nhóm Toán ngồi kề nhau giờ có thêm $20$ bạn mới từ nhóm Văn. Tổng cộng có tất cả $400$ bạn từ nhóm Văn ngồi thêm quanh chiếc bàn tròn rộng đó. Thỉnh thoảng một bạn nhóm Văn lại đứng dậy và rời khỏi bàn, dắt theo hai bạn ngồi cạnh mình đi luôn. Cứ như vậy, sau một lúc thì quanh bàn số bạn nhóm Toán còn lại chỉ là $3$ bạn. Hỏi số bạn nhóm Văn còn ở lại quanh bàn lúc đó ít nhất phải là bao nhiêu?
-%\end{multicols}
-%\vspace*{-12pt}
-%\rule{1\linewidth}{0.1pt}
-%\begingroup
-%\AddToShipoutPicture*{\put(112,452){\includegraphics[scale=1]{../tieude2.pdf}}} 
-%\centering
-%\endgroup
-%\graphicspath{{../toancuabi/pic/}}
-%\vspace*{80pt}
-%
-%\begin{multicols}{2}
-%	$\pmb{1.}$ Có $30$ bạn học sinh tham gia một cuộc thi hùng biện bằng tiếng Anh. Các bạn lần lượt chọn các câu hỏi và trả lời theo thứ tự xếp hàng. Bạn thứ nhất được $80$ điểm, bạn thứ hai được $60$ điểm, bạn thứ ba có số điểm bằng trung bình cộng của bạn thứ nhất và bạn thứ hai, bạn thứ tư có số điểm bằng trung bình cộng của ba bạn đầu tiên. Nói chung, kể từ bạn thứ ba trở đi thì  mỗi một bạn học sinh tiếp theo luôn có số điểm bằng trung bình cộng số điểm của các bạn đã thi trước đó. 
-%	\vskip 0.1cm
-%	Hỏi bạn cuối cùng, tức bạn có số thứ tự $30$, đạt được bao nhiêu điểm trong cuộc thi? 
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-10pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=0.92\linewidth]{bai1}
-%		\vspace*{-10pt}
-%	\end{figure}
-%	\textit{Lời giải.} 	Ta nhận thấy nếu mỗi bạn tiếp theo nhận được số điểm là trung bình cộng điểm số của các bạn đứng trước đó, thì trung bình cộng số điểm của các bạn luôn không thay đổi. Nếu hai bạn đầu tiên có trung bình cộng số điểm là $70$, thì kể từ bạn thứ ba, trung bình cộng số điểm của $n$ bạn đầu tiên, ($2\!<\!n\!<\!30$), luôn bằng $70$. Vì thế bạn cuối cùng cũng nhận được $70$ điểm.
-%	\vskip 0.1cm
-%	$\pmb{2.}$ Vào một ngày hè, ba bạn Yến, Vinh và Công đến hiệu kem và mỗi bạn đều lấy đủ $3$ vị: trái cây, vani và sô--cô--la (mỗi vị một cốc). Sau khi ăn xong, vì $3$ cốc cho một người là chưa đủ, nên Yến lấy thêm một cốc kem trái cây, Vinh lấy thêm một cốc kem vani và Công lấy thêm một cốc kem sô--cô--la. 
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-10pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=0.92\linewidth]{bai2}
-%		\vspace*{-10pt}
-%	\end{figure}
-%	Lúc ra quầy thanh toán, Yến phải trả $70$ nghìn, Vinh phải trả $80$ nghìn còn Công phải trả $90$ nghìn. Hỏi mỗi vị kem có giá bao nhiêu tiền một cốc?
-%	\vskip 0.1cm
-%	\textit{Lời giải.} 	Gọi $a$ là giá tiền một cốc kem hoa quả, khi đó $a+10000$ là giá một cốc kem va--ni, còn $a+20000$ là giá một cốc kem sô--cô--la. Tổng số tiền các bạn phải trả là $70+80+90= 240$ (nghìn đồng). Tổng số này cũng bằng $4(a+a+10000+a+20000)= 12 a+ 120000$.
-%	\vskip 0.1cm 
-%	Từ đây suy ra $a= 10000$.
-%	\vskip 0.1cm 
-%	Như vậy một cốc kem hoa quả giá $10$ nghìn đồng, một cốc kem va--ni giá $20$ nghìn đồng, còn một cốc kem sô--cô--la giá $30$ nghìn đồng. 
-%	\vskip 0.1cm
-%	\textit{Cách giải khác (Cô Hồng)}: Tổng số cốc kem mỗi loại mà ba bạn Yến, Vinh, Công đã ăn là $4$ cốc, và tổng số tiền ba bạn đã trả là 
-%	\begin{align*}
-%		70 + 80 +90 = 240 \text{ (nghìn đồng).}
-%	\end{align*}
-%	Như vậy, tổng giá tiền của $1$ cốc kem hoa quả, $1$ cốc kem va--ni và $1$ cốc kem sô--cô--la là:
-%	\begin{align*}
-%		240 : 4=60 \text{ (nghìn đồng).}
-%	\end{align*}
-%	Do đó giá tiền của $1$ cốc kem hoa quả là:
-%	\begin{align*}
-%		70-60 = 10 \text{ (nghìn đồng).}
-%	\end{align*}
-%	Giá tiền của $1$ cốc kem va--ni là:
-%	\begin{align*}
-%		80-60 = 20 \text{ (nghìn đồng).}
-%	\end{align*}
-%	Và giá tiền $1$ cốc kem sô--cô--la là:
-%	\begin{align*}
-%		90-60 = 30 \text{ (nghìn đồng).}
-%	\end{align*}
-%	$\pmb{3.}$ Ba chú khỉ con dễ thương có tên là Bibi, Bobo, và Bubu được diện áo và giày thật đẹp để quay video đăng YouTube. Các chú được mặc ba chiếc áo có các màu khác nhau là đỏ, xanh lá cây và xanh lơ. Giày của ba chú cũng có ba màu như thế, mỗi chú mang một màu. Bibi thì diện áo và giày có cùng màu. Bobo lại không thích màu đỏ, nên cả giày và áo đều không phải đỏ. Bubu thì mang giày xanh lá cây, còn áo lại khác màu giày. Vậy các chú khỉ đã mặc áo và đi giày có màu như thế nào nhỉ?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-5pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=1\linewidth]{bai3}
-%		\vspace*{-18pt}
-%	\end{figure}
-%	\textit{Lời giải.} Các em thấy ngay chỉ có Bibi mới mang giày màu đỏ, vì ngoài chú ta ra không có chú khỉ nào còn lại có thể mang giày đỏ. Vì thế Bibi mặc cả bộ áo và giày đều đỏ. Và suy ra Bubu phải mặc áo màu xanh lơ. Cuối cùng, ta thấy Bobo mặc áo xanh lá cây và đi giày màu xanh lơ. Các chú trông thật vui mắt khi lên hình, phải không nào các em?
-%	\vskip 0.1cm
-%	$\pmb{4.}$ Để chuẩn bị cho cuộc đua xe đạp sắp diễn ra, sáng sớm Gấu con đã mang xe ra tập luyện. Lúc đi tốc độ của Gấu con là $15$ dặm/giờ. Do đường khá đông nên chiều trở về dù vẫn đi trên con đường đó nhưng Gấu con chỉ di chuyển với tốc độ $10$ dặm/giờ. Hỏi trên cả quãng đường lúc đi và về vận tốc trung bình của Gấu con là bao nhiêu?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-5pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=1\linewidth]{bai4}
-%		\vspace*{-18pt}
-%	\end{figure}
-%	\textit{Lời giải.} 	Nhận thấy nếu quãng đường có khác nhau cũng ko ảnh hưởng tới kết quả tính vận tốc trung bình. Giả sử quãng đường là $30$ dặm, thời gian lúc đi của Gấu là:
-%	\begin{align*}
-%		30:15 =  2 \text{ (giờ).}
-%	\end{align*}
-%	Thời gian lúc về là
-%	\begin{align*}
-%		30:10 = 3 \text{ (giờ).}
-%	\end{align*}
-%	Vậy Gấu con đã đi tổng cộng $60$ dặm trong $5$ giờ nên vận tốc trung bình là
-%	\begin{align*}
-%		60:5 = 12 \text{ (dặm/giờ).}
-%	\end{align*}
-%	$\pmb{5.}$ Trên bàn có một đống đá cuội gồm $1001$ viên. Người ta lấy ra một viên đá và chia đống đá ra  thành hai đống mới, sao cho mỗi đống có ít nhất $3$ viên. Bây giờ, trong mỗi một đống đá mới, người ta lại lấy ra một viên đá và chia đống đó ra thành hai đống mới, và cứ tiếp tục như vậy. Hỏi có thể lấy các viên đá sao cho sau một số lần lấy, trên bàn chỉ còn toàn các đống đá mà mỗi đống có đúng $3$ viên được hay không?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-5pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=1\linewidth]{bai5}
-%		\vspace*{-15pt}
-%	\end{figure}
-%	\textit{Lời giải.} 	Ta nhận thấy sau mỗi một bước, số đá trên bàn giảm đi $1$ viên nhưng số đống đá lại tăng thêm $1$. Vì vậy tổng số các viên đá và số các đống đá ở trên bàn không thay đổi sau mỗi lần nhặt bớt đi viên đá. Ban đầu tổng số này là $1001+1=1002$ không chia hết cho $4$. Vì thế, ta không thể nhận được tình huống khi trên bàn chỉ còn toàn các đống đá, mỗi đống có đúng $3$ viên, vì khi đó tổng số này sẽ bằng $3k+k=4k$ (chia hết cho $4$), ở đó $k$ là số các đống đá lúc đó ở trên mặt bàn. 
-%	\vskip 0.1cm
-% 	$\pmb{6.}$ Thạch Sanh chuẩn bị lên đường tiêu diệt Mãng xà -- con quái vật có tận $3$ cái đầu và $3$ cái đuôi gớm ghiếc. Ngài Thần Miếu đưa cho chàng một bảo bối và dặn dò: ``Đây là chiếc gươm thần thiêng liêng. Bằng một nhát gươm, con có thể chém đứt được một cái đầu, hoặc là hai cái đầu, hoặc là một cái đuôi, hoặc là hai cái đuôi của con Mãng xà. Nhưng con nên nhớ, nếu con chỉ chém đứt một cái đầu, thì một cái đầu khác của nó sẽ mọc lên, nếu chỉ chém đứt một cái đuôi, thì hai cái đuôi khác lại mọc ra, nếu chém đứt hai cái đuôi thì một cái đầu khác lại mọc ra, còn nếu con chém đứt được hai cái đầu thì không có gì mọc ra thêm nữa". Vậy Thạch Sanh có thể chém đứt tất cả đầu và đuôi của con Mãng xà sau bao nhiêu nhát gươm?
-%	\begin{figure}[H]
-%		\centering
-%		\vspace*{-5pt}
-%		\captionsetup{labelformat= empty, justification=centering}
-%		\includegraphics[width=1\linewidth]{bai6}
-%		\vspace*{-5pt}
-%	\end{figure}
-%	\textit{Lời giải.} Để chiến thắng được Mãng xà, Thạch Sanh phải chém đứt được một số chẵn cái đầu của nó. Số đầu mới của Mãng xà sẽ tăng thêm chỉ trong trường hợp nếu Thạch Sanh chém đứt một số cái đuôi nào của con  chằn tinh này. Do có tất cả $3$ cái đuôi, nên nếu chém đứt tất cả đuôi của Mãng xà, thì số đầu mới mọc ra không ít hơn  $2$ cái. Vì thế tổng số đầu mà Thạch Sanh cần phải chém để thắng không ít hơn $5$ cái. Do vậy, một số chẵn cái đầu cần chém đứt phải tối thiểu là $6$ cái. Đây là cách Thạch Sanh tiêu diệt Mãng xà với $6$ đầu: Đầu tiên, chàng sẽ lần lượt chặt đứt từng cái đuôi (với $3$ nhát gươm). Mãng xà giờ có $6$ đuôi mới và $3$ đầu. Sau đó chàng lần lượt sẽ chặt đứt từng cặp đuôi (với $3$ nhát gươm). Lúc này Mãng xà giờ có $6$ đầu và $0$ đuôi. Cuối cùng Thạch Sanh sẽ lần lượt chặt từng cặp $2$ cái đầu sau $3$ nhát chém. Tóm lại, với $9$ nhát gươm Thạch Sanh sẽ hạ được con chằn tinh.
-%\end{multicols}
+\begin{multicols}{2}
+	$\pmb{1.}$ Một bác nông dân chở một xe ô tô quất cảnh ra chợ Tết để bán. Sau khi bán hết cây quất cuối cùng với giá $230$ nghìn đồng, bác tính nhẩm lại thấy mình đã bán số cây quất với giá trung bình là $245$ nghìn đồng/cây. Nhưng ngay lúc ấy người mua cây quất cuối quay trở lại và chỉ cho bác thấy cành quất bị rụng quá nhiều lá, nên ông ta chỉ đồng ý mua với giá $158$ nghìn đồng. Bác chấp thuận và bán cành quất đó. Khi nhẩm tính lại, bác nông dân thấy giá trung bình của xe quất bây giờ là $242$ nghìn đồng. Hỏi bác đã bán được bao nhiêu cây quất?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.8\linewidth]{Pi1_2_Bai1}
+		\vspace*{-10pt}
+	\end{figure}
+	$\pmb{2.}$ Chuyện kể rằng có một người khi gặp nhà triết học và toán học Hy--lạp Pythagoras đã hỏi ông: “Bây giờ là mấy giờ?” Pythagoras đã trả lời “Cho đến hết ngày còn lại hai lần của hai phần năm khoảng thời gian đã trôi qua từ lúc bắt đầu ngày”. Nghe vậy, người đó chịu không thể nghĩ ra ngay được lúc họ gặp nhau là mấy giờ. Em có thể giúp trả lời lúc đó là mấy giờ được không?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.7\linewidth]{Pi1_2_Bai2}
+		\vspace*{-5pt}
+	\end{figure}
+	$\pmb{3.}$ Một tháng trước bà Hoa ra chợ mua một cân khoai tây, một cân thịt và một chục trứng. Chủ nhật vừa rồi, khoai tây tăng lên gấp ba, thịt gấp $4$ lần còn trứng đắt gấp $5$ lần, nên bà Hoa phải trả $600$ nghìn cho từng ấy món hàng như lần thứ nhất. Hôm nay thì khoai lại đắt gấp $6$ lần so với tháng trước, thịt đắt gấp $5$ lần còn trứng chỉ đắt gấp $4$ lần nên bà Hoa lại phải trả $660$ nghìn với cùng một lượng hàng. Hỏi bà Hoa đã trả bao nhiêu tiền cho lần mua thứ nhất?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.9\linewidth]{Pi1_2_Bai3}
+		\vspace*{-10pt}
+	\end{figure}
+	$\pmb{4.}$ Trong một buổi dạ hội nọ mỗi quý ông đã hân hạnh khiêu vũ với ba quý bà, còn mỗi quý bà cũng đã khiêu vũ với ba quý ông. Em hãy chỉ ra rằng số quý ông và số quý bà tham gia dạ hội là bằng nhau.
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi1_2_Bai4}
+		\vspace*{-20pt}
+	\end{figure}
+	$\pmb{5.}$ 	Sau khi kết thúc một giải thi đấu cờ, ban tổ chức nhận thấy mỗi kỳ thủ tham gia đã có số trận thắng khi chơi bằng quân trắng bằng đúng số trận mà tất cả các kỳ thủ còn lại đã thắng khi chơi quân đen. Em hãy chỉ ra rằng tất cả các kỳ thủ tham gia thi đấu đã có số trận thắng là như nhau.
+	\begin{figure}[H]
+		\centering
+		\vspace*{2pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.8\linewidth]{Pi1_2_Bai5}
+		\vspace*{-10pt}
+	\end{figure}
+	$\pmb{6.}$ Vào một ngày Chủ nhật nọ, Vinh và người em trai nhỏ tuổi hơn là Minh  đạp hai chiếc xe tới hiệu sách trung tâm cách nhà vài cây số. Tại đó mỗi người chọn mua một cuốn sách quý mà nhóm bạn bè cũ đang bàn luận khen ngợi thường xuyên mấy năm nay trên Facebook. Mỗi người đều lấy tổng tất cả các chữ số của tất cả các trang sách mình đã mua và nhận thấy rằng số đó bẳng năm sinh của mình. Vậy ai  trong số hai anh em Vinh và Minh  đang đi học lớp  bồi dưỡng Toán cho học sinh phổ thông nhỉ?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi1_2_Bai6}
+		\vspace*{-15pt}
+	\end{figure}
+\end{multicols}
+\vspace*{-12pt}
+{\color{toancuabi}\rule{1\linewidth}{0.1pt}}
+\begingroup
+\AddToShipoutPicture*{\put(112,412){\includegraphics[scale=1]{../tieude2.pdf}}} 
+\centering
+\endgroup
+\graphicspath{{../toancuabi/pic/}}
+\vspace*{80pt}
+
+\begin{multicols}{2}
+	$\pmb{1.}$ Một chiếc tàu cao tốc dài $18$ m đi ngang qua một cột cây số trong vòng $9$ giây. Hỏi chiếc tàu đó cần bao nhiêu thời gian để đi qua hết một cây cầu dài $36$ m. 
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai1}
+		\vspace*{-15pt}
+	\end{figure}
+	\vskip 0.1cm
+	$\pmb{2.}$ Hai cậu bé đi bán cam để gây quỹ xây dựng thư viện. Mỗi cậu có $30$ quả cam. Cậu thứ nhất bán  $10{.}000$ đồng hai quả cam, cậu thứ hai bán $10{.}000$ đồng ba quả cam. Trong lúc đang chuẩn bị bày cam ra bán thì một cậu bị gọi về nhà nên cậu ta nhờ cậu thứ hai bán hộ số cam của mình. Tất cả số cam còn lại được cậu bé thứ hai bán với giá $20{.}000$ đồng năm quả. Nếu như số cam bán riêng như dự định lúc đầu thì đã thu được là $150{.}000$ đồng và $100{.}000$ đồng, tức là tổng cộng có $250{.}000$ đồng, nhưng vì bán gộp $20{.}000$ đồng cho $5$ quả nên  hai cậu chỉ thu được $240{.}000$ đồng. Hỏi số tiền bị hụt $10{.}000$ đồng đã mất ở chỗ nào?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.8\linewidth]{Pi10_ToanBi_Bai2}
+		\vspace*{-10pt}
+	\end{figure}
+	\vskip 0.1cm
+	$\pmb{3.}$ Có ba người bạn tập trung lại để đi cắm trại và họ chỉ có duy nhất một chiếc xe máy có $2$ chỗ ngồi. Liệu họ có thể vượt được quãng đường dài $60$ km tới nơi cắm trại sau khoảng thời gian $3$ giờ đồng hồ được hay không, biết rằng vận tốc của mỗi người đi bộ là $5$ km/giờ và vận tốc của xe máy (có tải hay không có tải) luôn là $50$ km/giờ?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai3}
+		\vspace*{-15pt}
+	\end{figure}
+	$\pmb{4.}$ Có $100$ chiếc thẻ bài bằng nhựa đánh số từ $1$ tới $100$ lần lượt được xếp thành hàng ngang. Cứ hai chiếc thẻ xếp cách nhau một chiếc thẻ khác đều có thể đổi chỗ được cho nhau. Liệu em có thể đổi chỗ các chiếc thẻ này bằng cách như trên để xếp lại được $100$ chiếc thẻ trên theo thứ tự ngược lại được hay không?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai4}
+		\vspace*{-15pt}
+	\end{figure}
+	$\pmb{5.}$ Trong ngày khai giảng các bạn học sinh gặp lại nhau sau một mùa hè nên vô cùng mừng rỡ. Gặp lại bạn bè cũ và ai cũng tranh thủ bắt tay bạn mình. Kết thúc màn chào hỏi vui tươi sôi nổi, anh phụ trách thống kê lại trong cuốn sổ các bạn học sinh đã có số lẻ lần bắt tay và tổng cộng có $67$ bạn. Bạn Lâm đứng cạnh anh phụ trách nói nhỏ ``Anh ơi, anh đếm nhầm rồi, chắc chắn không phải là $67$ bạn ạ". Anh phụ trách vô cùng ngạc nhiên, vì sao Lâm lại biết vậy. Em có thể giải thích vì sao Lâm lại cho rằng anh phụ trách đếm nhầm được không?
+	\begin{figure}[H]
+		\centering
+		%		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai5}
+		\vspace*{-15pt}
+	\end{figure}
+	$\pmb{6.}$ $a)$  Có $50$ vị khách ngồi xung quanh một chiếc bàn tròn được xếp đều, trong số họ có $25$ phụ nữ. Em hãy chứng tỏ rằng có một vị khách ngồi cạnh hai phụ nữ.
+	\vskip 0.1cm
+	$b)$ Giả sử bây giờ số phụ nữ là $26$ người. Trong buổi tiệc bỗng dưng có hai vị khách làm vỡ mất hai chiếc cốc đặt trước mặt họ. Em hãy chứng tỏ rằng có thể xoay lại chiếc bàn tròn theo một cách nào đó để sao cho hai chiếc cốc vỡ lại đặt trước mặt của hai vị khách~nữ.
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai6}
+		%		\vspace*{-5pt}
+	\end{figure}
+\end{multicols}
 \newpage
 \begingroup
 \thispagestyle{toancuabinone}
