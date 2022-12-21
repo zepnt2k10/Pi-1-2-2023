@@ -2,7 +2,6 @@
 \pagestyle{cackithitoan}
 \everymath{\color{cackithi}}
 \graphicspath{{../cackithi/pic/}}
-\blfootnote{{\color[named]{cackithi}$^1$Trường Đại học Mỏ--Địa chất.}}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannercackithi}}} 
 \AddToShipoutPicture*{\put(150,575){\includegraphics[scale=1]{../tieude1.pdf}}}
@@ -11,125 +10,219 @@
 \vspace*{130pt}
 
 \begin{multicols}{2}
-	Trong phần đầu chuyên mục, chúng tôi sẽ trình bày lời giải của các bài toán trong kỳ thi Olympic Toán thành phố Kiev (Ukraina), năm $2022$,   đăng trong số báo $8/2022$. 
+	Trong phần đầu chuyên mục, chúng tôi sẽ trình bày lời giải của các bài toán trong kỳ thi Olympic Toán học Trẻ của Estonia năm học $2020-2021$, đăng trong số báo $10/2022$. 
 	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{19.}$}  Viết phân số $\dfrac{1}{2021}$ thành hiệu của hai phân số tối giản có mẫu số nhỏ hơn.
-	\vskip 0.1cm
-	\textit{Lời giải.} Chú ý rằng $2021$ là tích của hai số nguyên tố: $2021=43\times 47$.
-	\vskip 0.1cm
-	Ta cần tìm $a, b$ để $\dfrac{a}{43} - \dfrac{b}{47}= \dfrac{1}{2021}$. Điều này tương đương với $47a-43b=1$. Như vậy $47a\equiv 1 \pmod{43}$, hay $4a\equiv 1\pmod{43}$. Dễ thấy ngay rằng giá trị $a=11$ thỏa mãn. Giá trị tương ứng của $b$ là $12$. Ta có 
-	\begin{align*}
-		\dfrac{11}{43} - \dfrac{12}{47}= \dfrac{1}{2021}.
-	\end{align*} 
-	Bằng cách tương tự ta cũng tìm được một cách viết khác 
-	\begin{align*}
-		\dfrac{35}{47} - \dfrac{32}{43}= \dfrac{1}{2021}.
-	\end{align*}
-	{\bf\color{cackithi} OC$\pmb{20.}$} Có $n$ tấm thẻ, trên đó viết lần lượt các số thực (không nhất thiết phân biệt): $a_1, a_2, \ldots, a_n $.  Xét tất cả $ 2^n-1 $ cách chọn ra một tập khác rỗng các tấm thẻ và tính tổng các số trên mỗi tập thẻ đã chọn. Hỏi trong số $2^n-1$ tổng nhận được có thể có nhiều nhất bao nhiêu số bằng $1$?
-	\vskip 0.1cm
-	Ví dụ: với $3$ tấm thẻ có số $-1$, $2$, $2$, thì các tổng thu được là $4$, $3$, $2$, $2$, $1$, $1$, $-1$. Do đó có hai tổng bằng $1$.
-	\vskip 0.1cm
-	\textit{Lời giải.} Trường hợp cả $n$ số trên thẻ đều bằng $0$ thì không có tổng nào bẳng $1$. Ta chỉ cần xét trường hợp có một số, giả sử là $a_1$ khác $0$. Ta có thể chia tất cả $2^n$ tập con của tập $n$ tấm thẻ thành $2^{n-1}$ cặp bằng cách ghép một tập $A$ không chứa thẻ $a_1$ với tập $A\cup \{\ \text{thẻ chứa}\ a_1\}$. Do trong mỗi cặp hai tổng nhận được có chênh lệch bằng $a_1$ nên chỉ có nhiều nhất một tập có tổng bằng $1$ (quy ước tập rỗng có tổng bằng $0$).
-	\vskip 0.1cm
-	Như vậy trong mọi trường hợp đều có không quá $2^{n-1}$ tổng bằng $1$. Ta dễ dàng chỉ ra ví dụ có đúng $2^{n-1}$ tổng bằng $1$:  có  $1$ tấm thẻ ghi số $1$, các tấm thẻ khác đều ghi số $0$. Như vậy có thể có nhiều nhất là $2^{n-1}$ tổng bằng $1$.
-	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{21.}$} Trong tam giác $ ABC$, đường trung tuyến $BM$ bằng một nửa cạnh $BC$. Chứng minh rằng $ \angle ABM = \angle BCA + \angle BAC$.
-	\vskip 0.1cm
-	\textit{Lời giải.}
-	\begin{center}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-		\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
-		\begin{tikzpicture}[cackithi,node font= small,scale=0.9]
-			\draw [shift={(3.,0.)},color=qqwuqq] (0,0) -- (116.56505117707799:0.5) arc (116.56505117707799:180.:0.5) -- cycle;
-			\draw [shift={(2.,2.)},color=qqwuqq] (0,0) -- (-63.43494882292201:0.5) arc (-63.43494882292201:0.:0.5) -- cycle;
-			\draw [shift={(4.,2.)},color=qqwuqq] (0,0) -- (180.:0.5) arc (180.:243.43494882292202:0.5) -- cycle;
-			\draw [shift={(-1.,0.)},color=qqwuqq] (0,0) -- (0.:0.6) arc (0.:33.690067525979785:0.6) -- cycle;
-			\draw [shift={(2.,2.)},color=qqwuqq] (0,0) -- (0.:0.6) arc (0.:33.690067525979785:0.6) -- cycle;
-			\draw  (4.,2.)-- (2.,2.);
-			\draw  (2.,2.)-- (3.,0.);
-			\draw  (2.5849705831449925,1.0983869910099906) -- (2.370308057305012,0.9910557280900002);
-			\draw  (2.6296919426949894,1.0089442719099997) -- (2.4150294168550084,0.9016130089900094);
-			\draw  (-1.,0.)-- (3.,0.);
-			\draw  (-1.,0.)-- (5.,4.);
-			\draw  (5.,4.)-- (4.,2.);
-			\draw  (4.62969194269499,2.991055728090001) -- (4.415029416855009,3.0983869910099915);
-			\draw  (4.584970583144993,2.901613008990009) -- (4.370308057305012,3.0089442719099995);
-			\draw  (4.,2.)-- (3.,0.);
-			\draw  (3.6296919426949894,0.9910557280900002) -- (3.4150294168550084,1.0983869910099906);
-			\draw  (3.584970583144993,0.9016130089900094) -- (3.370308057305012,1.0089442719099997);
-			\draw [shift={(-1.,0.)},color=qqwuqq] (0.:0.6) arc (0.:33.690067525979785:0.6);
-			\draw[color=qqwuqq] (-0.49752668609324713,0.15213667806142553) -- (-0.35396288211988924,0.1956043003646903);
-			\draw [shift={(2.,2.)},color=qqwuqq] (0.:0.6) arc (0.:33.690067525979785:0.6);
-			\draw[color=qqwuqq] (2.5024733139067536,2.1521366780614257) -- (2.646037117880111,2.1956043003646903);
-				\draw [fill=white] (5.,4.) circle (1.5pt);
-				\draw[color=ududff] (5.2,4.33) node {$C$};
-				\draw [fill=white] (3.,0.) circle (1.5pt);
-				\draw[color=xdxdff] (3.2,-0.31) node {$B$};
-				\draw [fill=white] (4.,2.) circle (1.5pt);
-				\draw[color=uuuuuu] (4.28,1.97) node {$N$};
-				\draw [fill=white] (2.,2.) circle (1.5pt);
-				\draw[color=ududff] (1.7,2.35) node {$M$};
-				\draw [fill=white] (-1.,0.) circle (1.5pt);
-				\draw[color=uuuuuu] (-1.2,-0.23) node {$A$};
+	{\bf\color{cackithi} OC$\pmb{22.}$} Tia phân giác tại đỉnh $A$ của tam giác $ABC$ cắt đường tròn ngoại tiếp tam giác $ABC$ tại điểm $F (F \neq A).$ Lấy điểm $D$ và $E$ lần lượt trên các cạnh $AB$ và $AC$ sao cho $DE$ song song với $BC$. Gọi $G$ và $H$ lần lượt là giao điểm của các tia $FD$ và $FE$ với đường tròn ngoại tiếp tam giác $ABC (G \neq F, H \neq F).$ Các đường tròn ngoại tiếp tam giác $AGD$ và $AHE$ cắt nhau tại điểm $P (P \neq A).$ Chứng minh rằng điểm $P$ nằm trên đường thẳng $AF.$
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[cackithi,scale=0.95, node font=/small]
+			\draw [shift={(3.46,2.88)}] (0,0) -- (-80.54882573391929:0.4) arc (-80.54882573391929:-44.21517539700811:0.4) -- cycle;
+			\draw [shift={(3.46,2.88)}] (0,0) -- (-116.88247607083048:0.5) arc (-116.88247607083048:-80.54882573391929:0.5) -- cycle;
+			\draw  (3.46,2.88)-- (2.,0.);
+			\draw  (2.,0.)-- (6.42,0.);
+			\draw  (3.46,2.88)-- (6.42,0.);
+			\draw  (4.21,0.6897222222222221) circle (2.315127802914379cm);
+			\draw  (3.46,2.88)-- (4.21,-1.6254055806921568);
+			\draw  (2.485169230769231,0.9570461538461539)-- (5.436547750464446,0.9568724590075657);
+			\draw  (2.0714369973952342,1.576494474673352)-- (4.21,-1.6254055806921568);
+			\draw  (4.21,-1.6254055806921568)-- (6.0044579560443,2.1525063443046544);
+			\draw  (2.0714369973952342,1.576494474673352)-- (3.46,2.88);
+			\draw  (3.46,2.88)-- (6.0044579560443,2.1525063443046544);
+			\draw  (2.0714369973952342,1.576494474673352)-- (6.42,0.);
+			\draw  (2.,0.)-- (6.0044579560443,2.1525063443046544);
+			\draw [fill=white] (3.46,2.88) circle (1.5pt);
+			\draw (3.48,3.35) node {$A$};
+			\draw [fill=white] (2.,0.) circle (1.5pt);
+			\draw (1.66,-0.11) node {$B$};
+			\draw [fill=white] (6.42,0.) circle (1.5pt);
+			\draw (6.7,-0.07) node {$C$};
+			\draw [fill=white] (4.21,-1.6254055806921568) circle (1.5pt);
+			\draw (4.24,-1.85) node {$F$};
+			\draw [fill=white] (2.485169230769231,0.9570461538461539) circle (1.5pt);
+			\draw (2.48,0.65) node {$D$};
+			\draw [fill=white] (5.436547750464446,0.9568724590075657) circle (1.5pt);
+			\draw (5.44,0.63) node {$E$};
+			\draw [fill=white] (2.0714369973952342,1.576494474673352) circle (1.5pt);
+			\draw (1.64,1.73) node {$G$};
+			\draw [fill=white] (6.0044579560443,2.1525063443046544) circle (1.5pt);
+			\draw (6.28,2.39) node {$H$};
+			\draw [fill=white] (3.7800041573402137,0.9569699500850757) circle (1.5pt);
+			\draw (3.6,0.73) node {$L$};
+			\draw [fill=white] (3.939424096524548,0.) circle (1.5pt);
+			\draw (4.16,-0.17) node {$K$};
 		\end{tikzpicture}
-	\end{center}
-	Gọi $N$ là trung điểm $BC$, ta nối đường trung bình $MN$. Khi đó ta có hai góc so le trong bằng nhau:
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Lời giải.} 
+	Ta gọi $K, L$ lần lượt là giao điểm của $AF$ với $BC, DE.$
+	Theo giả thiết $AF$ là phân giác của góc $\angle BAC$ nên ta có:
 	\begin{align*}
-		\angle ABM = \angle BMN. \tag{$1$}
-	\end{align*}	
-	Từ giả thiết ta có $BM= BN$ nên tam giác $BMN$ cân tại $B$.
+		\angle AHF&=\angle ACB \!+\! \angle BCF\\
+		&= \angle ACK \!+\! \angle KAC \!=\! 180^\circ \!-\!\angle AKC.
+	\end{align*}   
+	Mặt khác do $DE$ song song với $BC$ nên $\angle ALE = \angle AKC.$ Từ đó ta suy ra $\angle AHF$ và $\angle ALE$ là bù nhau, tức là tứ giác $AHEL$ nội tiếp.
 	\vskip 0.1cm
-	Như vậy $\angle BMN =\angle BNM$. \hfill ($2$)
+	Chứng minh tương tự ta cũng có tứ giác $AGDL$ nội tiếp. Như vậy đường tròn ngoại tiếp hai tam giác $AGD$ và $AHE$ cùng đi qua điểm $L$ trên đường thẳng $AF.$ Do đó $L\equiv P$ và ta có điều cần chứng minh.
 	\vskip 0.1cm
-	Từ ($1$) và ($2$) ta nhận được
-	\begin{align*}
-		\angle ABM= \angle BNM. \tag{$3$}
-	\end{align*}
-	Mặt khác ta cũng có hai góc đồng vị bằng nhau: $\angle BAC=\angle NMC$. Do đó 
-	\begin{align*}
-		\angle BNM&= \angle NCM + \angle NMC\\
-		&= \angle BCA + \angle BAC. \tag{$4$}
-	\end{align*}
-	Từ ($3$) và ($4$) ta có đẳng thức cần chứng minh.
+	{\bf\color{cackithi} OC$\pmb{23.}$} Tìm tất cả các số nguyên $n\ge 3$ sao cho có thể viết một số
+	thực vào mỗi đỉnh của một đa giác đều $n$ cạnh thỏa mãn cả hai điều kiện sau:
 	\vskip 0.1cm
-	Trong phần cuối của chuyên mục kỳ này, chúng tôi sẽ giới thiệu với bạn đọc các bài toán trong kỳ thi Olympic Toán học vùng Cáp--ca năm $2022$ (Caucasus Math Olympiad). Các bài toán này phù hợp với trình độ học sinh lớp $8-9$.
+	$(1)$  Với bất kỳ ba đỉnh liên tiếp theo chiều kim đồng hồ của đa giác, 
+	chứa các số $x, y$ và $z$ tương ứng, thì ta có $x=|y-z|$;
 	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{28.}$} Cho trước các số nguyên dương $a$, $b$, $c$. Biết rằng $\dfrac{c}{b} = \dfrac{b}{a}$, và $b^2 - a - c + 1$ là số nguyên tố. Chứng minh rằng $\dfrac{a}{2}$ và $\dfrac{c}{2}$ là các số chính phương.
+	$(2)$ Tổng các số ở tất cả các đỉnh của đa giác bằng $1$.
 	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{29.}$} Cho hình bình hành $ABCD$, các điểm $E$ và $F$ lần lượt nằm trên các đoạn $AD$ và $CD$ sao cho $\angle BCE = \angle BAF.$ Các điểm $K$ và $L$ lần lượt nằm trên các đoạn $AD$ và $CD$ sao cho $AK = ED$ và $CL = FD$. Chứng minh rằng $\angle BKD = \angle BLD$.
+	\textit{Lời giải.} Ta gọi các đỉnh của đa giác ngược chiều kim đồng hồ lần lượt là $A_0, A_1, \cdots, A_{n-1}$. Giả sử có thể viết được các số như yêu cầu. Không mất tổng quát, giả sử số nhỏ nhất $a$ được viết ở đỉnh $A_0.$ Gọi các số ở đỉnh $A_{n-1}, A_{n-2}$ lần lượt là $b, c$. Từ giả thiết, ta suy ra số ở đỉnh $A_1$ là $b-a$ và không nhỏ hơn $a,$ tức là $b\ge 2a.$ Như vậy, số ở đỉnh $A_2$ là $(b-a)-a=b-2a$ và như vậy số ở đỉnh $A_3$ phải là $(b-a)-(b-2a)=a.$ 
+	Lý luận tương tự ta sẽ có số ở tất cả các đỉnh $A_i$, với $i$ chia hết cho $3$, đều bằng $a$; ở đây các chỉ số $i$ được xét theo modulo $n$ (nghĩa là $A_{n+1}=A_1, A_{n+2}=A_2, \ldots$)  
 	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{30.}$} Peter viết ra $21$ số nguyên dương đôi một phân biệt, mỗi số không lớn hơn $10^6$. Đối với mỗi cặp số $(a, b)$ được Peter viết ra, Nick  viết  số
-	\begin{align*}
-		F(a, b) = a + b - \gcd (a, b)
-	\end{align*}
-	trên mảnh giấy của mình (ở đây $\gcd$ ký hiệu ước chung lớn nhất). 
-	\vskip 0.1cm
-	Chứng minh rằng một trong những số mà Nick viết khác với tất cả những số mà Peter viết. 
-\end{multicols}
-\vspace*{-10pt}
-{\color{cackithi}\rule{1\linewidth}{0.1pt}}
-\vskip 0.3cm
-\centerline{\LARGE{\textbf{\color{cackithi}LỜI GIẢI, ĐÁP ÁN}}}
-\begin{multicols}{2}
-	\textbf{\color{cackithi}Đố vui}
-	\vskip 0.1cm
-	Khối pho mát $1\times1\times1$ ở giữa có tất cả sáu mặt và mỗi mặt phải được tạo ra từ một lần cắt nào đó. Hơn nữa, chú ý rằng không thể dùng một lần cắt để làm lộ ra hai hay nhiều hơn những mặt này. Vì vậy, cần ít nhất $6$ lần cắt. Cuối cùng, với  $6$ lần cắt, ta có thể tạo ra $27$ miếng pho mát như yêu cầu bằng cách cắt song song với các mặt của khối lập phương. 
+	Như vậy nếu $n$ không chia hết cho $3$ thì ta có số ở đỉnh $A_1$ hoặc $A_{n-1}$ cũng bằng $a.$ Lại lý luận tương tự, ta nhận được ba số liên tiếp đều bằng $a$ và như vậy phải có $a=|a-a|=0.$ Điều này dẫn đến tất cả các số đều bằng $0$ và mâu thuẫn với cả điều kiện $(2)$.
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.4\linewidth]{1}
+		\begin{tikzpicture}[cackithi, scale=0.85, node font= /small]
+			\draw  (5.,0.)-- (6.,0.);
+			\draw  (6.,0.)-- (6.913545457642599,0.4067366430757997);
+			\draw  (6.913545457642599,0.4067366430757997)-- (7.582676064001458,1.1498814685531933);
+			\draw  (7.582676064001458,1.1498814685531933)-- (7.891693058376405,2.100937984848346);
+			\draw  (7.891693058376405,2.100937984848346)-- (7.787164595108752,3.0954598802166187);
+			\draw  (7.787164595108752,3.0954598802166187)-- (7.287164595108752,3.961485284001057);
+			\draw  (7.287164595108752,3.961485284001057)-- (6.478147600733806,4.5492705362935295);
+			\draw  (6.478147600733806,4.5492705362935295)-- (5.5,4.757182227111289);
+			\draw  (5.5,4.757182227111289)-- (4.521852399266196,4.54927053629353);
+			\draw  (4.521852399266196,4.54927053629353)-- (3.7128354048912486,3.961485284001059);
+			\draw  (3.7128354048912486,3.961485284001059)-- (3.212835404891249,3.0954598802166213);
+			\draw  (3.212835404891249,3.0954598802166213)-- (3.108306941623595,2.1009379848483474);
+			\draw  (3.108306941623595,2.1009379848483474)-- (3.4173239359985415,1.149881468553195);
+			\draw  (3.4173239359985415,1.149881468553195)-- (4.086454542357398,0.4067366430758015);
+			\draw  (4.086454542357398,0.4067366430758015)-- (5.,0.);
+			\draw [fill=white] (5.,0.) circle (1.5pt);
+			\draw (4.91,-0.2) node {$A_0$};
+			\draw [fill=white] (6.,0.) circle (1.5pt);
+			\draw (6.15,-0.2) node {$A_1$};
+			\draw [fill=white] (6.913545457642599,0.4067366430757997) circle (1.5pt);
+			\draw (7.23,0.3) node {$A_2$};
+			\draw [fill=white] (7.582676064001458,1.1498814685531933) circle (1.5pt);
+			\draw [fill=white] (7.891693058376405,2.100937984848346) circle (1.5pt);
+			\draw [fill=white] (7.787164595108752,3.0954598802166187) circle (1.5pt);
+			\draw [fill=white] (7.287164595108752,3.961485284001057) circle (1.5pt);
+			\draw [fill=white] (6.478147600733806,4.5492705362935295) circle (1.5pt);
+			\draw [fill=white] (5.5,4.757182227111289) circle (1.5pt);
+			\draw [fill=white] (4.521852399266196,4.54927053629353) circle (1.5pt);
+			\draw [fill=white] (3.7128354048912486,3.961485284001059) circle (1.5pt);
+			\draw (3.15,0.85) node {$A_{n-2}$};
+			\draw [fill=white] (3.212835404891249,3.0954598802166213) circle (1.5pt);
+			\draw (3.8,0.25) node {$A_{n-1}$};
+			\draw [fill=white] (3.108306941623595,2.1009379848483474) circle (1.5pt);
+			\draw (3.74,1.45) node {$c$};
+			\draw [fill=white] (3.4173239359985415,1.149881468553195) circle (1.5pt);
+			\draw (4.3,0.87) node {$b$};
+			\draw [fill=white] (4.086454542357398,0.4067366430758015) circle (1.5pt);
+			\draw (5.02,0.49) node {$a$};
+		\end{tikzpicture}
+		\vspace*{-5pt}
+	\end{figure}
+	Với $n=3k,$ dễ dàng thấy rằng lần lượt viết các số $0, \frac1{2k},\frac1{2k}, 0, \frac1{2k}, \frac1{2k}, 0, \cdots$ theo chiều kim đồng hồ lên các đỉnh sẽ thỏa mãn hai điều kiện trong đầu bài. Như vậy có thể thực hiện được khi và chỉ khi $n$ chia hết cho $3$.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[cackithi,scale=0.85]
+			\draw  (3.,0.)-- (5.,0.);
+			\draw  (5.,0.)-- (6.,1.7320508075688774);
+			\draw  (6.,1.7320508075688774)-- (5.,3.4641016151377553);
+			\draw  (5.,3.4641016151377553)-- (3.,3.4641016151377557);
+			\draw  (3.,3.4641016151377557)-- (2.,1.732050807568879);
+			\draw  (2.,1.732050807568879)-- (3.,0.);
+				\draw [fill=white] (3.,0.) circle (1.5pt);
+				\draw (2.84,-0.25) node {$0$};
+				\draw [fill=white] (5.,0.) circle (1.5pt);
+				\draw (5.12,-0.25) node {$\frac{1}{4}$};
+				\draw [fill=white] (6.,1.7320508075688774) circle (1.5pt);
+				\draw (6.34,1.83) node {$\frac{1}{4}$};
+				\draw [fill=white] (5.,3.4641016151377553) circle (1.5pt);
+				\draw (5.18,3.85) node {$0$};
+				\draw [fill=white] (3.,3.4641016151377557) circle (1.5pt);
+				\draw (2.86,3.91) node {$\frac{1}{4}$};
+				\draw [fill=white] (2.,1.732050807568879) circle (1.5pt);
+				\draw (1.66,1.83) node {$\frac{1}{4}$};
+		\end{tikzpicture}
 		\vspace*{-10pt}
 	\end{figure}
-	Đáp số: $6$ lần cắt.
+	{\bf\color{cackithi} OC$\pmb{24.}$} Có một bộ $8$ quân cờ domino như trong hình vẽ bên dưới, mỗi quân gồm hai ô vuông đơn vị:
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{OC24}
+		\vspace*{-10pt}
+	\end{figure}
+	Liệu có thể lát kín hoàn toàn một bảng vuông có kích thước $4 \times 4$ bằng những quân domino này sao cho tổng số chấm trên mỗi hàng, mỗi cột đều bằng nhau?
 	\vskip 0.1cm
-	\textbf{\color{cackithi}Hòn đảo kỳ lạ}
-	\vskip 0.1cm 
-	Xuân Phong luôn có cách để biết chính xác tuổi của mỗi người ngồi xung quanh bàn, từ đó biết được người ngồi cạnh anh ta nói thật (đến từ tộc Tutu) hay nói dối (đến từ tộc Titi). Cách xác định tuổi như sau.
+	\textit{Lời giải.} Có thể lát thỏa mãn điều kiện đầu bài như sau (để đơn giản ta viết số thay cho các chấm trên domino) 
+	\begin{figure}[H]
+%		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[cackithi,scale=0.65, node font=/small]
+			\draw (0,0) rectangle (4,4);
+			\draw (0,2) -- (4,2) (0,3) -- (4,3) (1,0) -- (1,2) (3,0) -- (3,2) (2,4) -- (2,0);
+			\draw (0.5, 0.5) node {$7$};
+			\draw (0.5, 1.5) node {$8$};
+			\draw (0.5, 2.5) node {$4$};
+			\draw (0.5, 3.5) node {$1$};
+			\draw (1.5, 0.5) node {$6$};
+			\draw (1.5, 1.5) node {$7$};
+			\draw (1.5, 2.5) node {$5$};
+			\draw (1.5, 3.5) node {$2$};
+			\draw (2.5, 0.5) node {$4$};
+			\draw (2.5, 1.5) node {$3$};
+			\draw (2.5, 2.5) node {$5$};
+			\draw (2.5, 3.5) node {$8$};
+			\draw (3.5, 0.5) node {$3$};
+			\draw (3.5, 1.5) node {$2$};
+			\draw (3.5, 2.5) node {$6$};
+			\draw (3.5, 3.5) node {$9$};
+		\end{tikzpicture}
+		\vspace*{-10pt}
+	\end{figure}
+	Trong phần cuối của chuyên mục kỳ này, chúng tôi sẽ giới thiệu với bạn đọc ba bài toán trong kỳ thi Olympic Toán học Trẻ của Vương quốc Anh năm học $2022$. Các bài toán này phù hợp với trình độ học sinh lớp $6-8$.
 	\vskip 0.1cm
-	Ta chọn ra người dân cần xác định tuổi. Đặt tên anh ta, giả sử là Toto. Ta sẽ gán cho mỗi người ngồi xung quanh bàn một trong hai màu: xanh và đỏ (một cách tưởng tượng) như sau: bắt đầu gán cho Toto màu đỏ, sau đó cứ cách một người ta lại gán cho màu đỏ, những người còn lại gán cho màu xanh. Như vậy các màu xanh đỏ được ngồi xen kẽ quanh bàn, còn bản thân Toto được gán màu đỏ. 
+	{\bf\color{cackithi} OC$\pmb{31.}$} Bốn góc trong một tứ giác có số đo là các số tự nhiên có $2$ chữ số $\overline{ab}, \overline{cd}, \overline{bd}, \overline{ac}$ như trong hình vẽ. Tìm tất cả các khả năng có thể của tập hợp bốn góc trên.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[cackithi,scale=0.85, node font= /small]
+			\draw  (5.48,-1.)-- (8.,-1.);
+			\draw  (8.,-1.)-- (9.,2.);
+			\draw  (9.,2.)-- (4.36,1.82);
+			\draw  (4.36,1.82)-- (5.48,-1.);
+			\draw [fill=white] (5.48,-1.) circle (1.5pt);
+			\draw (5.8,-0.63) node {$\overline{cd}^\circ$};
+			\draw [fill=white] (8.,-1.) circle (1.5pt);
+			\draw (7.76,-0.57) node {$\overline{bd}^\circ$};
+			\draw [fill=white] (9.,2.) circle (1.5pt);
+			\draw (8.56,1.73) node {$\overline{ac}^\circ$};
+			\draw [fill=white] (4.36,1.82) circle (1.5pt);
+			\draw (4.95,1.57) node {$\overline{ab}^\circ$};
+		\end{tikzpicture}
+		\vspace*{-10pt}
+	\end{figure}
+	{\bf\color{cackithi}OC$\pmb{32.}$} Cho hình ngũ giác đều $ABCDE$. Vẽ hai đường tròn: một có
+	tâm $A$ và bán kính $AB$, và hình kia có tâm $B$ và bán kính $BA$. Gọi $X$ là giao điểm bên trong ngũ giác của hai đường tròn.
+	Hỏi số đo của $\angle DEX$ bằng bao nhiêu?
 	\vskip 0.1cm
-	\hfill (Xem tiếp trang $..$)
+	{\bf\color{cackithi}OC$\pmb{33.}$} Seth làm $n$ viên xúc xắc giống hệt nhau bằng cách gấp $n$ bản giống như trong hình bên. Sau đó, anh ta xếp lần lượt các viên xúc xắc chồng lên nhau thành một hình tháp thẳng đứng.
+	Biết rằng tổng số chấm ở mỗi một trong bốn mặt xung quanh của tháp xúc xắc đều là số lẻ. Hỏi các giá trị có thể của $n$ là bao nhiêu?
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[height= 0.6\linewidth]{OC33}
+		\includegraphics[height= 0.6\linewidth]{OC}
+		\vspace*{-5pt}
+	\end{figure}
 \end{multicols}

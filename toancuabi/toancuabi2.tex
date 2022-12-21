@@ -9,7 +9,7 @@
 \centering
 \endgroup
 
-\vspace*{182pt}
+\vspace*{180pt}
 
 \begin{multicols}{2}
 	Mục Toán của Bi trong Số $11$, Tập $6$ đã giới thiệu đến các em cách tính diện tích của những hình tạo trên lưới ô vuông. Rất nhiều hình khác nhau có các đỉnh tại các điểm nguyên đều tính được mà chỉ cần dựa trên những ô vuông đơn vị có diện tích $1$. Không biết diện tích của những hình trên lưới có liên hệ gì với những điểm trên lưới không nhỉ? Định lý Pick được giới thiệu trong phần này sẽ trả lời cho ta câu hỏi rất thú vị này đấy.
@@ -21,7 +21,7 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.65\linewidth]{1}
+		\includegraphics[width= 0.62\linewidth]{1}
 		\caption{\small\textit{\color{toancuabi}Hình $1$.}}
 		\vspace*{-5pt}
 	\end{figure}
@@ -336,14 +336,14 @@
 		\vspace*{-15pt}
 	\end{figure}
 \end{multicols}
-\vspace*{-12pt}
+\vspace*{-15pt}
 {\color{toancuabi}\rule{1\linewidth}{0.1pt}}
 \begingroup
-\AddToShipoutPicture*{\put(112,412){\includegraphics[scale=1]{../tieude2.pdf}}} 
+\AddToShipoutPicture*{\put(112,418){\includegraphics[scale=1]{../tieude2.pdf}}} 
 \centering
 \endgroup
 \graphicspath{{../toancuabi/pic/}}
-\vspace*{80pt}
+\vspace*{70pt}
 
 \begin{multicols}{2}
 	$\pmb{1.}$ Một chiếc tàu cao tốc dài $18$ m đi ngang qua một cột cây số trong vòng $9$ giây. Hỏi chiếc tàu đó cần bao nhiêu thời gian để đi qua hết một cây cầu dài $36$ m. 
@@ -354,40 +354,86 @@
 		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai1}
 		\vspace*{-15pt}
 	\end{figure}
+	\textit{Lời giải.} 	Các em không cần phải tính vận tốc của chiếc tàu cao tốc mà vẫn có thể tìm ra đáp số đúng là $27$ giây. Thật vậy, thời gian tính từ khi đầu tàu đi tới cầu cho tới khi đuôi tàu đi hẳn vào cầu là $9$ giây. Sau $9$ giây đó, đầu tàu đi được đúng nửa cây cầu (do độ dài của tàu bằng nửa độ dài của cầu), và vì thế nó cần thêm $9$ giây để đi hết chiếc cầu. Đuôi tàu cũng cần thêm $9$ giây nữa để đi qua hết cầu. Vì thế tàu cao tốc cần tổng cộng $9+9+9= 27$ (giây) để đi qua hết cây cầu.
 	\vskip 0.1cm
 	$\pmb{2.}$ Hai cậu bé đi bán cam để gây quỹ xây dựng thư viện. Mỗi cậu có $30$ quả cam. Cậu thứ nhất bán  $10{.}000$ đồng hai quả cam, cậu thứ hai bán $10{.}000$ đồng ba quả cam. Trong lúc đang chuẩn bị bày cam ra bán thì một cậu bị gọi về nhà nên cậu ta nhờ cậu thứ hai bán hộ số cam của mình. Tất cả số cam còn lại được cậu bé thứ hai bán với giá $20{.}000$ đồng năm quả. Nếu như số cam bán riêng như dự định lúc đầu thì đã thu được là $150{.}000$ đồng và $100{.}000$ đồng, tức là tổng cộng có $250{.}000$ đồng, nhưng vì bán gộp $20{.}000$ đồng cho $5$ quả nên  hai cậu chỉ thu được $240{.}000$ đồng. Hỏi số tiền bị hụt $10{.}000$ đồng đã mất ở chỗ nào?
+	\vskip 0.1cm
+	\textit{Lời giải.} Ta xếp tổng số cam của cả $2$ bạn thành $2$ loại:
+	\vskip 0.1cm
+	-- Loại $1$: gồm $10$ phần, mỗi phần gồm $5$ quả;
+	\vskip 0.1cm
+	-- Loại $2$: $10$ quả còn lại.
+	\vskip 0.1cm
+	Trong mỗi phần ở Loại $1$, ta bán $2$ quả theo giá của cậu thứ nhất và $3$ quả theo giá của cậu thứ $2$. Như vậy, bán mỗi phần này  thu được $20{.}000$ nghìn và theo cách bán này thì mỗi phần thu được số tiền đúng như cách bán của cả hai kiểu.
 	\begin{figure}[H]
 		\centering
 		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.8\linewidth]{Pi10_ToanBi_Bai2}
+		\includegraphics[width=0.7\linewidth]{Pi10_ToanBi_Bai2}
 		\vspace*{-10pt}
 	\end{figure}
+	-- Nếu bán như ban đầu, $10$ quả còn lại sẽ bán theo giá của cậu bé thứ nhất ($10000$ đồng hai quả)
 	\vskip 0.1cm
+	-- Nếu bán theo cách sau, trong $10$ quả còn lại chỉ có $4$ quả cam được theo giá ban đầu ($10000$ đồng hai quả) và $6$ quả bị bán với giá rẻ hơn ($10000$ đồng ba quả).
+	\vskip 0.1cm
+	Từ đó theo cách bán sau, số tiền bị thiệt đi là:
+	\setlength{\abovedisplayskip}{5pt}
+	\setlength{\belowdisplayskip}{5pt}
+	\begin{align*}
+		6\times\frac{10000}{2} – 6\times\frac{10000}{3} = 10000.
+	\end{align*}
+	\textit{Cách giải khác.}
+	\vskip 0.1cm
+	Theo cách bán ban đầu: mỗi quả cam của cậu thứ nhất có giá là: $\dfrac{10000}{2}$ đồng, mỗi quả cam của cậu thứ hai có giá là: $\dfrac{10000}{3}$ đồng.
+	\vskip 0.1cm
+	Theo cách bán sau thì giá của mỗi quả cam là $\dfrac{20000}{5}$ đồng.
+	\vskip 0.1cm
+	Như vậy, cứ $2$ quả cam thì bán theo cách sau bị thiệt:
+	\begin{align*}
+		\dfrac{10000}{2} + \dfrac{10000}{3} – 2\times\dfrac{20000}{5} = \dfrac{1000}{3}.
+	\end{align*}
+	Vậy khi bán $60$ quả cam thì theo cách sau, cậu bé thứ hai bị mất đi số tiền là:
+	\begin{align*}
+		30\times \dfrac{1000}{3} = 10000 \text{ (đồng)}
+	\end{align*}
 	$\pmb{3.}$ Có ba người bạn tập trung lại để đi cắm trại và họ chỉ có duy nhất một chiếc xe máy có $2$ chỗ ngồi. Liệu họ có thể vượt được quãng đường dài $60$ km tới nơi cắm trại sau khoảng thời gian $3$ giờ đồng hồ được hay không, biết rằng vận tốc của mỗi người đi bộ là $5$ km/giờ và vận tốc của xe máy (có tải hay không có tải) luôn là $50$ km/giờ?
 	\begin{figure}[H]
 		\centering
-		\vspace*{-5pt}
+		\vspace*{-15pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai3}
+		\includegraphics[width=0.95\linewidth]{Pi10_ToanBi_Bai3}
 		\vspace*{-15pt}
 	\end{figure}
+	\textit{Lời giải.} 	Ta gọi $3$ người đó là $A$, $B$, $C$. Trước tiên $A$ sẽ chở $B$ đi bằng xe máy và để $C$ tự đi bộ. Sau $1$ tiếng đi được $50$ km, $A$ để $B$ xuống, cho $B$ tự đến nơi cắm trại một mình, và $A$ quay lại đón $C$. Anh $B$ sẽ đi quãng đường còn lại là $60 -50 =10$ (km) sau đúng $2$ giờ. Sau $1$ giờ, $C$ cũng đã đi được $5$ km, vì vậy $A$ sẽ gặp $C$ sau $(50-5):(50+5)= \dfrac{9}{11}$ (giờ). Thời gian để hai anh này từ lúc gặp lại nhau và quay ngược để đến được nơi cắm trại là $\dfrac{9}{11}+\dfrac{10}{50}$ (giờ).
+	\vskip 0.1cm
+	Như vậy kể từ lúc đi từ nhà, tổng cộng anh $A$ phải đi mất
+	\begin{align*}
+		1\!\!+\!\!\dfrac{9}{11}\!\!+\!\!  \dfrac{9}{11}\!\!+\!\!\dfrac{10}{50}  \!=\!\! 1\!\!+\!\!\dfrac{101}{55}\!\!<\!\!1\!\!+\!\!\dfrac{110}{55}\!=\!\!3  \text{ (giờ)}.
+	\end{align*}
+	Vậy ba người bạn có thể đến được nơi cắm trại sau $3$ giờ chỉ với một chiếc xe máy.
+	\vskip 0.1cm
 	$\pmb{4.}$ Có $100$ chiếc thẻ bài bằng nhựa đánh số từ $1$ tới $100$ lần lượt được xếp thành hàng ngang. Cứ hai chiếc thẻ xếp cách nhau một chiếc thẻ khác đều có thể đổi chỗ được cho nhau. Liệu em có thể đổi chỗ các chiếc thẻ này bằng cách như trên để xếp lại được $100$ chiếc thẻ trên theo thứ tự ngược lại được hay không?
 	\begin{figure}[H]
 		\centering
-		\vspace*{-5pt}
+		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai4}
-		\vspace*{-15pt}
+		\includegraphics[width=0.98\linewidth]{Pi10_ToanBi_Bai4}
+		\vspace*{-10pt}
 	\end{figure}
+	\textit{Lời giải.} 	Mỗi lần đổi chỗ, một chiếc thẻ sẽ di chuyển vị trí là $+2$ hoặc $-2$ so với vị trí cũ. Như vậy theo cách đổi chỗ như trên, một chiếc thẻ sẽ luôn thay đổi một số chẵn vị trí. Từ vị trí số $1$ tới vị trí $100$ có $99$ vị trí phải thay đổi, đó là một số lẻ. Suy ra ta không thể xếp lại $100$ chiếc thẻ theo thứ tự ngược lại.
+	\vskip 0.1cm
 	$\pmb{5.}$ Trong ngày khai giảng các bạn học sinh gặp lại nhau sau một mùa hè nên vô cùng mừng rỡ. Gặp lại bạn bè cũ và ai cũng tranh thủ bắt tay bạn mình. Kết thúc màn chào hỏi vui tươi sôi nổi, anh phụ trách thống kê lại trong cuốn sổ các bạn học sinh đã có số lẻ lần bắt tay và tổng cộng có $67$ bạn. Bạn Lâm đứng cạnh anh phụ trách nói nhỏ ``Anh ơi, anh đếm nhầm rồi, chắc chắn không phải là $67$ bạn ạ". Anh phụ trách vô cùng ngạc nhiên, vì sao Lâm lại biết vậy. Em có thể giải thích vì sao Lâm lại cho rằng anh phụ trách đếm nhầm được không?
 	\begin{figure}[H]
 		\centering
-		%		\vspace*{-5pt}
+		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai5}
-		\vspace*{-15pt}
+		\includegraphics[width=0.9\linewidth]{Pi10_ToanBi_Bai5}
+		\vspace*{-10pt}
 	\end{figure}
+	\textit{Lời giải.} 	Khi một bạn $A$ bắt tay một bạn $B$ của mình, thì $B$ cũng bắt tay $A$, vì thế nếu $P$ là tổng số lượt bắt tay của tất cả các bạn học sinh thì $P= 2+2+\cdots+2=2n$ phải là một số chẵn.
+	\vskip 0.1cm
+	Ta chia $P$ thành hai tổng. Tổng thứ nhất, ký là $Q$, là số lượt bắt tay của các bạn thực hiện một số chẵn lần bắt tay. Tổng thứ hai, ký hiệu là $R$, là số lượt bắt tay của các bạn thực hiện một số lẻ lần bắt tay. Rõ ràng $P= Q+R$, và $Q$ phải là số chẵn. Vì thế $R = P - Q$ cũng phải là số chẵn. Vì vậy số các bạn có số lẻ lần bắt tay không thể bằng $67$, vì nếu như vậy $R$ sẽ là số lẻ (là tổng của $67$ số lẻ). Do đó Lâm biết được anh phụ trách đã đếm nhầm. Các em cũng có thể thấy từ bài này rằng số các bạn có số lẻ lần bắt tay phải luôn là số chẵn, thú vị phải không nào.
+	 \vskip 0.1cm
 	$\pmb{6.}$ $a)$  Có $50$ vị khách ngồi xung quanh một chiếc bàn tròn được xếp đều, trong số họ có $25$ phụ nữ. Em hãy chứng tỏ rằng có một vị khách ngồi cạnh hai phụ nữ.
 	\vskip 0.1cm
 	$b)$ Giả sử bây giờ số phụ nữ là $26$ người. Trong buổi tiệc bỗng dưng có hai vị khách làm vỡ mất hai chiếc cốc đặt trước mặt họ. Em hãy chứng tỏ rằng có thể xoay lại chiếc bàn tròn theo một cách nào đó để sao cho hai chiếc cốc vỡ lại đặt trước mặt của hai vị khách~nữ.
@@ -396,8 +442,13 @@
 		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
 		\includegraphics[width=1\linewidth]{Pi10_ToanBi_Bai6}
-		%		\vspace*{-5pt}
+		\vspace*{-10pt}
 	\end{figure}
+	\textit{Lời giải.} $a)$	Ta chia hình đa giác $50$ cạnh thành hai hình $25$--giác đều (với các đỉnh xếp đan xen nhau). Do số phụ nữ là $25$ nên theo nguyên lý Dirichlet phải có một trong các hình $25$--giác đều này có ít nhất $13$ phụ nữ ngồi ở các đỉnh của nó. Nhưng do $13>\dfrac{25}{2}$ nên cũng theo nguyên lý Dirichlet, phải có hai phụ nữ ngồi ở hai đỉnh liên tiếp của $25$--giác đều này, vì thế ở giữa họ chỉ có một đỉnh duy nhất của hình $50$--giác ban đầu -- đó chính là vị trí của vị khách cần tìm.
+	\vskip 0.1cm
+	$b)$ Giả sử hai vị khách làm vỡ cốc ngồi ở hai đỉnh được nối với nhau bởi một đường chéo có độ dài là $a$. Ta sẽ phải tìm hai vị khách nữ cũng ngồi cách nhau một khoảng bằng $a$.
+	\vskip 0.1cm
+	Nếu $a$ không phải là độ dài của đường chéo lớn nhất, thì từ mỗi một vị khách nữ có tất cả hai đường chéo xuất phát có độ dài $a$. Có tất cả $26\times 2= 52$ đường chéo như vậy. Tuy nhiên số đường chéo có độ dài $a$ chỉ là $50$, vì thế phải có hai đường chéo trong số $52$ đường trên trùng nhau. Ta giả sử đó là đường chéo $AB$. Khi đó $AB=a$, và có hai phụ nữ ngồi tại vị trí $A$ và $B$ là hai vị khách nữ cần tìm.
 \end{multicols}
 \newpage
 \begingroup
