@@ -29,10 +29,10 @@
 	\setlength{\abovedisplayskip}{4pt}
 	\setlength{\belowdisplayskip}{4pt}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P671.}}
-	(Mức $B$) Một hình chữ nhật được chia thành $9$ hình chữ nhật con như hình vẽ. Số ghi ở giữa mỗi hình chữ nhật con bằng chu vi của hình chữ nhật ấy. Biết rằng $c$ là một số nguyên và khác với $2,3,4,5$; hãy tìm $a,b,c,d,e$.
+	(Mức $B$) Một hình chữ nhật được chia thành $9$ hình chữ nhật con như hình vẽ. Số ghi ở giữa mỗi hình chữ nhật con bằng chu vi của hình chữ nhật ấy. Biết rằng $c$ là một số nguyên khác $2,3,4,5$; hãy tìm $a,b,c,d,e$.
 	\begin{center} 
 		\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
-		\begin{tikzpicture}[xscale=1.7,thachthuctoanhoc]
+		\begin{tikzpicture}[yscale=0.85,xscale=1.7,thachthuctoanhoc]
 			\draw (0,0) grid (3,3);
 			\draw (0.5,1.5) node{$2$};
 			\draw (1.5,0.5) node{$5$};
@@ -45,11 +45,13 @@
 			\draw (2.5,0.5) node{$e$};
 		\end{tikzpicture}
 	\end{center}
-	\begin{flushright}
-		\textit{Đăng Hải, Hà Nội (st)}
-	\end{flushright}
+	\hfill	\textit{Đăng Hải, Hà Nội (st)}
+	\vskip 0.1cm
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P672.}}
-	(Mức $B$) Cho $x$ và $y$ là các số nguyên dương phân biệt thoả mãn $2023x^{2023}+999 y^{2023}$ chia hết cho $x+y$. Chứng minh rằng $x+y$ là hợp số. 
+	(Mức $B$) Cho $x$ và $y$ là các số nguyên dương phân biệt thoả mãn 
+	\begin{align*}
+		2023x^{2023}+999 y^{2023}
+	\end{align*} chia hết cho $x+y$. Chứng minh rằng $x+y$ là hợp số. 
 	\begin{flushright}
 		\textit{Nguyễn Đức Tấn, Tp. Hồ Chí Minh}
 	\end{flushright}
@@ -63,7 +65,8 @@
 		\textit{Nguyễn Văn Quý, Hà Nội}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P674.}}
-	(Mức $B$) Mỗi ô của bảng $8\times 8$ được điền số $+1$ hoặc $-1$ sao cho tổng của $4$ số trong mỗi hình vuông con cỡ $2\times2$ đều bằng $2$ hoặc $-2$. Chứng minh rằng bảng phải chứa hai hàng giống nhau.
+	(Mức $B$) Ở mỗi ô vuông con của bảng ô vuông $8 \times 8$ được điền một số $+1$, hoặc một số $-1$, sao
+	cho tổng của bốn số ở một bảng con $2 \times 2$ tùy ý bằng $2$, hoặc $-2$. Chứng minh rằng, trong bảng số thu được có hai hàng, hoặc hai cột, giống nhau
 	\begin{flushright}
 		\textit{Nguyễn Tường Thanh, Nghệ An (st)}
 	\end{flushright}
@@ -120,21 +123,29 @@
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P677.}}
 	(Mức $A$) Cho dãy số thực $(u_n)$ xác định bởi 
 	\begin{align*}
-		u_n=\dfrac{C^n_{2n}-2022}{n^2}\quad\text{với $n=1,2,3,\ldots$}.
+		u_n=\dfrac{C^n_{2n}-2022}{n^2}\quad\text{, $n=1,2,3,\ldots$}.
 	\end{align*}
 	$a)$ Chứng minh rằng $(u_n)$ là dãy tăng và không bị chặn trên.
 	\vskip 0.05cm
-	$b)$ Tìm tất cả các số thực $\alpha$ sao cho giới hạn $\lim \dfrac{n^\alpha. u_n}{4^n}$ tồn tại hữu hạn và khác $0$. 
+	$b)$ Tìm tất cả các số thực $\alpha$ sao cho dãy số $(x_n)$, xác định bởi
+	\begin{align*}
+		x_n = \frac{n^\alpha \cdot u_n}{4^n}, \quad n = 1,2,3,\ldots,
+	\end{align*}
+	có giới hạn hữu hạn khác $0$, khi $n \to + \infty$.
 	\begin{flushright}
 		\textit{Lê Phúc Lữ, Tp. Hồ Chí Minh}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P678.}}
-	(Mức $A$) Trong mặt phẳng, cho hai điểm $I$, $J$ cố định sao cho $IJ=8$.  Gọi $(S)$ là tập hợp các điểm $M$ thoả mãn ít nhất một trong hai đoạn thẳng $MI,MJ$ không vượt quá $7$. Với $A,B,C$ là ba điểm không thẳng hàng thuộc $(S)$, chu vi tam giác $ABC$ lớn nhất là bao nhiêu?
+	(Mức $A$) Trong mặt phẳng, cho hai điểm $I$, $J$ cố định thỏa mãn $IJ=8$.  Gọi $(S)$ là tập hợp các điểm $M$ sao cho ít nhất một trong hai đoạn thẳng $MI,MJ$ có độ dài không vượt quá $7$. Với $A,B,C$ là ba điểm không thẳng hàng thuộc $(S)$, chu vi tam giác $ABC$ lớn nhất là bao nhiêu?
 	\begin{flushright}
 		\textit{Trần Quốc Luật, Tp. Hồ Chí Minh}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P679.}}
-	(Mức $A$) Có $100$ quả trứng xếp thành một vòng tròn. Hỏi, nếu bỏ qua quả đầu tiên, theo chiều kim đồng hồ, ta bắt đầu nhặt từ quả thứ hai, sau đó cứ cách một quả lại nhặt cho đến khi hết trứng, thì quả được nhặt sau cùng là quả thứ mấy?
+	(Mức $A$) Có $100$ quả trứng, được xếp thành một vòng tròn. Gọi một quả bất kỳ, trong $100$ quả
+	trứng đó, là quả thứ nhất; sau đó, theo chiều kim đồng hồ, lần lượt gọi các quả trứng tiếp theo là quả
+	thứ $2$, quả thứ $3$, ..., quả thứ $100$. Người ta nhặt trứng theo quy tắc: đầu tiên, nhặt quả thứ hai; sau đó,
+	theo chiều kim đồng hồ, cứ cách một quả lại nhặt một quả, cho đến khi nhặt được hết $100$ quả trứng.
+	Hỏi quả trứng nhặt được ở lần cuối cùng là quả thứ mấy?
 	\begin{flushright}
 		\textit{Phạm Triều Dương, Hà Nội (st)}
 	\end{flushright}
@@ -213,7 +224,7 @@
 		\centering
 		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.8\linewidth]{P641}
+		\includegraphics[width=0.75\linewidth]{P641}
 		\vspace*{-10pt}
 	\end{figure}
 	Từ quy tắc ghi số của đề bài suy ra, với mỗi $k = 1, 2, \ldots, 15$, ta có:
@@ -224,7 +235,7 @@
 	Do đó
 		\begin{align*}
 			&{x_2} =  - {x_5} = {x_8} = 20,\\
-			&22 = {x_{12}} =  - {x_{15}} = {x_{18}}.7
+			&22 = {x_{12}} =  - {x_{15}} = {x_{18}}.
 		\end{align*}
 	Vì vậy
 	\begin{align*}
@@ -268,7 +279,10 @@
 	\vskip 0.05cm
 	Vì vậy, $z \ge 0$; hay, $z$ là số tự nhiên.
 	\vskip 0.05cm
-	Vậy, tồn tại số tự nhiên $z$, sao cho $x + y + z + xyz$ là một số chính phương.
+	Vậy, tồn tại số tự nhiên $z$, sao cho 
+	\begin{align*}
+		x + y + z + xyz
+	\end{align*} là một số chính phương.
 	\vskip 0.05cm
 	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
 	\vskip 0.05cm
@@ -298,7 +312,7 @@
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P643.}}
 	(Mức $B$)
-	Người ta lần lượt ghi các số lên bảng, theo quy tắc: Ở mỗi lần ghi, chỉ ghi một số, và nếu số được ghi ở lần thứ $k$ ($k \in \mathbb{N^*}$) là $x \ne -1$,  thì ở lần thứ $k + 1$ ghi số $\dfrac{x-1}{x+1}$. Hãy tìm số nhỏ nhất cần ghi ở lần thứ nhất, sao cho trong quá trình ghi số lên bảng theo quỳ tắc trên, ta ghi được số $-\dfrac{1}{2023}$.
+	Người ta lần lượt ghi các số lên bảng, theo quy tắc: Ở mỗi lần ghi, chỉ ghi một số, và nếu số được ghi ở lần thứ $k$ ($k \in \mathbb{N^*}$) là $x \ne -1$,  thì ở lần thứ $k + 1$ ghi số $\dfrac{x-1}{x+1}$. Hãy tìm số nhỏ nhất cần ghi ở lần thứ nhất, sao cho trong quá trình ghi số lên bảng theo quy tắc trên, ta ghi được số $-\dfrac{1}{2023}$.
 	\vskip 0.05cm
 	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
 	\vskip 0.05cm
@@ -359,9 +373,10 @@
 	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Vũ Bảo Lân, lớp $8$A$5$, trường THCS Phúc Yên, Tp. Phúc Yên, tỉnh Vĩnh Phúc})\textbf{\color{thachthuctoanhoc}.}
 	\vskip 0.05cm
 	$\pmb{1.}$ \textit{Chứng minh “chỉ khi”.
-	Giả sử tam giác ABC vuông tại} $A$ (xem Hình $1$) .\textit{Ta cần chứng minh}
+	\vskip 0.05cm
+	Giả sử tam giác $ABC$ vuông tại} $A$ (xem Hình $1$) .\textit{Ta cần chứng minh}
 	\begin{align*}
-		\frac{{H{B^3}}}{{A{B^4}}} + \frac{{H{C^3}}}{{A{C^4}}} = \frac{1}{{BC}}.
+		\frac{{H{B^3}}}{{A{B^4}}} + \frac{{H{C^3}}}{{A{C^4}}} = \frac{1}{{BC}}. \tag{$1$}
 	\end{align*}                                                           
 	\begin{figure}[H]
 		\centering
@@ -388,8 +403,8 @@
 	\end{figure}
 	Do $H$ là chân đường cao kẻ từ đỉnh góc vuông của tam giác vuông $ABC$ nên
 	\begin{align*}
-		A{B^2} = BC \cdot BH, AC^2 = BC \cdot CH,\\
-		\text{và }	BC = HB + HC.
+		A{B^2} = &BC \cdot BH, \,\,\,AC^2 = BC \cdot CH,\\
+		&\text{và }	BC = HB + HC.
 	\end{align*}
 	Do đó
 	\begin{align*}
@@ -399,6 +414,7 @@
 	($1$) được chứng minh.
 	\vskip 0.05cm
 	$\pmb{2.}$ \textit{Chứng minh “khi”.
+	\vskip 0.05cm
 	Giả sử $ABC$ là tam giác thỏa mãn ($1$), và có các góc $B$, $C$ là góc nhọn. 
 	Ta cần chứng minh tam giác $ABC$ vuông tại $A$.}
 	Gọi $A'$ là giao điểm của tia $HA$ và đường tròn đường kính $BC$; ta có $\angle BA'C = 90^\circ$,  và $H$ là chân đường cao kẻ từ $A'$  của tam giác vuông $A'BC$. Do đó, theo chứng minh ở phần $1$, ta có:
@@ -510,8 +526,7 @@
 	\end{align*}
 	Bằng cách hoàn toàn tương tự, ta có:
 	\begin{align*}
-		\frac{b}{{b + {c^3}a + c}} &= \frac{{{b^2}}}{{{b^2} + bc + {c^2}}}, \frac{c}{{c + {a^3}b + a}} \\
-		&= \frac{{{c^2}}}{{{c^2} + ca + {a^2}}}.
+		&\frac{b}{{b + {c^3}a + c}} = \frac{{{b^2}}}{{{b^2} + bc + {c^2}}},\\ &\frac{c}{{c + {a^3}b + a}} = \frac{{{c^2}}}{{{c^2} + ca + {a^2}}}.
 	\end{align*}
 	Do đó, bất đẳng thức cần chứng minh của đề bài tương đương với bất đẳng thức
 	\begin{align*}
@@ -638,7 +653,7 @@
 	\vskip 0.05cm
 	Xét $m + 1$ điểm tùy ý, đôi một phân biệt, và cùng nằm trên một đường tròn. Ký hiệu một điểm tùy ý, trong $m + 1$ điểm này, bởi $X_1$; sau đó, lần lượt, theo chiều kim đồng hồ, ký hiệu $m$ điểm còn lại bởi $X_2, X_3, ;\ldots, X_{m+1}$.
 	\vskip 0.05cm  
-	Xét một đường đi tùy ý có $m + 1$ đỉnh, được tạo thành từ $m + 1$ điểm đang xét, và có đỉnh đầu tiên là $X_1$. Dễ thấy, đỉnh thứ hai của đường đi này chỉ có thể là $X_2$  hoặc $X_{m+1}$, vì nếu ngược lại, đỉnh thứ hai là $X_i$, với $2 < i < m + 1$, thì trong đường đi sẽ có cạnh $X_jY_s$  với $2 < j < i < s < m + 1$, và cạnh này sẽ cắt cạnh  $X_1X_i$ tại một điểm nằm trong cạnh đó (do các điểm nằm trên một đường tròn), trái với định nghĩa đường đi của đề bài. Do đó, tất cả các đường đi có $m + 1$ đỉnh, được tạo thành từ $m + 1$ điểm $X_1, X_2, X_3, \ldots,X_{m+1}$, và có đỉnh đầu tiên là $X_1$, đều là các đường đi nhận được bằng cách ghép thêm điểm $X_1$ vào đầu các đường đi có $m$ đỉnh, được tạo thành từ $m$ điểm  $X_2, X_3, \ldots, X_{m+1}$, và có đỉnh đầu tiên là $X_2$  hoặc $X_{m+1}$. Vì thế, theo giả thiết quy nạp, số đường đi có $m + 1$ đỉnh, được tạo thành từ $m + 1$ điểm  $X_1, X_2, X_3, \ldots, X_{m+1}$, và có đỉnh đầu tiên là $X_1$, là
+	Xét một đường đi tùy ý có $m + 1$ đỉnh, được tạo thành từ $m + 1$ điểm đang xét, và có đỉnh đầu tiên là $X_1$. Dễ thấy, đỉnh thứ hai của đường đi này chỉ có thể là $X_2$  hoặc $X_{m+1}$, vì nếu ngược lại, đỉnh thứ hai là $X_i$, với $2 < i < m + 1$, thì trong đường đi sẽ có cạnh $X_jY_s$  với $2 \le j < i < s \le m + 1$, và cạnh này sẽ cắt cạnh  $X_1X_i$ tại một điểm nằm trong cạnh đó (do các điểm nằm trên một đường tròn), trái với định nghĩa đường đi của đề bài. Do đó, tất cả các đường đi có $m + 1$ đỉnh, được tạo thành từ $m + 1$ điểm $X_1, X_2, X_3, \ldots,X_{m+1}$, và có đỉnh đầu tiên là $X_1$, đều là các đường đi nhận được bằng cách ghép thêm điểm $X_1$ vào đầu các đường đi có $m$ đỉnh, được tạo thành từ $m$ điểm  $X_2, X_3, \ldots, X_{m+1}$, và có đỉnh đầu tiên là $X_2$  hoặc $X_{m+1}$. Vì thế, theo giả thiết quy nạp, số đường đi có $m + 1$ đỉnh, được tạo thành từ $m + 1$ điểm  $X_1, X_2, X_3, \ldots, X_{m+1}$, và có đỉnh đầu tiên là $X_1$, là
 	\begin{align*}
 		2 \cdot {2^{m - 2}} = {2^{m - 1}} = {2^{\left( {m + 1} \right) - 2}}.
 	\end{align*}
@@ -716,6 +731,7 @@
 	Giải hệ trên, với lưu ý $a \ne 0$ (theo trên), ta được $a \in \{1; 2\}$.
 	\vskip 0.05cm
 	Ngược lại:
+	\vskip 0.05cm
 	-- Với $a = 1$, dễ thấy hàm số $f(x) = -x$ thỏa mãn ($1$), và là một đơn ánh từ  $\mathbb{R}$ đến  $\mathbb{R}$;
 	\vskip 0.05cm
 	-- Với $a = 2$, dễ thấy hàm số  $f(x) = -2x + 2$ thỏa mãn ($1$), và là một đơn ánh từ $\mathbb{R}$ đến $\mathbb{R}$.
@@ -730,8 +746,10 @@
 	\vskip 0.05cm
 	Trong ($7$):
 	\vskip 0.05cm
-	-- Cho $x = -1, y = 1$, ta được\linebreak $f(-1) = 0$; \hfill ($8$)
-	\vskip 0.05cm
+	-- Cho $x = -1, y = 1$, ta được
+	\begin{align*}
+		f(-1) = 0; \tag{$8$}
+	\end{align*}
 	-- Cho $x = 1, y = -1$, với lưu ý tới ($8$), ta được  $f(1) = 0 $; \hfill ($9$)
 	\vskip 0.05cm
 	-- Cho $y = 0$, ta được
@@ -759,13 +777,13 @@
 	\end{align*}
 	Từ ($11$) và ($14$), suy ra
 	\begin{align*}
-		f\left( { - x - 1} \right) =  - f\left( {x + 1} \right) \quad\forall x \in \mathbb{R}. \tag{$15$}
+		f\left( { - x - 1} \right) =  - f\left( {x + 1} \right) \quad\forall x \in \mathbb{R}.
 	\end{align*}
 	Do đó, $f$ là hàm số lẻ trên $\mathbb{R}$. \hfill ($15$)
 	\vskip 0.05cm
 	Tiếp theo, trong ($7$), cho $x = -1$ và thay $y$ bởi $-x$, với lưu ý tới ($8$), ta được
 	\begin{align*}
-		f\left( { \!-\! 2 \!-\! x \!+\! f\left( { \!-\! 1 \!-\! x} \right)} \right) \!+\! f\left( x \right) \!=\! 0 \quad\forall x \in \mathbb{R}
+		f\left( { \!-\! 2 \!-\! x \!+\! f\left( { \!-\! 1 \!-\! x} \right)} \right) \!+\! f\left( x \right) \!=\! 0 \quad\forall x \in \mathbb{R}.
 	\end{align*}
 	Suy ra
 	\begin{align*}
