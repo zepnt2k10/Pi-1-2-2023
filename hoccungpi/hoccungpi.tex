@@ -12,7 +12,7 @@
 
 \begin{multicols}{2}
 	Dãy số Fibonacci, đặt theo tên nhà toán học người Ý Fibonacci ($1170-1250$), được xác định bởi $F_0=0$, $F_1=1$, $F_{n+1}=F_n+F_{n-1}$ với mọi $n\geq 1$. 
-	Đây là một trong những dãy số nổi tiếng nhất trong toán học. Tạp chí toán học Fibonacci Quaterly [$3$] của Canada chỉ xuất bản những nghiên cứu liên quan đến dãy Fibonacci. Vào năm $1964$, nhà toán học người Anh, John H. E. Cohen, [$2$] chứng minh  có đúng ba số chính phương trong dãy Fibonacci, đó là $0$, $1$, và $144$. Một câu hỏi tự nhiên là liệu ta có thể tìm tất cả các giai thừa trong dãy Fibonacci. Câu hỏi này được giải quyết bởi Rajagopal và Griffiths [$5$]. Họ chỉ ra $1!$ và $2!$ là  hai số giai thừa duy nhất trong dãy Fibonacci. Nói cách khác, ta có định lý sau.
+	Đây là một trong những dãy số nổi tiếng nhất trong toán học. Tạp chí toán học Fibonacci Quaterly [$3$] của Canada chỉ xuất bản những nghiên cứu liên quan đến dãy Fibonacci. Vào năm $1964$, nhà toán học người Anh John H. E. Cohen chứng minh  có đúng ba số chính phương trong dãy Fibonacci, đó là $0$, $1$, và $144$ [$2$]. Một câu hỏi tự nhiên là liệu ta có thể tìm tất cả các giai thừa trong dãy Fibonacci. Câu hỏi này được giải quyết bởi Rajagopal và Griffiths [$5$]. Họ chỉ ra $1!$ và $2!$ là  hai số giai thừa duy nhất trong dãy Fibonacci. Nói cách khác, ta có định lý sau.
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Định lý} $\pmb{1.}$ \textit{Phương trình
 		\begin{align*}
@@ -34,14 +34,14 @@
 			v_2(F_n)=
 			\begin{cases}
 				0 \text{ nếu } n\not\equiv 0 \,\,(\!\bmod{3})\\
-				1 \text{ nếu } n\equiv 3 \,\,(\!\bmod{3}) \quad\quad\quad\text{\color{black}(}2\text{\color{black})}\\ 
+				1 \text{ nếu } n\equiv 3 \,\,(\!\bmod{6}) \quad\quad\quad\text{\color{black}(}2\text{\color{black})}\\ 
 				v_2(n)+2 \text{ nếu } n \equiv 0 \,\,(\!\bmod{6}).
 			\end{cases} 
 		\end{align*}
 	Trong chứng minh Bổ đề [$2$], ta cần đến dãy số Lucas. Dãy Lucas $(L_n)_{n\geq 0}$ được xác định bởi  $L_0=2,\, L_1=1,\, L_{n+1}=L_n+L_{n-1}$ với mọi $n\geq 1$. Chú ý rằng $L_n=u^n+v^n$ với mọi $n\geq 0$.
 	\vskip 0.1cm
-	\textit{Chứng minh.} Xét dãy $(F_n)_{n\geq 0}$ modulo $4$: $0$, $1$, $1$, $2$, $3$, $1$, $0$, $1$, $1$, $2$, $3$, $....$ Đây là một dãy tuần hoàn theo chu kỳ $6$. Dễ thấy ($2$) đúng với $n\leq 6$. Giả sử ($2$) đúng với $n<k$ ($k\geq 6$, $k\in \mathbb{Z}^{+}$). Xét $n=k$. 
-	Ta chỉ cần xét trường hợp $6\mid k$ vì nếu không $v_2(F_k)=0$ khi $3\nmid k$ và $v_2(F_k)=1$ khi $6\mid k-3$.
+	\textit{Chứng minh.} Xét dãy $(F_n)_{n\geq 0}$ modulo $4$: $0$, $1$, $1$, $2$, $3$, $1$, $0$, $1$, $1$, $2$, $3$, $...$ Đây là một dãy tuần hoàn theo chu kỳ $6$. Dễ thấy ($2$) đúng với $n\leq 6$. Giả sử ($2$) đúng với $n<k$ ($k\geq 6$, $k\in \mathbb{Z}^{+}$). Xét $n=k$. 
+	Ta chỉ cần xét trường hợp $6\mid k$ vì nếu không $v_2(F_k)=0$ khi $3\nmid k$ và $v_2(F_k)=1$ khi $6\mid (k-3)$.
 	\vskip 0.1cm	
 	Đặt $k=6m$, với $m\in \mathbb{Z}^{+}$. Khi đó 
 	\begin{align*}
@@ -67,7 +67,7 @@
 		\begin{align*}
 			v_2(F_{6m})=v_2(F_{3m})+1=v_2(m)+3.
 		\end{align*}
-		Suy ra ($2$) đúng với $n=k+1$. Bổ đề được chứng minh.
+		Suy ra ($2$) đúng với $n=k+1$. Bổ đề được chứng minh. \hfill $\square$
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Bổ đề} $\pmb{3.}$ \textit{Với mọi số nguyên dương {$n$} thì} 
 		\begin{align*}
@@ -84,13 +84,13 @@
 	\begin{align*}
 		S_2(n)\leq k \leq 1+ \log_2 n.
 	\end{align*}
-	Mặt khác theo công thức Legendre\footnote[2]{\color{hoccungpi}Công thức Legendere nói rằng với mọi số nguyên tố $p$ thì $v_p(n!)=(n-S_p(n))/(p-1)$, trong đó $S_p(n)$ là tổng các chữ số trong biểu diễn cơ số $p$ của $n$.}   thì
+	Mặt khác theo công thức Legendre\footnote[2]{\color{hoccungpi}Công thức Legendre nói rằng với mọi số nguyên tố $p$ thì $v_p(n!)=(n-S_p(n))/(p-1)$, trong đó $S_p(n)$ là tổng các chữ số trong biểu diễn cơ số $p$ của $n$.}   thì
 	\begin{align*}
 		v_2(n!)=n-S_2(n).
 	\end{align*}
 	Nên 
 	\begin{align*}
-		v_2(n!)\geq n-1-\log_2 n.
+	\quad\quad\quad	v_2(n!)\geq n-1-\log_2 n. \,\,\,\,\quad\quad\quad \square
 	\end{align*}
 	\textbf{\color{hoccungpi}Bổ đề} $\pmb{4.}$
 	\textit{Với mọi số nguyên dương $n\geq 15$ thì}
@@ -105,7 +105,7 @@
 			&\quad +3 (m^2-m)+ (m^2-1)+ 8m^2 \\
 			&> m^3+3m^2+3m+1=(m+1)^3.
 		\end{align*}
-		Suy ra ($6$) đúng với $n=m+1$. Theo quy nạp có ($6$) đúng với mọi $n\geq 15$.
+		Suy ra ($6$) đúng với $n=m+1$. Theo quy nạp có ($6$) đúng với mọi $n\geq 15$. \hfill $\square$
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Bổ đề} $\pmb{5.}$
 	\textit{Với mọi số nguyên dương $n\geq 2$ thì 
@@ -124,7 +124,7 @@
 			&>(1+\sqrt{5}m!)(m+1)\\
 			&>1+\sqrt{5}(m+1)!.
 	\end{align*}
-	Suy ra ($7$) đúng với $n=m+1$. Như vậy, theo nguyên lý quy nạp thì ($7$) đúng với mọi $n\geq 2$.
+	Suy ra ($7$) đúng với $n=m+1$. Như vậy, theo nguyên lý quy nạp thì ($7$) đúng với mọi \linebreak $n\geq 2$.\hfill $\square$
 	\vskip 0.1cm
 	Bây giờ ta chứng minh Định lý $1$.
 	\vskip 0.1cm
@@ -133,7 +133,7 @@
 	\begin{align*}
 			F_n=m!. \tag{$8$}
 	\end{align*}
-	Do $F_4=3$ không là một số giai thừa nên ta phải có $F_n\geq F_5 =5$, dẫn đến $m\geq 3$. Nếu $m=4$ thì $F_n=24$, điều này là vô lý do dãy Fibonacci là dãy số tăng kể từ số hạng thứ 3 và $F_8=21< 24< F_9=24$. Suy ra $m\geq 5$. Khi đó $3,4,5$ đều là ước của $m!$ nên cũng là ước của $F_n$. Theo ($2$) ta có $6\mid n$. 
+	Do $F_4=3$ không là một số giai thừa nên ta phải có $F_n\geq F_5 =5$, dẫn đến $m\geq 3$. Nếu $m=4$ thì $F_n=24$, điều này là vô lý do dãy Fibonacci là dãy số tăng kể từ số hạng thứ ba và $F_8=21< 24< F_9=34$. Suy ra $m\geq 5$. Khi đó $3,4,5$ đều là ước của $m!$ nên cũng là ước của $F_n$. Theo ($2$) ta có $6\mid n$. 
 	\vskip 0.1cm	
 	Xét dãy $(F_n)_{n\geq 0}$  modulo $3$: $0$, $1$, $1$, $2$, $0$, $2$, $2$, $1$, $0$, $1$, $1$, $...$ Từ đó suy ra dãy Fobonacci modulo $3$ tuần hoàn với chu kỳ $8$ và $3\mid F_n$ khi và chỉ khi $4\mid n$.
 	\vskip 0.1cm
@@ -168,9 +168,9 @@
 	\end{align*}
 	Chú ý rằng $m\geq 16$ nên bằng cách kết hợp ($6$), ($7$), và ($9$) ta thu được
 	\begin{align*}
-		m!=F_n&>\dfrac{u^n-1}{\sqrt{5}}>\dfrac{u^{\dfrac{2^{m-3}}{m}}-1}{\sqrt{5}}\\&>\dfrac{u^{m^2}-1}{\sqrt{5}}>m!,
+		m!=F_n&>\dfrac{u^n-1}{\sqrt{5}}>\dfrac{u^{2^{m-3}/{m}}-1}{\sqrt{5}}\\&>\dfrac{u^{m^2}-1}{\sqrt{5}}>m!,
 	\end{align*}
-	vô lý. Định lý $1$ được chứng minh.
+	vô lý. Định lý $1$ được chứng minh. \hfill $\square$
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Tài liệu tham khảo}
 	\vskip 0.1cm

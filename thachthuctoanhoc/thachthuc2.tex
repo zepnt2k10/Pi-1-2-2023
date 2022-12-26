@@ -11,7 +11,7 @@
 \begin{tBox}
 	\begin{itemize}[leftmargin = 13pt, itemsep = 1.0pt] 
 		\item Mỗi bài toán đề xuất (kèm theo lời giải) cần được nêu rõ là bài sáng tác hay bài sưu tầm.
-		%		\item Mỗi bài toán đề xuất (kèm theo lời giải) cần được nêu rõ là bài sáng tác hay bài sưu tầm (nếu là bài sưu tầm, cần ghi rõ nguồn).
+%				\item Mỗi bài toán đề xuất (kèm theo lời giải) cần được nêu rõ là bài sáng tác hay bài sưu tầm (nếu là bài sưu tầm, cần ghi rõ nguồn).
 		\item Bài giải cho mỗi bài toán cần được trình bày trong một file riêng hoặc
 		một tờ giấy riêng.
 		\item  Người đề xuất bài toán hoặc gửi bài giải cho các bài toán trong mục ``Thách thức kỳ này" cần ghi rõ họ, đệm, tên và nơi làm việc/học tập, số điện thoại liên hệ. Nếu là học sinh (hoặc sinh viên) cần ghi rõ là học sinh lớp mấy (hoặc sinh viên năm thứ mấy).
@@ -29,27 +29,33 @@
 	\setlength{\abovedisplayskip}{4pt}
 	\setlength{\belowdisplayskip}{4pt}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P671.}}
-	(Mức $B$) Một hình chữ nhật được chia thành $9$ hình chữ nhật con như hình vẽ. Số ghi ở giữa mỗi hình chữ nhật con bằng chu vi của hình chữ nhật ấy. Biết rằng $c$ là một số nguyên và khác với $2,3,4,5$; hãy tìm $a,b,c,d,e$.
+	(Mức $B$) Một hình chữ nhật được chia thành $9$ hình chữ nhật con như hình vẽ. Số ghi ở giữa mỗi hình chữ nhật con bằng chu vi của hình chữ nhật ấy. Biết rằng $c$ là một số nguyên khác $2,3,4,5$; hãy tìm $a,b,c,d,e$.
 	\begin{center} 
 		\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
-		\begin{tikzpicture}[xscale=1.7,thachthuctoanhoc]
-			\draw (0,0) grid (3,3);
-			\draw (0.5,1.5) node{$2$};
-			\draw (1.5,0.5) node{$5$};
-			\draw (1.5,2.5) node{$4$};
-			\draw (2.5,1.5) node{$2$};
-			\draw (0.5,2.5) node{$a$};
-			\draw (2.5,2.5) node{$b$};
-			\draw (1.5,1.5) node{$c$};
-			\draw (0.5,0.5) node{$d$};
-			\draw (2.5,0.5) node{$e$};
+		\begin{tikzpicture}[scale=0.7,thachthuctoanhoc]
+			\draw (0,0) rectangle (9,3); 
+			\draw (2,0) -- (2, 3) (6, 0) -- (6, 3);
+			\draw (0,1.2) -- (9, 1.2) (0, 2.1) -- (9, 2.1);
+			\draw (1,2.5) node{$a$};
+			\draw (1,1.5) node{$2$};
+			\draw (1,0.5) node{$d$};
+			\draw (4,2.5) node{$4$};
+			\draw (4,1.5) node{$c$};
+			\draw (4,0.5) node{$5$};
+			\draw (7.5,2.5) node{$b$};
+			\draw (7.5,1.5) node{$3$};
+			\draw (7.5,0.5) node{$e$};
 		\end{tikzpicture}
 	\end{center}
 	\begin{flushright}
 		\textit{Đăng Hải, Hà Nội (st)}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P672.}}
-	(Mức $B$) Cho $x$ và $y$ là các số nguyên dương phân biệt thoả mãn $2023x^{2023}+999 y^{2023}$ chia hết cho $x+y$. Chứng minh rằng $x+y$ là hợp số. 
+	(Mức $B$) Cho $x$ và $y$ là các số nguyên dương phân biệt thoả mãn
+	\begin{align*}
+		2023x^{2023}+999 y^{2023}
+	\end{align*}
+	chia hết cho $x+y$. Chứng minh rằng $x+y$ là hợp số. 
 	\begin{flushright}
 		\textit{Nguyễn Đức Tấn, Tp. Hồ Chí Minh}
 	\end{flushright}
@@ -63,14 +69,14 @@
 		\textit{Nguyễn Văn Quý, Hà Nội}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P674.}}
-	(Mức $B$) Mỗi ô của bảng $8\times 8$ được điền số $+1$ hoặc $-1$ sao cho tổng của $4$ số trong mỗi hình vuông con cỡ $2\times2$ đều bằng $2$ hoặc $-2$. Chứng minh rằng bảng phải chứa hai hàng giống nhau.
+	(Mức $B$) Ở mỗi ô vuông con của bảng ô vuông $8\times8$ được điền một số $+1$, hoặc một số $-1$, sao cho tổng của bốn số ở một bảng con $2\times2$ tuỳ ý bằng $2$, hoặc $-2$. Chứng minh rằng, trong bảng số thu được có hai hàng giống nhau.
 	\begin{flushright}
 		\textit{Nguyễn Tường Thanh, Nghệ An (st)}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P675.}}
 	(Mức $B$) Cho hình thang $ABCD$ vuông tại $A$ và $D$. Trên tia $AD$ lấy điểm $F$ sao cho $AF\cdot AD=AB\cdot CD$. Gọi $E$ là hình chiếu vuông góc của $A$ trên $BD$. Chứng minh rằng $\angle CEF=90^\circ$. 
 	\begin{figure}[H]
-		\vspace*{-5pt}
+		\vspace*{-15pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\definecolor{sqsqsq}{rgb}{0.12549019607843137,0.12549019607843137,0.12549019607843137}
@@ -78,7 +84,7 @@
 		\definecolor{qqzzcc}{rgb}{0,0.6,0.8}
 		\definecolor{qqqqff}{rgb}{0,0,1}
 		\definecolor{qqqqffa}{rgb}{1,1,1}
-		\begin{tikzpicture}[scale=0.55,thachthuctoanhoc]
+		\begin{tikzpicture}[scale=0.5,thachthuctoanhoc, rotate=90]
 			\draw[color=sqsqsq] (-3,3.317157287525381) -- (-2.717157287525381,3.317157287525381) -- (-2.717157287525381,3.6) -- (-3,3.6) -- cycle; 
 			\draw[color=sqsqsq] (-2.7171572875253815,-3.78) -- (-2.7171572875253815,-3.4971572875253814) -- (-3,-3.4971572875253814) -- (-3,-3.78) -- cycle; 
 			\draw[color=sqsqsq] (-0.7031626699615052,2.6414283229649644) -- (-0.8393330759027575,2.315149882755081) -- (-0.5130546356928736,2.1789794768138284) -- (-0.3768842297516215,2.5052579170237124) -- cycle; 
@@ -99,7 +105,7 @@
 			\draw [fill=white] (-3,-3.78) circle (1.5pt);
 			\draw[color=qqqqff] (-3.6,-3.78) node {$D$};
 			\draw [fill=white] (-3,1.3129539295392954) circle (1.5pt);
-			\draw[color=qqqqff] (-3.36,1.49) node {$F$};
+			\draw[color=qqqqff] (-3.6,1.49) node {$F$};
 			\draw [fill=white] (-0.3768842297516215,2.5052579170237124) circle (1.5pt);
 			\draw[color=qqqqff] (-0.54,2.99) node {$E$};
 		\end{tikzpicture}
@@ -111,8 +117,8 @@
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P676.}}
 	(Mức $B$) Cho $a, b, c$ là các số thực dương. Chứng minh rằng
 	\begin{align*}
-		&\sqrt{\frac{a}{b+c}}+\sqrt{\frac{b}{c+a}}+\sqrt{\frac{c}{a+b}}\\
-		\leq &\sqrt{\frac{a}{b}+\frac{b}{c}+\frac{c}{a}+\frac{3}{2}} .
+		\sqrt{\!\!\frac{a}{b\!+\!c}}\!+\!\sqrt{\!\!\frac{b}{c\!+\!a}}\!+\!\sqrt{\!\!\frac{c}{a\!+\!b}}
+		\!\leq\! \sqrt{\!\!\frac{a}{b}\!+\!\frac{b}{c}\!+\!\frac{c}{a}\!+\!\frac{3}{2}} .
 	\end{align*}
 	\begin{flushright}
 		\textit{Nguyễn Việt Hùng, Hà Nội}
@@ -124,17 +130,21 @@
 	\end{align*}
 	$a)$ Chứng minh rằng $(u_n)$ là dãy tăng và không bị chặn trên.
 	\vskip 0.05cm
-	$b)$ Tìm tất cả các số thực $\alpha$ sao cho giới hạn $\lim \dfrac{n^\alpha. u_n}{4^n}$ tồn tại hữu hạn và khác $0$. 
+	$b)$ Tìm tất cả các số thực $\alpha$,  sao cho dãy số $(x_n)$, xác định bởi
+	\begin{align*}
+		x_n=\dfrac{n^\alpha. u_n}{4^n},\quad n=1,2,3,\ldots,
+	\end{align*}
+	có giới hạn hữu hạn khác $0$, khi $n\to+\infty$.
 	\begin{flushright}
 		\textit{Lê Phúc Lữ, Tp. Hồ Chí Minh}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P678.}}
-	(Mức $A$) Trong mặt phẳng, cho hai điểm $I$, $J$ cố định sao cho $IJ=8$.  Gọi $(S)$ là tập hợp các điểm $M$ thoả mãn ít nhất một trong hai đoạn thẳng $MI,MJ$ không vượt quá $7$. Với $A,B,C$ là ba điểm không thẳng hàng thuộc $(S)$, chu vi tam giác $ABC$ lớn nhất là bao nhiêu?
+	(Mức $A$) Trong mặt phẳng, cho hai điểm $I$, $J$ cố định thoả mãn $IJ=8$.  Gọi $(S)$ là tập hợp các điểm $M$ sao cho ít nhất một trong hai đoạn thẳng $MI,MJ$ có độ dài không vượt quá $7$. Với $A,B,C$ là ba điểm không thẳng hàng thuộc $(S)$, chu vi tam giác $ABC$ lớn nhất là bao nhiêu?
 	\begin{flushright}
 		\textit{Trần Quốc Luật, Tp. Hồ Chí Minh}
 	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P679.}}
-	(Mức $A$) Có $100$ quả trứng xếp thành một vòng tròn. Hỏi, nếu bỏ qua quả đầu tiên, theo chiều kim đồng hồ, ta bắt đầu nhặt từ quả thứ hai, sau đó cứ cách một quả lại nhặt cho đến khi hết trứng, thì quả được nhặt sau cùng là quả thứ mấy?
+	(Mức $A$) Có $100$ quả trứng, được xếp thành một vòng tròn. Gọi một quả bất kỳ, trong $100$ quả trứng đó, là quả thứ nhất; sau đó, theo chiều kim đồng hồ, lần lượt gọi các quả trứng tiếp theo là quả thứ $2$, quả thứ $3$, $\ldots$, quả thứ $100$. Người ta nhặt trứng theo quy tắc: đầu tiên, nhặt quả thứ hai; sau đó, theo chiều kim đồng hồ, cứ cách một quả lại nhặt một quả, cho đến khi nhặt được hết $100$ quả trứng. Hỏi quả trứng nhặt được ở lần cuối cùng là quả thứ mấy?
 	\begin{flushright}
 		\textit{Phạm Triều Dương, Hà Nội (st)}
 	\end{flushright}
@@ -159,7 +169,7 @@
 		\definecolor{ffvvqq}{rgb}{1,0.3333333333333333,0}
 		\definecolor{qqqqffa}{rgb}{0,0,1}
 		\definecolor{qqzzff}{rgb}{0,0.6,1}
-		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.45, node font= \small]
+		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.4, node font= \small]
 			\draw (1.401115339869085,5.50644760016908136) node[anchor=north west] {$X$};
 			\draw (1.4408759814898973,-0.7306378725360659) node[anchor=north west] {$Y$};
 			\draw (-7.8444170535279,2.5008856260029945) node[anchor=north west] {$S$};
@@ -213,7 +223,7 @@
 		\centering
 		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.75\linewidth]{P641}
+		\includegraphics[width=0.7\linewidth]{P641}
 		\vspace*{-10pt}
 	\end{figure}
 	Từ quy tắc ghi số của đề bài suy ra, với mỗi $k = 1, 2, \ldots, 15$, ta có:
@@ -504,8 +514,7 @@
 	(Mức $B$)
 	Cho $a$, $b$, $c$ là các số thực dương thỏa mãn $abc = 1$. Chứng minh rằng
 	\begin{align*}
-		&\frac{a}{{a + {b^3}c + b}} + \frac{b}{{b + {c^3}a + c}} \\
-		&+ \frac{c}{{c + {a^3}b + a}} \ge 1.
+		\frac{a}{{a \!+ \!{b^3}c \!+\! b}} \!+\! \frac{b}{{b \!+\! {c^3}a \!+\! c}} \!+\! \frac{c}{{c \!+\! {a^3}b \!+\! a}} \ge 1.
 	\end{align*}
 	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của người đề xuất bài toán})\textbf{\color{thachthuctoanhoc}.}
 	\vskip 0.05cm
@@ -624,7 +633,7 @@
 	\hfill\textbf{\color{thachthuctoanhoc}Nguyễn Khắc Minh}
 	\vskip 0.2cm
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P647.}}
-	(Mức $A$) Cho số nguyên $n \ge 2$, và cho $n$ điểm đôi một phân biệt  $A_1, A_2, \ldots, A_n$   cùng nằm trên một đường tròn, theo thứ tự đó (tính theo chiều kim đồng hồ). Một dãy các điểm đôi một phân biệt  $A_{k_1}, A_{k_2}, \ldots, A_{k_t}$ ($t \in \mathbb{N}, t \ge 2$) được gọi là một \textit{đường đi}, nếu đường gấp khúc $A_{k_1}A_{k_2}\ldots A_{k_1}$ ($t$ đỉnh) là một đường gấp khúc không tự cắt. Hỏi có tất cả bao nhiêu đường đi?
+	(Mức $A$) Cho số nguyên $n \ge 2$, và cho $n$ điểm đôi một phân biệt  $A_1, A_2, \ldots, A_n$   cùng nằm trên một đường tròn, theo thứ tự đó (tính theo chiều kim đồng hồ). Một dãy các điểm đôi một phân biệt  $A_{k_1}, A_{k_2}, \ldots, A_{k_t}$ ($t \in \mathbb{N}, t \ge 2$) được gọi là một \textit{đường đi}, nếu đường gấp khúc $A_{k_1}A_{k_2}\ldots A_{k_t}$ ($t$ đỉnh) là một đường gấp khúc không tự cắt. Hỏi có tất cả bao nhiêu đường đi?
 	\vskip 0.05cm
 	(Một đường gấp khúc được gọi là \textit{không tự cắt}, nếu không có hai cạnh nào của nó cắt nhau tại một điểm nằm bên trong mỗi cạnh, trong hai cạnh ấy.)
 	\vskip 0.05cm
@@ -955,7 +964,8 @@
 	\vskip 0.05cm
 	Sử dụng định lý nhỏ Fermat, bạn đọc có thể dễ dàng chứng minh kết quả trên bằng phương pháp phản chứng.
 	\vskip 0.05cm
-	$\pmb{3.}$ Trong bài báo “Fibonacci and Lucas perfect powers”, đăng tải trong Annals of Mathematics, $163$ ($2006$) (trang $969 - 1018$), các nhà toán học Yann Bugeaud, Maurice Mignotte và Samir Siksek đã chứng minh được rằng, \textit{trong dãy Fibonacci, \textbf{\color{thachthuctoanhoc}chỉ có} các số hạng $F_0=0, F_1 = 1, F_2 = 1, F_6 = 8$ và $F_{12} = 144$ là các lũy thừa hoàn hảo của một số nguyên.}
+	$\pmb{3.}$ Trong bài báo “Classical and
+	modular approaches to exponential Diophantine equations I. Fibonacci and Lucas perfect powers”, đăng tải trong Annals of Mathematics, $163$ ($2006$) (trang $969 - 1018$), các nhà toán học Yann Bugeaud, Maurice Mignotte và Samir Siksek đã chứng minh được rằng, \textit{trong dãy Fibonacci, \textbf{\color{thachthuctoanhoc}chỉ có} các số hạng $F_0=0, F_1 = 1, F_2 = 1, F_6 = 8$ và $F_{12} = 144$ là các lũy thừa hoàn hảo của một số nguyên.}
 	\vskip 0.05cm
 	$\pmb{4.}$ Tất cả các lời giải Tạp chí đã nhận được từ bạn đọc đều là lời giải đúng và hoàn chỉnh.
 	\begin{flushright}
